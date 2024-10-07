@@ -54,7 +54,7 @@ module cpu (
     logic gate_mdr;
     logic gate_alu;
     logic gate_marmux;
-    // Lab 5.2
+
     
     logic [1:0] pcmux;
     logic       drmux;
@@ -71,10 +71,17 @@ module cpu (
     logic [15:0] led;
     logic ben;
     logic [2:0] npz;
+
+    logic [15:0] ret_sr1_mux;
+    logic [15:0] sr2_out;
+    logic [15:0] ret_sr2_mux;
+    logic [15:0] sr1_out;
+    logic [15:0] ret_alu;
+    logic [15:0] ret_addr1;
+    logic [15:0] ret_addr2;
     
     assign i = ir;
     
-    // LAB 5.1
     logic [15:0] ret_bus;
     logic [15:0] ret_pc;
     logic [15:0] ret_mdr;
@@ -96,7 +103,6 @@ module cpu (
     );
     
     
-    // LAB 5.1
     bus mainBus (
         .gate_pc(gate_pc),
         .gate_mdr(gate_mdr),
@@ -126,6 +132,49 @@ module cpu (
         
         .ret_mdr(ret_mdr)
     );
+
+
+    module sr1_mux (
+        .select(sr1mux),
+        .ir8_6(ir[8:6]),
+        .ir11_9(ir[11:9]),
+        
+        .ret_sr1_mux(ret_sr1_mux)
+    );
+
+    module sr2_mux (
+        .select(sr2_mux),
+        .ir_sext({{11{ir[4]}}, ir[4:0]}),
+        .sr2_out(sr2_out),
+        
+        .ret_sr2_mux(ret_sr2_mux)
+    );
+
+    module ALU (
+        .ALUK(aluk),
+        .A(sr1_out),
+        .B(ret_sr2_mux),
+
+        .ret_alu(ret_alu)
+    );
+
+    module addr1_mux (
+        .select(addr1mux),
+        .pc_reg(pc),
+        .sr1_out(sr1_out),
+        
+        .ret_addr1(ret_addr1)
+    );
+
+    module addr2_mux (
+        .select(addr2mux),
+        .offset6({{10{ir[5]}}, ir[5:0]}),
+        .offset9({{7{ir[8]}}, ir[8:0]}),
+        .offset11({{5{ir[10]}}, ir[10:0]}),
+        
+        .ret_addr2(ret_addr2)
+    );
+
     
     
     assign led_o = led;
@@ -193,9 +242,7 @@ module cpu (
     
         .data_q(pc)
     );
-    
-    
-    // Lab 5.1
+
     load_reg #(.DATA_WIDTH(16)) mar_reg (
         .clk    (clk),
         .reset  (reset),

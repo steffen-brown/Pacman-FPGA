@@ -84,6 +84,21 @@ module sr1_mux (
     end
 endmodule
 
+module sr2_mux (
+    input logic         select,
+    input logic [15:0]  ir_sext,
+    input logic [15:0]  sr2_out,
+    
+    output logic [15:0] ret_sr2_mux
+);
+    always_comb
+    begin
+        ret_sr2_mux = ir_sext;
+        if (select == 1'b1)
+            ret_sr2_mux = sr_out;
+    end
+endmodule
+
 module ALU (
 	input  logic [1:0]  ALUK,
 	input  logic [15:0]	A,
