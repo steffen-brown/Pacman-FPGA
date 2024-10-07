@@ -69,6 +69,40 @@ endmodule
 
 // Lab 5.2 Modules
 
+module dr_mux (
+    input logic        select,
+    input logic [2:0]  ir11_9,
+    
+    output logic [2:0] dr
+);
+    always_comb
+    begin
+        dr = ir11_9;
+        if (select == 1'b1)
+            dr = 111;
+    end
+endmodule
+
+reg_file regfile(
+    input logic logic clk,
+    input logic reset,
+
+    input logic data_in,
+    input logic dr,
+    input logic ld_reg,
+    input logic selectsr2,
+    input logic selectsr1,
+
+    output logic sr1_out,
+    output logic sr2_out
+);
+    always_comb
+    begin
+        sr1_out = 15'b0;
+        sr2_out = 15'b0;
+    end
+endmodule
+
 module sr1_mux (
     input logic        select,
     input logic [2:0]  ir8_6,
@@ -78,9 +112,9 @@ module sr1_mux (
 );
     always_comb
     begin
-        ret_sr1_mux = ir8_6;
+        ret_sr1_mux = ir11_9;
         if (select == 1'b1)
-            ret_sr1_mux = ir11_9;
+            ret_sr1_mux = ir8_6;
     end
 endmodule
 
@@ -93,9 +127,9 @@ module sr2_mux (
 );
     always_comb
     begin
-        ret_sr2_mux = ir_sext;
+        ret_sr2_mux = sr_out;
         if (select == 1'b1)
-            ret_sr2_mux = sr_out;
+            ret_sr2_mux = ir_sext;
     end
 endmodule
 
@@ -126,9 +160,9 @@ module addr1_mux (
 );
     always_comb
     begin
-        ret_addr1 = pc_reg;
+        ret_addr1 = sr1_out;
         if (select == 1'b1)
-            ret_addr1 = sr1_out;
+            ret_addr1 = pc_reg;
     end
 endmodule
 
@@ -142,12 +176,12 @@ module addr2_mux (
 );
     always_comb
     begin
-        ret_addr1 = 15'b0;
+        ret_addr1 = offset11;
         if (select == 2'b01)
-            ret_addr1 = offset6;
-        else if (select == 2'b01)
             ret_addr1 = offset9;
+        else if (select == 2'b01)
+            ret_addr1 = offset6;
         else if (select == 2'b10)
-            ret_addr1 = offset11;
+            ret_addr1 = 15'b0;
     end
 endmodule

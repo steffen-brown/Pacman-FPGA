@@ -80,6 +80,8 @@ module cpu (
     logic [15:0] ret_addr1;
     logic [15:0] ret_addr2;
     logic [15:0] addr_out;
+    logic [2:0]  dr;
+    logic [2:0]  sr2_3bit;
     
     assign i = ir;
     
@@ -92,6 +94,7 @@ module cpu (
     logic ben_ret;
 
     assign addr_out = ret_addr1 + ret_addr2;
+    assign sr2_3bit = ir[2:0];
     
     
     assign mem_addr = mar;
@@ -137,6 +140,13 @@ module cpu (
     );
 
 
+    module dr_mux (
+        .select(drmux),
+        ir11_9(ir[11:9]),
+        
+        .dr(dr)
+    );
+
     sr1_mux sr1mux (
         .select(sr1mux),
         .ir8_6(ir[8:6]),
@@ -146,7 +156,7 @@ module cpu (
     );
 
     sr2_mux sr2mux (
-        .select(sr2_mux),
+        .select(ir[5]),
         .ir_sext({{11{ir[4]}}, ir[4:0]}),
         .sr2_out(sr2_out),
         
@@ -176,6 +186,20 @@ module cpu (
         .offset11({{5{ir[10]}}, ir[10:0]}),
         
         .ret_addr2(ret_addr2)
+    );
+
+    reg_file regfile(
+        .clk(clk),
+        .reset(reset),
+
+        .data_in(ret_bus),
+        .dr(dr),
+        .ld_reg(ld_reg),
+        .selectsr2(sr2_3bit),
+        .selectsr1(ret_sr1_mux),
+        
+        .sr1_out(sr1out),
+        .sr2_out(sr2out)
     );
 
     
