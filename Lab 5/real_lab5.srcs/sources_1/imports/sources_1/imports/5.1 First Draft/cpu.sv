@@ -99,13 +99,13 @@ module cpu (
     // LAB 5.1
     bus mainBus (
         .gate_pc(gate_pc),
-    //    .gate_alu(gate_alu),
-    //    .gate_marmux(gate_marmux),
         .gate_mdr(gate_mdr),
+        .gate_alu(gate_alu),
+        .gate_marmux(gate_marmux),
         .ret_pc(pc),
-    //    .ret_alu(alu_out),
-    //    .ret_marmux(addr_out),
         .ret_mdr(mdr),
+        .ret_alu(alu_out),
+        .ret_marmux(addr_out),
         
         .ret_bus(ret_bus)
     );
@@ -114,7 +114,7 @@ module cpu (
         .select(pcmux),
         .pc_bus(ret_bus),
         .pc_increment(pc + 1'b1),
-    //    .pc_adder(addr_out),
+        .pc_adder(addr_out),
         
         .ret_pc(ret_pc)
     );
