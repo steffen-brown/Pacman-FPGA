@@ -12,7 +12,10 @@ module processor_top (
 	output logic [7:0]  hex_seg_left,
 	output logic [3:0]  hex_grid_left,
 	output logic [7:0]  hex_seg_right,
-	output logic [3:0]  hex_grid_right
+	output logic [3:0]  hex_grid_right,
+	
+	output logic [4:0] s,
+    output logic [15:0] i
 );
 
 logic reset_s;
@@ -59,7 +62,10 @@ slc3 slc3 (
 	.sram_wdata		(sram_wdata),
 	.sram_addr		(sram_addr),
 	.sram_mem_ena	(sram_mem_ena), 
-	.sram_wr_ena	(sram_wr_ena)
+	.sram_wr_ena	(sram_wr_ena),
+	
+	.s(s),
+	.i(i)
 );
 
 memory mem_subsystem (

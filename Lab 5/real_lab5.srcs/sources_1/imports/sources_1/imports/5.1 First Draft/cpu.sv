@@ -33,123 +33,186 @@ module cpu (
     output  logic [15:0] mem_wdata,
     output  logic [15:0] mem_addr,
     output  logic        mem_mem_ena,
-    output  logic        mem_wr_ena
-);
-
-
-// Internal connections, follow the datapath block diagram and add the additional needed signals
-logic ld_mar; 
-logic ld_mdr; 
-logic ld_ir; 
-logic ld_pc; 
-logic ld_led;
-
-logic gate_pc;
-logic gate_mdr;
-// Lab 5.2
-//logic gate_alu;
-//logic gate_marmux;
-
-logic [1:0] pcmux;
-
-logic [15:0] mar; 
-logic [15:0] mdr;
-logic [15:0] ir;
-logic [15:0] pc;
-logic ben;
-
-// LAB 5.1
-logic [15:0] ret_bus;
-logic [15:0] ret_pc;
-logic [15:0] ret_mdr;
-
-
-assign mem_addr = mar;
-assign mem_wdata = mdr;
-
-// State machine, you need to fill in the code here as well
-// .* auto-infers module input/output connections which have the same name
-// This can help visually condense modules with large instantiations, 
-// but can also lead to confusing code if used too commonly
-control cpu_control (
-    .*
-);
-
-
-// LAB 5.1
-bus mainBus (
-    .gate_pc(gate_pc),
-//    .gate_alu(gate_alu),
-//    .gate_marmux(gate_marmux),
-    .gate_mdr(gate_mdr),
-    .ret_pc(pc),
-//    .ret_alu(alu_out),
-//    .ret_marmux(addr_out),
-    .ret_mdr(mdr),
+    output  logic        mem_wr_ena,
     
-    .ret_bus(ret_bus)
+    output logic [4:0] s,
+    output logic [15:0] i
 );
 
-pc_mux pcMux (
-    .select(pcmux),
-    .pc_bus(ret_bus),
-    .pc_increment(pc + 1'b1),
-//    .pc_adder(addr_out),
+    // Internal connections, follow the datapath block diagram and add the additional needed signals
+	logic		ld_mar;
+	logic		ld_mdr;
+	logic		ld_ir;
+	logic       ld_ben;
+	logic       ld_reg;
+	logic       ld_cc;
+	logic		ld_pc;
+	logic       ld_led;
+						
+
+    logic gate_pc;
+    logic gate_mdr;
+    logic gate_alu;
+    logic gate_marmux;
+    // Lab 5.2
     
-    .ret_pc(ret_pc)
-);
-
-mdr_mux mdrMux (
-    .select(mem_mem_ena),
-    .mdr_bus(ret_bus),
-    .mdr_rdata(mem_rdata),
+    logic [1:0] pcmux;
+    logic       drmux;
+    logic       sr1mux;
+    logic       sr2mux;
+    logic       addr1mux;
+    logic [1:0]  addr2mux;
+    logic [1:0] aluk;
     
-    .ret_mdr(ret_mdr)
-);
-
-
-assign led_o = ir;
-assign hex_display_debug = ir;
-
-load_reg #(.DATA_WIDTH(16)) ir_reg (
-    .clk    (clk),
-    .reset  (reset),
-
-    .load   (ld_ir),
-    .data_i (ret_bus),
-
-    .data_q (ir)
-);
-
-load_reg #(.DATA_WIDTH(16)) pc_reg (
-    .clk(clk),
-    .reset(reset),
-
-    .load(ld_pc),
-    .data_i(ret_pc),
-
-    .data_q(pc)
-);
-
-
-// Lab 5.1
-load_reg #(.DATA_WIDTH(16)) mar_reg (
-    .clk    (clk),
-    .reset  (reset),
-    .load   (ld_mar),
-    .data_i (ret_bus),  // Load MAR from the bus (PC)
-    .data_q (mar)
-);
-
-load_reg #(.DATA_WIDTH(16)) mdr_reg (
-    .clk(clk),
-    .reset(reset),
-
-    .load(ld_mdr),
-    .data_i(ret_mdr),
-
-    .data_q(mdr)
-);
+    logic [15:0] mar; 
+    logic [15:0] mdr;
+    logic [15:0] ir;
+    logic [15:0] pc;
+    logic [15:0] led;
+    logic ben;
+    logic [2:0] npz;
+    
+    assign i = ir;
+    
+    // LAB 5.1
+    logic [15:0] ret_bus;
+    logic [15:0] ret_pc;
+    logic [15:0] ret_mdr;
+    
+    logic [2:0] nzp_ret;
+    logic [2:0] ret_nzp_logic;
+    logic ben_ret;
+    
+    
+    assign mem_addr = mar;
+    assign mem_wdata = mdr;
+    
+    // State machine, you need to fill in the code here as well
+    // .* auto-infers module input/output connections which have the same name
+    // This can help visually condense modules with large instantiations, 
+    // but can also lead to confusing code if used too commonly
+    control cpu_control (
+        .*
+    );
+    
+    
+    // LAB 5.1
+    bus mainBus (
+        .gate_pc(gate_pc),
+    //    .gate_alu(gate_alu),
+    //    .gate_marmux(gate_marmux),
+        .gate_mdr(gate_mdr),
+        .ret_pc(pc),
+    //    .ret_alu(alu_out),
+    //    .ret_marmux(addr_out),
+        .ret_mdr(mdr),
+        
+        .ret_bus(ret_bus)
+    );
+    
+    pc_mux pcMux (
+        .select(pcmux),
+        .pc_bus(ret_bus),
+        .pc_increment(pc + 1'b1),
+    //    .pc_adder(addr_out),
+        
+        .ret_pc(ret_pc)
+    );
+    
+    mdr_mux mdrMux (
+        .select(mem_mem_ena),
+        .mdr_bus(ret_bus),
+        .mdr_rdata(mem_rdata),
+        
+        .ret_mdr(ret_mdr)
+    );
+    
+    
+    assign led_o = led;
+    assign hex_display_debug = ir;
+    
+    load_reg #(.DATA_WIDTH(16)) led_reg (
+        .clk    (clk),
+        .reset  (reset),
+    
+        .load   (ld_led),
+        .data_i (ir),
+    
+        .data_q (led)
+    );
+    
+    ben_logic ben_l (
+        .nzp(nzp_ret),
+        .ir(ir),
+        
+        .ben(ben_ret)
+    );
+    
+    load_reg #(.DATA_WIDTH(1)) ben_reg (
+        .clk    (clk),
+        .reset  (reset),
+    
+        .load   (ld_ben),
+        .data_i (ben_ret),
+    
+        .data_q (ben)
+    );
+    
+    nzp_logic nzp_l (
+        .bus(ret_bus), 
+        .nzp(ret_nzp_logic)
+    );
+    
+    load_reg #(.DATA_WIDTH(3)) nzp_reg (
+        .clk    (clk),
+        .reset  (reset),
+    
+        .load   (ld_cc),
+        .data_i (ret_nzp_logic),
+    
+        .data_q (nzp_ret)
+    );
+    
+    
+    load_reg #(.DATA_WIDTH(16)) ir_reg (
+        .clk    (clk),
+        .reset  (reset),
+    
+        .load   (ld_ir),
+        .data_i (ret_bus),
+    
+        .data_q (ir)
+    );
+    
+    load_reg #(.DATA_WIDTH(16)) pc_reg (
+        .clk(clk),
+        .reset(reset),
+    
+        .load(ld_pc),
+        .data_i(ret_pc),
+    
+        .data_q(pc)
+    );
+    
+    
+    // Lab 5.1
+    load_reg #(.DATA_WIDTH(16)) mar_reg (
+        .clk    (clk),
+        .reset  (reset),
+        .load   (ld_mar),
+        .data_i (ret_bus),  // Load MAR from the bus (PC)
+        .data_q (mar)
+    );
+    
+    load_reg #(.DATA_WIDTH(16)) mdr_reg (
+        .clk(clk),
+        .reset(reset),
+    
+        .load(ld_mdr),
+        .data_i(ret_mdr),
+    
+        .data_q(mdr)
+    );
 
 
 

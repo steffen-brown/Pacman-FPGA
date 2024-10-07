@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="61" Path="C:/Users/steff/OneDrive/Documents/ECE385/real_lab5/real_lab5.xpr">
+<Project Version="7" Minor="61" Path="C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="990b761ee23b4292a7b95b0b557fc895"/>
@@ -57,7 +57,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="7"/>
+    <Option Name="WTXSimLaunchSim" Val="13"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -88,9 +88,16 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/new/condition_code_logic.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/control.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/control.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/control.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -99,7 +106,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/cpu.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/cpu.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/cpu.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -108,7 +115,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/cpu_to_io.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/cpu_to_io.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/cpu_to_io.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -117,7 +124,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/new/fetch.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/new/fetch.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/new/fetch.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -126,7 +133,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/hex_driver.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/hex_driver.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/hex_driver.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -135,7 +142,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/types.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/types.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/types.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -144,7 +151,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/instantiate_ram.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/instantiate_ram.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/instantiate_ram.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -153,7 +160,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/load_reg.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/load_reg.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/load_reg.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -162,25 +169,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/memory.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/memory.sv"/>
-          <Attr Name="ImportTime" Val="1727924595"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/slc3.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/slc3.sv"/>
-          <Attr Name="ImportTime" Val="1727924595"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/sync.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/sync.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/memory.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -189,7 +178,34 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/processor_top.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/processor_top.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/processor_top.sv"/>
+          <Attr Name="ImportTime" Val="1727924595"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/slc3.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/slc3.sv"/>
+          <Attr Name="ImportTime" Val="1727924595"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/sync.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/sync.sv"/>
+          <Attr Name="ImportTime" Val="1727924595"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/testbench_5_1.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -199,17 +215,7 @@
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/test_memory.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/test_memory.sv"/>
-          <Attr Name="ImportTime" Val="1727924595"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/testbench_5_1.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/test_memory.sv"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -218,7 +224,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="processor_top"/>
+        <Option Name="TopModule" Val="testbench_5_1"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -226,7 +232,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/pin_assignment/top.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/lab5_provided_fa24/lab5_provided_fa24/pin_assignment/top.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../lab5_provided_fa24/lab5_provided_fa24/pin_assignment/top.xdc"/>
           <Attr Name="ImportTime" Val="1727923559"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -237,6 +243,7 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="testbench_5_1"/>
@@ -268,7 +275,7 @@
     <FileSet Name="blk_mem_gen_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/blk_mem_gen_0" RelGenDir="$PGENDIR/blk_mem_gen_0">
       <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci"/>
           <Attr Name="ImportTime" Val="1727924595"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -302,9 +309,7 @@
   <Runs Version="1" Minor="19">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7s50csga324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/processor_top.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -314,9 +319,7 @@
     </Run>
     <Run Id="blk_mem_gen_0_synth_1" Type="Ft3:Synth" SrcSet="blk_mem_gen_0" Part="xc7s50csga324-1" ConstrsSet="blk_mem_gen_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/blk_mem_gen_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/blk_mem_gen_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/blk_mem_gen_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -324,11 +327,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7s50csga324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7s50csga324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -339,16 +340,13 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
     <Run Id="blk_mem_gen_0_impl_1" Type="Ft2:EntireDesign" Part="xc7s50csga324-1" ConstrsSet="blk_mem_gen_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="blk_mem_gen_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/blk_mem_gen_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/blk_mem_gen_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

@@ -1,5 +1,2 @@
 Time resolution is 1 ps
-Error: IR content mismatch
-Time: 55 ns  Iteration: 0  Process: /testbench_5_1/Initial17_15  Scope: testbench_5_1  File: C:/Users/steff/OneDrive/Documents/ECE385/real_lab5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv Line: 37
-Test completed
-$finish called at time : 85 ns : File "C:/Users/steff/OneDrive/Documents/ECE385/real_lab5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv" Line 49
+$finish called at time : 585 ns : File "C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv" Line 44

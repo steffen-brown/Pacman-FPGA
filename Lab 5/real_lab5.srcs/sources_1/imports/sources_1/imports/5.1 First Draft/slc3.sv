@@ -39,7 +39,10 @@ module slc3 (
 	output logic [15:0] sram_wdata,
 	output logic [15:0] sram_addr,
 	output logic        sram_mem_ena, 
-	output logic        sram_wr_ena
+	output logic        sram_wr_ena,
+	
+	output logic [4:0] s,
+    output logic [15:0] i
 );
 
 	logic [15:0] hex_display_debug;
@@ -64,7 +67,9 @@ module slc3 (
 		.mem_wdata			(cpu_wdata),
 		.mem_addr			(cpu_addr),
 		.mem_mem_ena		(cpu_mem_ena),
-		.mem_wr_ena			(cpu_wr_ena)
+		.mem_wr_ena			(cpu_wr_ena),
+		.s(s),
+		.i(i)
 	);
 
 	cpu_to_io io_bridge ( 	
