@@ -75,6 +75,7 @@ module control (
 		s_33_2,      // FETCH_2: Wait state for memory read
 		s_33_3,      // FETCH_2: Wait state for memory read
 		s_35,         // FETCH_3: IR <- MDR, PC <- PC + 1
+		s_32,
 		s_1,          // ADD
 		s_5,         // AND
 		s_9,         // NOT
@@ -139,7 +140,7 @@ module control (
 		
 	
 		// Assign relevant control signals based on current state
-		case (state_nxt)
+		case (state)
 			halted: ; 
 			s_18 : 
 				begin 
@@ -158,6 +159,10 @@ module control (
 					gate_mdr = 1'b1;
 					ld_ir = 1'b1;
 				end
+		    s_32 :
+		        begin
+		            ld_ben = 1'b1;
+		        end
 			pause_ir1: ld_led = 1'b1; 
 			pause_ir2: ld_led = 1'b1; 
 			s_1 :
@@ -297,7 +302,9 @@ module control (
 				state_nxt = s_33_3;
 			s_33_3 : 
 				state_nxt = s_35;
-			s_35 : 
+		    s_35 :
+		        state_nxt = s_32;
+			s_32 : 
 				 case (ir[15:12])  // Check the opcode in IR[15:12]
                     4'b0001: state_nxt = s_1; // ADD
                     4'b0101: state_nxt = s_5; // AND
