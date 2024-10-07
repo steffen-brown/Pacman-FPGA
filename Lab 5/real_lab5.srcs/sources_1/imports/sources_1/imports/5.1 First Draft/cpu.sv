@@ -33,10 +33,8 @@ module cpu (
     output  logic [15:0] mem_wdata,
     output  logic [15:0] mem_addr,
     output  logic        mem_mem_ena,
-    output  logic        mem_wr_ena,
-    
-    output logic [4:0] s,
-    output logic [15:0] i
+    output  logic        mem_wr_ena
+
 );
 
     // Internal connections, follow the datapath block diagram and add the additional needed signals
@@ -72,7 +70,7 @@ module cpu (
     logic ben;
     logic [2:0] npz;
 
-    logic [15:0] ret_sr1_mux;
+    logic [2:0] ret_sr1_mux;
     logic [15:0] sr2_out;
     logic [15:0] ret_sr2_mux;
     logic [15:0] sr1_out;
@@ -82,8 +80,6 @@ module cpu (
     logic [15:0] addr_out;
     logic [2:0]  dr;
     logic [2:0]  sr2_3bit;
-    
-    assign i = ir;
     
     logic [15:0] ret_bus;
     logic [15:0] ret_pc;
@@ -116,7 +112,7 @@ module cpu (
         .gate_marmux(gate_marmux),
         .ret_pc(pc),
         .ret_mdr(mdr),
-        .ret_alu(alu_out),
+        .ret_alu(ret_alu),
         .ret_marmux(addr_out),
         
         .ret_bus(ret_bus)
@@ -140,14 +136,14 @@ module cpu (
     );
 
 
-    module dr_mux (
+    dr_mux dr_m (
         .select(drmux),
-        ir11_9(ir[11:9]),
+        .ir11_9(ir[11:9]),
         
         .dr(dr)
     );
 
-    sr1_mux sr1mux (
+    sr1_mux sr1muxx (
         .select(sr1mux),
         .ir8_6(ir[8:6]),
         .ir11_9(ir[11:9]),
@@ -155,8 +151,8 @@ module cpu (
         .ret_sr1_mux(ret_sr1_mux)
     );
 
-    sr2_mux sr2mux (
-        .select(ir[5]),
+    sr2_mux sr2muxx (
+        .select(sr2mux),
         .ir_sext({{11{ir[4]}}, ir[4:0]}),
         .sr2_out(sr2_out),
         
@@ -171,7 +167,7 @@ module cpu (
         .ret_alu(ret_alu)
     );
 
-    addr1_mux addr1mux (
+    addr1_mux addr1muxx (
         .select(addr1mux),
         .pc_reg(pc),
         .sr1_out(sr1_out),
@@ -179,7 +175,7 @@ module cpu (
         .ret_addr1(ret_addr1)
     );
 
-    addr2_mux addr2mux (
+    addr2_mux addr2muxx (
         .select(addr2mux),
         .offset6({{10{ir[5]}}, ir[5:0]}),
         .offset9({{7{ir[8]}}, ir[8:0]}),
@@ -188,7 +184,7 @@ module cpu (
         .ret_addr2(ret_addr2)
     );
 
-    reg_file regfile(
+    reg_file regfile (
         .clk(clk),
         .reset(reset),
 
@@ -198,8 +194,8 @@ module cpu (
         .selectsr2(sr2_3bit),
         .selectsr1(ret_sr1_mux),
         
-        .sr1_out(sr1out),
-        .sr2_out(sr2out)
+        .sr1_out(sr1_out),
+        .sr2_out(sr2_out)
     );
 
     

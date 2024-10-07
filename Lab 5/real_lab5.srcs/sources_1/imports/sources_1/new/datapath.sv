@@ -107,7 +107,7 @@ module sr2_mux (
 );
     always_comb
     begin
-        ret_sr2_mux = sr_out;
+        ret_sr2_mux = sr2_out;
         if (select == 1'b1)
             ret_sr2_mux = ir_sext;
     end
@@ -147,7 +147,7 @@ module addr1_mux (
 endmodule
 
 module addr2_mux (
-    input logic         select,
+    input logic [1:0]         select,
     input logic [15:0]  offset6,
     input logic [15:0]  offset9,
     input logic [15:0]  offset11,    
@@ -156,12 +156,12 @@ module addr2_mux (
 );
     always_comb
     begin
-        ret_addr1 = offset11;
-        if (select == 2'b01)
-            ret_addr1 = offset9;
+        ret_addr2 = 16'b0000000000000000;
+        if (select == 2'b00)
+            ret_addr2 = offset11;
         else if (select == 2'b01)
-            ret_addr1 = offset6;
+            ret_addr2 = offset9;
         else if (select == 2'b10)
-            ret_addr1 = 15'b0;
+            ret_addr2 = offset6;
     end
 endmodule

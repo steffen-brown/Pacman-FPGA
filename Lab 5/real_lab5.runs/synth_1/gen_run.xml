@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1728269858" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/processor_top.dcp">
-  <File Type="PA-TCL" Name="testbench_5_1.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="testbench_5_1_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="testbench_5_1_reports.tcl"/>
-  <File Type="RDS-RDS" Name="testbench_5_1.vds"/>
-  <File Type="RDS-UTIL" Name="testbench_5_1_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="testbench_5_1_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="testbench_5_1.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="testbench_5_1_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="testbench_5_1_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1728327144" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/processor_top.dcp">
+  <File Type="PA-TCL" Name="processor_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="processor_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="processor_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="processor_top.vds"/>
+  <File Type="RDS-UTIL" Name="processor_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="processor_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="processor_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="processor_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="processor_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/condition_code_logic.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -20,8 +27,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/control.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/control.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -29,8 +34,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/cpu.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/cpu.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -38,17 +41,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/cpu_to_io.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/cpu_to_io.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/fetch.sv">
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/datapath.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/new/fetch.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -56,8 +55,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/hex_driver.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/hex_driver.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -65,8 +62,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/types.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/types.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -74,8 +69,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/instantiate_ram.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/instantiate_ram.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -83,8 +76,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/load_reg.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/load_reg.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -92,17 +83,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/memory.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/memory.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/processor_top.sv">
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/reg_file.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/processor_top.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -110,8 +97,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/slc3.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/slc3.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -119,17 +104,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/sync.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/sync.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv">
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/processor_top.sv">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/testbench_5_1.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -138,8 +119,14 @@
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/test_memory.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../5.1 v2-20241003T030303Z-001/5.1 v2/sources_1/imports/5.1 First Draft/test_memory.sv"/>
-        <Attr Name="ImportTime" Val="1727924595"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -147,8 +134,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="testbench_5_1"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="processor_top"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -183,5 +169,4 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
 </GenRun>

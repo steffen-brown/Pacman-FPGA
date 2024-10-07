@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log testbench_5_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_5_1.tcl
+EAStep vivado -log processor_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor_top.tcl

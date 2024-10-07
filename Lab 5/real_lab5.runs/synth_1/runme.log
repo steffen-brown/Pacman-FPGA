@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log testbench_5_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench_5_1.tcl
+    with args -log processor_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor_top.tcl
 
 
 
@@ -9,27 +9,27 @@
   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
-source testbench_5_1.tcl -notrace
+source processor_top.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental {C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/utils_1/imports/synth_1/processor_top.dcp}
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/utils_1/imports/synth_1/processor_top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top testbench_5_1 -part xc7s50csga324-1
+Command: synth_design -top processor_top -part xc7s50csga324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11048
+INFO: [Synth 8-7075] Helper process launched with PID 9892
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 WARNING: [Synth 8-11067] parameter 'NO_OP' declared inside package 'SLC3_TYPES' shall be treated as localparam [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/types.sv:58]
 WARNING: [Synth 8-11067] parameter 'outHEX' declared inside package 'SLC3_TYPES' shall be treated as localparam [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/types.sv:88]
 WARNING: [Synth 8-11067] parameter 'inSW' declared inside package 'SLC3_TYPES' shall be treated as localparam [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/types.sv:89]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1185.941 ; gain = 407.902
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1187.555 ; gain = 409.277
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'testbench_5_1' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv:1]
-WARNING: [Synth 8-6896] event control except as first statement of always block inside initial block, initial block items will be ignored [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv:34]
 INFO: [Synth 8-6157] synthesizing module 'processor_top' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/processor_top.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'sync_debounce' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/sync.sv:9]
 INFO: [Synth 8-6155] done synthesizing module 'sync_debounce' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/sync.sv:9]
@@ -38,17 +38,30 @@ INFO: [Synth 8-6155] done synthesizing module 'sync_flop' (0#1) [C:/Users/steff/
 INFO: [Synth 8-6157] synthesizing module 'slc3' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/slc3.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'cpu' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/cpu.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/control.sv:26]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/control.sv:288]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/control.sv:301]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/control.sv:289]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/control.sv:304]
 INFO: [Synth 8-6155] done synthesizing module 'control' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/control.sv:26]
-INFO: [Synth 8-6157] synthesizing module 'bus' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/fetch.sv:5]
-INFO: [Synth 8-6155] done synthesizing module 'bus' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/fetch.sv:5]
-INFO: [Synth 8-6157] synthesizing module 'pc_mux' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/fetch.sv:32]
-INFO: [Synth 8-6155] done synthesizing module 'pc_mux' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/fetch.sv:32]
-WARNING: [Synth 8-7071] port 'pc_adder' of module 'pc_mux' is unconnected for instance 'pcMux' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/cpu.sv:113]
-WARNING: [Synth 8-7023] instance 'pcMux' of module 'pc_mux' has 5 connections declared, but only 4 given [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/cpu.sv:113]
-INFO: [Synth 8-6157] synthesizing module 'mdr_mux' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/fetch.sv:51]
-INFO: [Synth 8-6155] done synthesizing module 'mdr_mux' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/fetch.sv:51]
+INFO: [Synth 8-6157] synthesizing module 'bus' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'bus' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'pc_mux' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'pc_mux' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:35]
+INFO: [Synth 8-6157] synthesizing module 'mdr_mux' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'mdr_mux' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'dr_mux' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'dr_mux' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:72]
+INFO: [Synth 8-6157] synthesizing module 'sr1_mux' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:86]
+INFO: [Synth 8-6155] done synthesizing module 'sr1_mux' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:86]
+INFO: [Synth 8-6157] synthesizing module 'sr2_mux' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:101]
+INFO: [Synth 8-6155] done synthesizing module 'sr2_mux' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:101]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:116]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:125]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:116]
+INFO: [Synth 8-6157] synthesizing module 'addr1_mux' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:134]
+INFO: [Synth 8-6155] done synthesizing module 'addr1_mux' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:134]
+INFO: [Synth 8-6157] synthesizing module 'addr2_mux' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:149]
+INFO: [Synth 8-6155] done synthesizing module 'addr2_mux' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/datapath.sv:149]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/reg_file.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/new/reg_file.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'load_reg' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/load_reg.sv:1]
 	Parameter DATA_WIDTH bound to: 16 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'load_reg' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/load_reg.sv:1]
@@ -80,12 +93,10 @@ INFO: [Synth 8-6157] synthesizing module 'memory' [C:/Users/steff/Downloads/ece3
 INFO: [Synth 8-6157] synthesizing module 'instantiate_ram' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/instantiate_ram.sv:18]
 INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/types.sv:218]
 INFO: [Synth 8-6155] done synthesizing module 'instantiate_ram' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/instantiate_ram.sv:18]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.runs/synth_1/.Xil/Vivado-9520-Winferior/realtime/blk_mem_gen_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.runs/synth_1/.Xil/Vivado-9520-Winferior/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.runs/synth_1/.Xil/Vivado-14916-Winferior/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.runs/synth_1/.Xil/Vivado-14916-Winferior/realtime/blk_mem_gen_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'memory' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/memory.sv:3]
 INFO: [Synth 8-6155] done synthesizing module 'processor_top' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/processor_top.sv:3]
-WARNING: [Synth 8-85] always block has no event control specified [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv:22]
-INFO: [Synth 8-6155] done synthesizing module 'testbench_5_1' (0#1) [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/sources_1/imports/sources_1/imports/5.1 First Draft/testbench_5_1.sv:1]
 WARNING: [Synth 8-7129] Port ir[15] in module ben_logic is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ir[14] in module ben_logic is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ir[13] in module ben_logic is either unconnected or has no load
@@ -111,198 +122,124 @@ WARNING: [Synth 8-7129] Port ir[2] in module control is either unconnected or ha
 WARNING: [Synth 8-7129] Port ir[1] in module control is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ir[0] in module control is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1282.977 ; gain = 504.938
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1286.066 ; gain = 507.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1282.977 ; gain = 504.938
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1286.066 ; gain = 507.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1282.977 ; gain = 504.938
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1286.066 ; gain = 507.789
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1282.977 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1286.066 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'dut/mem_subsystem/sram0'
-Finished Parsing XDC File [c:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'dut/mem_subsystem/sram0'
+Parsing XDC File [c:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'mem_subsystem/sram0'
+Finished Parsing XDC File [c:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'mem_subsystem/sram0'
 Parsing XDC File [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc]
-WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:1]
-WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:2]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[0]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:4]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[1]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:5]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[2]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:6]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[3]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:7]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[4]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:8]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[5]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:9]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[6]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:10]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[7]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:12]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[8]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:13]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[9]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:14]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[10]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:15]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[11]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:16]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[12]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:17]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[13]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:18]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[14]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:19]
-WARNING: [Vivado 12-584] No ports matched 'sw_i[15]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:20]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:22]
-WARNING: [Vivado 12-584] No ports matched 'run_i'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:23]
-WARNING: [Vivado 12-584] No ports matched 'continue_i'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:24]
-WARNING: [Vivado 12-584] No ports matched 'hex_grid_left[0]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:26]
-WARNING: [Vivado 12-584] No ports matched 'hex_grid_left[1]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:27]
-WARNING: [Vivado 12-584] No ports matched 'hex_grid_left[2]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:28]
-WARNING: [Vivado 12-584] No ports matched 'hex_grid_left[3]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:29]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_left[0]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:30]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_left[1]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:31]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_left[2]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:32]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_left[3]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:33]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_left[4]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:34]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_left[5]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:35]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_left[6]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:36]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_left[7]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:37]
-WARNING: [Vivado 12-584] No ports matched 'hex_grid_right[0]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:39]
-WARNING: [Vivado 12-584] No ports matched 'hex_grid_right[1]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:40]
-WARNING: [Vivado 12-584] No ports matched 'hex_grid_right[2]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:41]
-WARNING: [Vivado 12-584] No ports matched 'hex_grid_right[3]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:42]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_right[0]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:43]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_right[1]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:44]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_right[2]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:45]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_right[3]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:46]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_right[4]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:47]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_right[5]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:48]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_right[6]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:49]
-WARNING: [Vivado 12-584] No ports matched 'hex_seg_right[7]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:50]
-WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:53]
-WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:54]
-WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:55]
-WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:56]
-WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:57]
-WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:58]
-WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:59]
-WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:60]
-WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:62]
-WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:63]
-WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:64]
-WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:65]
-WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:66]
-WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:67]
-WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:68]
-WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc:69]
 Finished Parsing XDC File [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/testbench_5_1_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/constrs_1/imports/pin_assignment/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/processor_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/processor_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1338.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1329.922 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1338.559 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1329.922 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mem_subsystem/sram0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1335.871 ; gain = 557.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1335.871 ; gain = 557.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for dut/mem_subsystem/sram0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mem_subsystem/sram0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1338.559 ; gain = 560.520
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Preparing Guide Design
----------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.srcs/utils_1/imports/synth_1/processor_top.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1338.559 ; gain = 560.520
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1335.871 ; gain = 557.594
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                  halted |       00000000000000000000000001 |                            00000
-                    s_18 |       00000000000000000000000010 |                            00011
-                  s_33_1 |       00000000000000000000000100 |                            00100
-                  s_33_2 |       00000000000000000000001000 |                            00101
-                  s_33_3 |       00000000000000000000010000 |                            00110
-                    s_35 |       00000000000000000000100000 |                            00111
-                     s_1 |       00000000000000000001000000 |                            01000
-                     s_5 |       00000000000000000010000000 |                            01001
-                     s_9 |       00000000000000000100000000 |                            01010
-                     s_6 |       00000000000000001000000000 |                            01011
-                  s_25_1 |       00000000000000010000000000 |                            01100
-                  s_25_2 |       00000000000000100000000000 |                            01101
-                  s_25_3 |       00000000000001000000000000 |                            01110
-                    s_27 |       00000000000010000000000000 |                            01111
-                     s_7 |       00000000000100000000000000 |                            10000
-                    s_23 |       00000000001000000000000000 |                            10001
-                  s_16_1 |       00000000010000000000000000 |                            10010
-                  s_16_2 |       00000000100000000000000000 |                            10011
-                  s_16_3 |       00000001000000000000000000 |                            10100
-                     s_4 |       00000010000000000000000000 |                            10101
-                    s_21 |       00000100000000000000000000 |                            10110
-                    s_12 |       00001000000000000000000000 |                            10111
-                     s_0 |       00010000000000000000000000 |                            11000
-                  iSTATE |       00100000000000000000000000 |                            11001
-*
-               pause_ir1 |       01000000000000000000000000 |                            00001
-               pause_ir2 |       10000000000000000000000000 |                            00010
+                  halted |                            00000 |                            00000
+                    s_18 |                            00001 |                            00011
+                  s_33_1 |                            00010 |                            00100
+                  s_33_2 |                            00011 |                            00101
+                  s_33_3 |                            00100 |                            00110
+                    s_35 |                            00101 |                            00111
+                    s_32 |                            00110 |                            01000
+                     s_1 |                            00111 |                            01001
+                     s_5 |                            01000 |                            01010
+                     s_9 |                            01001 |                            01011
+                     s_6 |                            01010 |                            01100
+                  s_25_1 |                            01011 |                            01101
+                  s_25_2 |                            01100 |                            01110
+                  s_25_3 |                            01101 |                            01111
+                    s_27 |                            01110 |                            10000
+                     s_7 |                            01111 |                            10001
+                    s_23 |                            10000 |                            10010
+                  s_16_1 |                            10001 |                            10011
+                  s_16_2 |                            10010 |                            10100
+                  s_16_3 |                            10011 |                            10101
+                     s_4 |                            10100 |                            10110
+                    s_21 |                            10101 |                            10111
+                    s_12 |                            10110 |                            11000
+                     s_0 |                            10111 |                            11001
+                    s_22 |                            11000 |                            11010
+               pause_ir1 |                            11001 |                            00001
+               pause_ir2 |                            11010 |                            00010
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1335.871 ; gain = 557.594
 ---------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : 
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   16 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 3     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 3     
 +---Registers : 
-	               16 Bit    Registers := 6     
+	               16 Bit    Registers := 14    
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 43    
 +---Muxes : 
-	  26 Input   26 Bit        Muxes := 1     
-	   2 Input   26 Bit        Muxes := 4     
-	  10 Input   26 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 6     
 	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 6     
+	   4 Input   16 Bit        Muxes := 2     
 	 176 Input   16 Bit        Muxes := 1     
 	   2 Input   10 Bit        Muxes := 1     
 	   4 Input    8 Bit        Muxes := 2     
 	   2 Input    8 Bit        Muxes := 2     
-	   2 Input    5 Bit        Muxes := 4     
-	  26 Input    5 Bit        Muxes := 3     
+	  27 Input    5 Bit        Muxes := 1     
+	  10 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
 	   5 Input    4 Bit        Muxes := 2     
-	   2 Input    3 Bit        Muxes := 2     
-	  20 Input    2 Bit        Muxes := 3     
-	  20 Input    1 Bit        Muxes := 17    
-	   2 Input    1 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	  21 Input    2 Bit        Muxes := 3     
+	  10 Input    1 Bit        Muxes := 1     
+	  21 Input    1 Bit        Muxes := 18    
+	  27 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -319,8 +256,10 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design processor_top has port hex_seg_left[7] driven by constant 1
+WARNING: [Synth 8-3917] design processor_top has port hex_seg_right[7] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1335.871 ; gain = 557.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -330,7 +269,7 @@ ROM: Preliminary Mapping Report
 +--------------+----------------------------------------+---------------+----------------+
 |Module Name   | RTL Object                             | Depth x Width | Implemented As | 
 +--------------+----------------------------------------+---------------+----------------+
-|testbench_5_1 | dut/mem_subsystem/init_ram/memContents | 256x16        | LUT            | 
+|processor_top | mem_subsystem/init_ram/address_reg_rep | 256x16        | Block RAM      | 
 +--------------+----------------------------------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
@@ -340,45 +279,20 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1335.871 ; gain = 557.594
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.207 ; gain = 609.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[25]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[24]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[23]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[22]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[21]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[20]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[19]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[18]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[17]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[16]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[15]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[14]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[13]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[12]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[11]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[10]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[9]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[8]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[7]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[6]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[5]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[4]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[3]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[2]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[1]) is unused and will be removed from module testbench_5_1.
-WARNING: [Synth 8-3332] Sequential element (dut/slc3/cpu/cpu_control/FSM_onehot_state_reg[0]) is unused and will be removed from module testbench_5_1.
+INFO: [Synth 8-7052] The timing for the instance mem_subsystem/init_ram/address_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.223 ; gain = 610.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -396,37 +310,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1390.070 ; gain = 611.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1390.070 ; gain = 611.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1390.070 ; gain = 611.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1390.070 ; gain = 611.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1390.070 ; gain = 611.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1390.070 ; gain = 611.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -444,27 +358,43 @@ Report Cell Usage:
 |      |Cell        |Count |
 +------+------------+------+
 |1     |blk_mem_gen |     1|
+|2     |BUFG        |     1|
+|3     |CARRY4      |    35|
+|4     |LUT1        |     8|
+|5     |LUT2        |    24|
+|6     |LUT3        |    55|
+|7     |LUT4        |    66|
+|8     |LUT5        |    82|
+|9     |LUT6        |   238|
+|10    |MUXF7       |     1|
+|11    |RAMB18E1    |     1|
+|12    |FDCE        |   128|
+|13    |FDRE        |   227|
+|14    |FDSE        |     1|
+|15    |IBUF        |    20|
+|16    |OBUF        |    40|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1390.070 ; gain = 611.793
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 27 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1338.559 ; gain = 504.938
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1338.559 ; gain = 560.520
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1390.070 ; gain = 561.988
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1390.070 ; gain = 611.793
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1338.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1402.172 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1338.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1405.816 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: a9ab8527
+Synth Design complete, checksum: 432286e9
 INFO: [Common 17-83] Releasing license: Synthesis
-70 Infos, 120 Warnings, 1 Critical Warnings and 0 Errors encountered.
+90 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1338.559 ; gain = 934.625
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.runs/synth_1/testbench_5_1.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file testbench_5_1_utilization_synth.rpt -pb testbench_5_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Oct  6 21:58:08 2024...
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1405.816 ; gain = 1001.672
+INFO: [Common 17-1381] The checkpoint 'C:/Users/steff/Downloads/ece385git/Lab 5/real_lab5.runs/synth_1/processor_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file processor_top_utilization_synth.rpt -pb processor_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 13:52:57 2024...

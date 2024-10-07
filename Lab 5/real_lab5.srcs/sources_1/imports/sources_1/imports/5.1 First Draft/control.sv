@@ -59,9 +59,7 @@ module control (
 	//You should add additional control signals according to the SLC-3 datapath design
 
 	output logic		mem_mem_ena, // Mem Operation Enable
-	output logic		mem_wr_ena,  // Mem Write Enable
-
-    output logic [4:0] s
+	output logic		mem_wr_ena  // Mem Write Enable
 );
 
 
@@ -95,8 +93,6 @@ module control (
 		s_0,        // BR_1
 		s_22       // BR_2
 	} state, state_nxt;   // Internal state logic
-
-    assign s = state;
 
 	always_ff @ (posedge clk)
 	begin
@@ -354,6 +350,8 @@ module control (
                 end else begin
                     state_nxt = s_22;
                 end
+            s_22: 
+                state_nxt = s_18;
 			pause_ir1 : 
 				if (continue_i) 
 					state_nxt = pause_ir2;

@@ -30,7 +30,7 @@ module testbench_5_1();
 
 	    run_i = 1'b0;
 	    continue_i = 1'b0;
-	    sw_i = 16'b0000000000000000;
+	    sw_i = 16'b0000000000000110;
         repeat (5) @(posedge clk);
         reset = 1'b0;
         
@@ -39,7 +39,7 @@ module testbench_5_1();
         run_i = 1'b0;
         
 
-        repeat (50) @(posedge clk); // FETCH_1 of next cycle
+        repeat (60) @(posedge clk); // FETCH_1 of next cycle
         
         $finish;
     end
