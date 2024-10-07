@@ -79,6 +79,7 @@ module cpu (
     logic [15:0] ret_alu;
     logic [15:0] ret_addr1;
     logic [15:0] ret_addr2;
+    logic [15:0] addr_out;
     
     assign i = ir;
     
@@ -89,6 +90,8 @@ module cpu (
     logic [2:0] nzp_ret;
     logic [2:0] ret_nzp_logic;
     logic ben_ret;
+
+    assign addr_out = ret_addr1 + ret_addr2;
     
     
     assign mem_addr = mar;
