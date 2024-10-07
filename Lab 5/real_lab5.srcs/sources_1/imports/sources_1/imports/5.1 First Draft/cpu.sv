@@ -137,7 +137,7 @@ module cpu (
     );
 
 
-    module sr1_mux (
+    sr1_mux sr1mux (
         .select(sr1mux),
         .ir8_6(ir[8:6]),
         .ir11_9(ir[11:9]),
@@ -145,7 +145,7 @@ module cpu (
         .ret_sr1_mux(ret_sr1_mux)
     );
 
-    module sr2_mux (
+    sr2_mux sr2mux (
         .select(sr2_mux),
         .ir_sext({{11{ir[4]}}, ir[4:0]}),
         .sr2_out(sr2_out),
@@ -153,7 +153,7 @@ module cpu (
         .ret_sr2_mux(ret_sr2_mux)
     );
 
-    module ALU (
+    ALU alu (
         .ALUK(aluk),
         .A(sr1_out),
         .B(ret_sr2_mux),
@@ -161,7 +161,7 @@ module cpu (
         .ret_alu(ret_alu)
     );
 
-    module addr1_mux (
+    addr1_mux addr1mux (
         .select(addr1mux),
         .pc_reg(pc),
         .sr1_out(sr1_out),
@@ -169,7 +169,7 @@ module cpu (
         .ret_addr1(ret_addr1)
     );
 
-    module addr2_mux (
+    addr2_mux addr2mux (
         .select(addr2mux),
         .offset6({{10{ir[5]}}, ir[5:0]}),
         .offset9({{7{ir[8]}}, ir[8:0]}),
