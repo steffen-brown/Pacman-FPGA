@@ -83,26 +83,6 @@ module dr_mux (
     end
 endmodule
 
-reg_file regfile(
-    input logic logic clk,
-    input logic reset,
-
-    input logic data_in,
-    input logic dr,
-    input logic ld_reg,
-    input logic selectsr2,
-    input logic selectsr1,
-
-    output logic sr1_out,
-    output logic sr2_out
-);
-    always_comb
-    begin
-        sr1_out = 15'b0;
-        sr2_out = 15'b0;
-    end
-endmodule
-
 module sr1_mux (
     input logic        select,
     input logic [2:0]  ir8_6,
