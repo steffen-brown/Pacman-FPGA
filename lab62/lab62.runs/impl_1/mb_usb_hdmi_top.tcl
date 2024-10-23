@@ -115,8 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -124,9 +122,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 3
-  set_param synth.incrementalSynthesisCache C:/Users/steff/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-105844-Winferior/incrSyn
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7s50csga324-1
   set_property design_mode GateLvl [current_fileset]
@@ -146,8 +142,8 @@ OPTRACE "add files" START { }
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
   add_files C:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/sources_1/bd/mb_block/mb_block.bd
-  read_ip -quiet c:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci
-  read_ip -quiet c:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_ip -quiet C:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci
+  read_ip -quiet C:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc

@@ -70,10 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/steff/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-105844-Winferior/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -141,9 +137,9 @@ set_property used_in_implementation false [get_files -all c:/Users/steff/Downloa
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab62/lab62.gen/sources_1/bd/mb_block/mb_block_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab62/lab62.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/data/mb_bootloop_le.elf]
 
-read_ip -quiet c:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci
+read_ip -quiet C:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci
 
-read_ip -quiet c:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+read_ip -quiet C:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab62/lab62.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab62/lab62.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab62/lab62.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
@@ -163,6 +159,8 @@ set_property used_in_implementation false [get_files C:/Users/steff/Downloads/ec
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/steff/Downloads/ece385git/lab62/lab62.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
