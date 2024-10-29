@@ -137,7 +137,7 @@ module mb_usb_hdmi_top(
     //Ball Module
     ball ball_instance(
         .Reset(reset_ah),
-        .frame_clk(),                    //Figure out what this should be so that the ball will move
+        .frame_clk(vsync),                    //Figure out what this should be so that the ball will move
         .keycode(keycode0_gpio[7:0]),    //Notice: only one keycode connected to ball by default
         .BallX(ballxsig),
         .BallY(ballysig),
@@ -155,5 +155,39 @@ module mb_usb_hdmi_top(
         .Green(green),
         .Blue(blue)
     );
+    
+    
+//    // HDMI text controller
+//    hdmi_text_controller_v1_0 hdmi_text_controller_0(
+        
+//        // User ports
+//        .hdmi_clk_n(hdmi_tmds_clk_n),
+//        .hdmi_clk_p(hdmi_tmds_clk_p),
+//        .hdmi_tx_n(hdmi_tmds_data_n),
+//        .hdmi_tx_p(hdmi_tmds_data_p),
+        
+//        // Ports of Axi Slave Bus Interface AXI
+//        input logic  axi_aclk,
+//        input logic  axi_aresetn,
+//        input logic [C_AXI_ADDR_WIDTH-1 : 0] axi_awaddr,
+//        input logic [2 : 0] axi_awprot,
+//        input logic  axi_awvalid,
+//        output logic  axi_awready,
+//        input logic [C_AXI_DATA_WIDTH-1 : 0] axi_wdata,
+//        input logic [(C_AXI_DATA_WIDTH/8)-1 : 0] axi_wstrb,
+//        input logic  axi_wvalid,
+//        output logic  axi_wready,
+//        output logic [1 : 0] axi_bresp,
+//        output logic  axi_bvalid,
+//        input logic  axi_bready,
+//        input logic [C_AXI_ADDR_WIDTH-1 : 0] axi_araddr,
+//        input logic [2 : 0] axi_arprot,
+//        input logic  axi_arvalid,
+//        output logic  axi_arready,
+//        output logic [C_AXI_DATA_WIDTH-1 : 0] axi_rdata,
+//        output logic [1 : 0] axi_rresp,
+//        output logic  axi_rvalid,
+//        input logic  axi_rready
+//    );
     
 endmodule
