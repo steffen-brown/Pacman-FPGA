@@ -394,3 +394,150 @@ INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Area.Core/Decode_I/Us
 ---------------------------------------------------------------------------------
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:47 . Memory (MB): peak = 1479.066 ; gain = 694.480
 ---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:02:14 . Memory (MB): peak = 1479.066 ; gain = 694.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:02:23 . Memory (MB): peak = 1479.066 ; gain = 694.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:23 ; elapsed = 00:02:25 . Memory (MB): peak = 1479.066 ; gain = 694.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:02:39 . Memory (MB): peak = 1479.066 ; gain = 694.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:02:39 . Memory (MB): peak = 1479.066 ; gain = 694.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:02:40 . Memory (MB): peak = 1479.066 ; gain = 694.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:02:40 . Memory (MB): peak = 1479.066 ; gain = 694.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:02:40 . Memory (MB): peak = 1479.066 ; gain = 694.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:02:41 . Memory (MB): peak = 1479.066 ; gain = 694.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MB_DSP48E1__parameterized1 | (PCIN>>17+(A*B)')' | 30     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|MB_DSP48E1__parameterized3 | PCIN+(A'*B')'      | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|MB_DSP48E1                 | (A*B)'             | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++---------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |DSP48E1  |     3|
+|4     |LUT1     |     9|
+|5     |LUT2     |    65|
+|6     |LUT3     |    97|
+|7     |LUT4     |   263|
+|8     |LUT5     |   155|
+|9     |LUT6     |   452|
+|11    |MULT_AND |     2|
+|12    |MUXCY_L  |   119|
+|13    |MUXF7    |    34|
+|14    |RAM32X1D |    64|
+|15    |SRL16E   |    78|
+|16    |SRLC16E  |     8|
+|17    |XORCY    |    67|
+|18    |FD       |    32|
+|19    |FDCE     |     7|
+|20    |FDE      |    32|
+|21    |FDR      |     1|
+|22    |FDRE     |   669|
+|23    |FDS      |     3|
+|24    |FDSE     |    66|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:02:41 . Memory (MB): peak = 1479.066 ; gain = 694.480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10615 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:02:30 . Memory (MB): peak = 1479.066 ; gain = 694.480
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:02:41 . Memory (MB): peak = 1479.066 ; gain = 694.480
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.337 . Memory (MB): peak = 1479.066 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 502 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1479.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 315 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 36 instances
+  FD => FDRE: 32 instances
+  FDE => FDRE: 32 instances
+  FDR => FDRE: 1 instance 
+  FDS => FDSE: 3 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 145 instances
+  MULT_AND => LUT2: 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 64 instances
+
+Synth Design complete, checksum: d4c8fd0a
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:38 ; elapsed = 00:02:59 . Memory (MB): peak = 1479.066 ; gain = 1067.809
+INFO: [Common 17-1381] The checkpoint 'C:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.runs/mb_block_microblaze_0_0_synth_1/mb_block_microblaze_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mb_block_microblaze_0_0, cache-ID = 1adc401b7514f7a0
+INFO: [Coretcl 2-1174] Renamed 1144 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.runs/mb_block_microblaze_0_0_synth_1/mb_block_microblaze_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mb_block_microblaze_0_0_utilization_synth.rpt -pb mb_block_microblaze_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 12:06:57 2024...

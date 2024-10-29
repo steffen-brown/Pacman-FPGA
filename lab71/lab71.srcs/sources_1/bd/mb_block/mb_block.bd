@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xAEEDB58675AFD503",
+      "boundary_crc": "0x1E7B06161D73E184",
       "device": "xc7s50csga324-1",
       "gen_directory": "../../../../lab71.gen/sources_1/bd/mb_block",
       "name": "mb_block",
@@ -45,6 +45,33 @@
           },
           "TxD": {
             "physical_name": "uart_rtl_0_txd",
+            "direction": "O"
+          }
+        }
+      },
+      "HDMI_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:hdmi:2.0",
+        "vlnv": "xilinx.com:interface:hdmi_rtl:2.0",
+        "port_maps": {
+          "TMDS_CLK_N": {
+            "physical_name": "HDMI_0_tmds_clk_n",
+            "direction": "O"
+          },
+          "TMDS_DATA_N": {
+            "physical_name": "HDMI_0_tmds_data_n",
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "TMDS_DATA_P": {
+            "physical_name": "HDMI_0_tmds_data_p",
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "TMDS_CLK_P": {
+            "physical_name": "HDMI_0_tmds_clk_p",
             "direction": "O"
           }
         }
@@ -831,6 +858,12 @@
         "interface_ports": [
           "uart_rtl_0",
           "axi_uartlite_0/UART"
+        ]
+      },
+      "hdmi_text_controller_0_HDMI": {
+        "interface_ports": [
+          "HDMI_0",
+          "hdmi_text_controller_0/HDMI"
         ]
       },
       "microblaze_0_axi_dp": {

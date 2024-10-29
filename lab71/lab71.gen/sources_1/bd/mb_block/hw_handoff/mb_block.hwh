@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct 29 12:02:51 2024" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct 29 14:50:24 2024" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="spartan7" DEVICE="7s50" NAME="mb_block" PACKAGE="csga324" SPEEDGRADE="-1"/>
 
@@ -12,6 +12,26 @@
     <PORT DIR="O" NAME="uart_rtl_0_txd" SIGIS="undef" SIGNAME="axi_uartlite_0_tx">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_uartlite_0" PORT="tx"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="HDMI_0_tmds_clk_n" SIGIS="undef" SIGNAME="hdmi_text_controller_0_hdmi_clk_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="hdmi_clk_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="HDMI_0_tmds_data_n" RIGHT="0" SIGIS="undef" SIGNAME="hdmi_text_controller_0_hdmi_tx_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="hdmi_tx_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="HDMI_0_tmds_data_p" RIGHT="0" SIGIS="undef" SIGNAME="hdmi_text_controller_0_hdmi_tx_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="hdmi_tx_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="HDMI_0_tmds_clk_p" SIGIS="undef" SIGNAME="hdmi_text_controller_0_hdmi_clk_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hdmi_text_controller_0" PORT="hdmi_clk_p"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="reset_rtl_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_rtl_0">
@@ -31,6 +51,14 @@
       <PORTMAPS>
         <PORTMAP LOGICAL="RxD" PHYSICAL="uart_rtl_0_rxd"/>
         <PORTMAP LOGICAL="TxD" PHYSICAL="uart_rtl_0_txd"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="hdmi_text_controller_0_HDMI" NAME="HDMI_0" TYPE="INITIATOR">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="TMDS_CLK_N" PHYSICAL="HDMI_0_tmds_clk_n"/>
+        <PORTMAP LOGICAL="TMDS_DATA_N" PHYSICAL="HDMI_0_tmds_data_n"/>
+        <PORTMAP LOGICAL="TMDS_DATA_P" PHYSICAL="HDMI_0_tmds_data_p"/>
+        <PORTMAP LOGICAL="TMDS_CLK_P" PHYSICAL="HDMI_0_tmds_clk_p"/>
       </PORTMAPS>
     </BUSINTERFACE>
   </EXTERNALINTERFACES>
@@ -1024,7 +1052,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="7" FULLNAME="/hdmi_text_controller_0" HWVERSION="1.0" INSTANCE="hdmi_text_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hdmi_text_controller" VLNV="xilinx.com:user:hdmi_text_controller:1.0">
+    <MODULE COREREVISION="9" FULLNAME="/hdmi_text_controller_0" HWVERSION="1.0" INSTANCE="hdmi_text_controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hdmi_text_controller" VLNV="xilinx.com:user:hdmi_text_controller:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="AXI" NAME="AXI_reg" RANGE="4096" USAGE="register"/>
@@ -1038,10 +1066,26 @@
         <PARAMETER NAME="C_AXI_HIGHADDR" VALUE="0x44A0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="hdmi_clk_n" SIGIS="clk"/>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="hdmi_clk_p" SIGIS="clk"/>
-        <PORT DIR="O" LEFT="2" NAME="hdmi_tx_n" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="2" NAME="hdmi_tx_p" RIGHT="0" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="hdmi_clk_n" SIGIS="clk" SIGNAME="hdmi_text_controller_0_hdmi_clk_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mb_block_imp" PORT="HDMI_0_tmds_clk_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="hdmi_clk_p" SIGIS="clk" SIGNAME="hdmi_text_controller_0_hdmi_clk_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mb_block_imp" PORT="HDMI_0_tmds_clk_p"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="hdmi_tx_n" RIGHT="0" SIGIS="undef" SIGNAME="hdmi_text_controller_0_hdmi_tx_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mb_block_imp" PORT="HDMI_0_tmds_data_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="hdmi_tx_p" RIGHT="0" SIGIS="undef" SIGNAME="hdmi_text_controller_0_hdmi_tx_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mb_block_imp" PORT="HDMI_0_tmds_data_p"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="axi_aclk" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
@@ -1203,6 +1247,14 @@
             <PORTMAP LOGICAL="RRESP" PHYSICAL="axi_rresp"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="axi_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="axi_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="hdmi_text_controller_0_HDMI" NAME="HDMI" TYPE="INITIATOR" VLNV="xilinx.com:interface:hdmi:2.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TMDS_CLK_N" PHYSICAL="hdmi_clk_n"/>
+            <PORTMAP LOGICAL="TMDS_DATA_N" PHYSICAL="hdmi_tx_n"/>
+            <PORTMAP LOGICAL="TMDS_DATA_P" PHYSICAL="hdmi_tx_p"/>
+            <PORTMAP LOGICAL="TMDS_CLK_P" PHYSICAL="hdmi_clk_p"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
