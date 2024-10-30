@@ -1,3 +1,10 @@
+-makelib xcelium_lib/xpm -sv \
+  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+-endlib
+-makelib xcelium_lib/xpm \
+  "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
+-endlib
 -makelib xcelium_lib/microblaze_v11_0_10 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/1f7b/hdl/microblaze_v11_0_vh_rfs.vhd" \
 -endlib
@@ -92,7 +99,21 @@
   "../../../bd/mb_block/ip/mb_block_axi_uartlite_0_0/sim/mb_block_axi_uartlite_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/mb_block_hdmi_text_controller_0_0_sim_netlist.v" \
+  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/hdl/encode.v" \
+  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/hdl/serdes_10_to_1.v" \
+  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/hdl/srldelay.v" \
+  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/hdl/hdmi_tx_v1_0.v" \
+  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/sim/hdmi_tx_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/mb_block/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/imports/src/VGA_controller.sv" \
+  "../../../bd/mb_block/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/imports/src/font_rom.sv" \
+  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/new/mapper.sv" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/sim/mb_block_hdmi_text_controller_0_0.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
   "../../../bd/mb_block/sim/mb_block.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

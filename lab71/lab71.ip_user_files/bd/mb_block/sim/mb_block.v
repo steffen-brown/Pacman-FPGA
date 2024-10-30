@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Tue Oct 29 22:39:24 2024
+//Date        : Wed Oct 30 09:12:46 2024
 //Host        : Winferior running 64-bit major release  (build 9200)
 //Command     : generate_target mb_block.bd
 //Design      : mb_block
@@ -595,12 +595,12 @@ module mb_block
         .reset(mdm_1_debug_sys_rst));
   mb_block_hdmi_text_controller_0_0 hdmi_text_controller_0
        (.axi_aclk(microblaze_0_Clk),
-        .axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[9:0]),
+        .axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR),
         .axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
         .axi_arprot(microblaze_0_axi_periph_M02_AXI_ARPROT),
         .axi_arready(microblaze_0_axi_periph_M02_AXI_ARREADY),
         .axi_arvalid(microblaze_0_axi_periph_M02_AXI_ARVALID),
-        .axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR[9:0]),
+        .axi_awaddr(microblaze_0_axi_periph_M02_AXI_AWADDR),
         .axi_awprot(microblaze_0_axi_periph_M02_AXI_AWPROT),
         .axi_awready(microblaze_0_axi_periph_M02_AXI_AWREADY),
         .axi_awvalid(microblaze_0_axi_periph_M02_AXI_AWVALID),
