@@ -1,9 +1,9 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.550685",
-   "Default View_TopLeft":"-107,-36",
+   "Default View_ScaleFactor":"0.853812",
+   "Default View_TopLeft":"-138,-153",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
 #  -string -flagsOSRD
 preplace port gpio_rtl_0 -pg 1 -lvl 7 -x 1980 -y 80 -defaultsOSRD
 preplace port uart_rtl_0 -pg 1 -lvl 7 -x 1980 -y 210 -defaultsOSRD

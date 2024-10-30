@@ -24,6 +24,33 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/mb_block/ip/mb_block_lmb_bram_0/sim/mb_block_lmb_bram_0.v" \
 -endlib
+-makelib xcelium_lib/generic_baseblocks_v2_1_0 \
+  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axi_infrastructure_v1_1_0 \
+  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axi_register_slice_v2_1_27 \
+  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/fifo_generator_v13_2_7 \
+  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/83df/simulation/fifo_generator_vlog_beh.v" \
+-endlib
+-makelib xcelium_lib/fifo_generator_v13_2_7 \
+  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/83df/hdl/fifo_generator_v13_2_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/fifo_generator_v13_2_7 \
+  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/83df/hdl/fifo_generator_v13_2_rfs.v" \
+-endlib
+-makelib xcelium_lib/axi_data_fifo_v2_1_26 \
+  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axi_crossbar_v2_1_28 \
+  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/mb_block/ip/mb_block_xbar_0/sim/mb_block_xbar_0.v" \
+-endlib
 -makelib xcelium_lib/axi_lite_ipif_v3_0_4 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
 -endlib
@@ -52,33 +79,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/sim/mb_block_rst_clk_wiz_1_100M_0.vhd" \
 -endlib
--makelib xcelium_lib/generic_baseblocks_v2_1_0 \
-  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/axi_infrastructure_v1_1_0 \
-  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/axi_register_slice_v2_1_27 \
-  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/fifo_generator_v13_2_7 \
-  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/83df/simulation/fifo_generator_vlog_beh.v" \
--endlib
--makelib xcelium_lib/fifo_generator_v13_2_7 \
-  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/83df/hdl/fifo_generator_v13_2_rfs.vhd" \
--endlib
--makelib xcelium_lib/fifo_generator_v13_2_7 \
-  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/83df/hdl/fifo_generator_v13_2_rfs.v" \
--endlib
--makelib xcelium_lib/axi_data_fifo_v2_1_26 \
-  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/axi_crossbar_v2_1_28 \
-  "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_xbar_0/sim/mb_block_xbar_0.v" \
--endlib
 -makelib xcelium_lib/lib_pkg_v1_0_2 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
 -endlib
@@ -92,7 +92,7 @@
   "../../../bd/mb_block/ip/mb_block_axi_uartlite_0_0/sim/mb_block_axi_uartlite_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/mb_block_hdmi_text_controller_0_0_sim_netlist.v" \
+  "c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/mb_block_hdmi_text_controller_0_0_sim_netlist.v" \
   "../../../bd/mb_block/sim/mb_block.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

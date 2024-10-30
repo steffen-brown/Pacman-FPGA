@@ -2,18 +2,17 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Oct 29 14:50:32 2024
-# Process ID: 44136
-# Current directory: C:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.runs/mb_block_hdmi_text_controller_0_0_synth_1
+# Start of session at: Tue Oct 29 22:39:27 2024
+# Process ID: 44168
+# Current directory: C:/Users/steff/Downloads/ece385git/lab71/lab71.runs/mb_block_hdmi_text_controller_0_0_synth_1
 # Command line: vivado.exe -log mb_block_hdmi_text_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_block_hdmi_text_controller_0_0.tcl
-# Log file: C:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.runs/mb_block_hdmi_text_controller_0_0_synth_1/mb_block_hdmi_text_controller_0_0.vds
-# Journal file: C:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.runs/mb_block_hdmi_text_controller_0_0_synth_1\vivado.jou
-# Running On: Arhan-Latitude, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16849 MB
+# Log file: C:/Users/steff/Downloads/ece385git/lab71/lab71.runs/mb_block_hdmi_text_controller_0_0_synth_1/mb_block_hdmi_text_controller_0_0.vds
+# Journal file: C:/Users/steff/Downloads/ece385git/lab71/lab71.runs/mb_block_hdmi_text_controller_0_0_synth_1\vivado.jou
+# Running On: Winferior, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 6, Host memory: 16943 MB
 #-----------------------------------------------------------
 source mb_block_hdmi_text_controller_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 376.227 ; gain = 65.359
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mb_block_hdmi_text_controller_0_0
 Command: synth_design -top mb_block_hdmi_text_controller_0_0 -part xc7s50csga324-1 -incremental_mode off -mode out_of_context
@@ -23,21 +22,223 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Device 21-403] Loading part xc7s50csga324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 29584
+INFO: [Synth 8-7075] Helper process launched with PID 20424
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1187.766 ; gain = 407.930
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1185.547 ; gain = 408.500
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'mb_block_hdmi_text_controller_0_0' [c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/synth/mb_block_hdmi_text_controller_0_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/ec70/src/hdmi_text_controller_v1_0.sv:10]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/ec70/src/hdmi_text_controller_v1_0_AXI.sv:28]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/ec70/src/hdmi_text_controller_v1_0_AXI.sv:28]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/ec70/src/hdmi_text_controller_v1_0.sv:10]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_hdmi_text_controller_0_0' (0#1) [c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/synth/mb_block_hdmi_text_controller_0_0.sv:53]
-WARNING: [Synth 8-3848] Net hdmi_clk_n in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/ec70/src/hdmi_text_controller_v1_0.sv:21]
-WARNING: [Synth 8-3848] Net hdmi_clk_p in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/ec70/src/hdmi_text_controller_v1_0.sv:22]
-WARNING: [Synth 8-3848] Net hdmi_tx_n in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/ec70/src/hdmi_text_controller_v1_0.sv:23]
-WARNING: [Synth 8-3848] Net hdmi_tx_p in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/ec70/src/hdmi_text_controller_v1_0.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_hdmi_text_controller_0_0' [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/synth/mb_block_hdmi_text_controller_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0' [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_text_controller_v1_0_AXI' [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:28]
+WARNING: [Synth 8-324] index 601 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 602 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 603 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 604 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 605 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 606 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 607 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 608 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 609 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 610 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 611 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 612 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 613 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 614 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 615 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 616 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 617 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 618 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 619 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 620 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 621 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 622 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 623 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 624 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 625 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 626 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 627 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 628 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 629 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 630 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 631 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 632 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 633 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 634 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 635 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 636 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 637 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 638 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 639 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 640 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 641 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 642 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 643 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 644 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 645 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 646 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 647 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 648 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 649 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 650 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 651 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 652 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 653 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 654 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 655 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 656 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 657 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 658 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 659 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 660 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 661 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 662 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 663 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 664 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 665 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 666 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 667 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 668 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 669 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 670 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 671 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 672 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 673 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 674 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 675 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 676 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 677 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 678 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 679 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 680 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 681 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 682 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 683 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 684 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 685 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 686 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 687 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 688 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 689 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 690 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 691 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 692 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 693 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 694 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 695 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 696 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 697 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 698 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 699 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-324] index 700 out of range [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0_AXI' (0#1) [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_text_controller_v1_0' (0#1) [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_hdmi_text_controller_0_0' (0#1) [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/synth/mb_block_hdmi_text_controller_0_0.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[4] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[5] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[6] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[7] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[8] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[9] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[10] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[11] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[12] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[13] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[14] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[15] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[16] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[17] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[18] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[19] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[20] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[21] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[22] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[23] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[24] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[25] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[26] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[27] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[28] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[29] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[30] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[31] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[32] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[33] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[34] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[35] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[36] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[37] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[38] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[39] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[40] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[41] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[42] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[43] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[44] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[45] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[46] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[47] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[48] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[49] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[50] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[51] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[52] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[53] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[54] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[55] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[56] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[57] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[58] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[59] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[60] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[61] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[62] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[63] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[64] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[65] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[66] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[67] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[68] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[69] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[70] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[71] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[72] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[73] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[74] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[75] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[76] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[77] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[78] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[79] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[80] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[81] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[82] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[83] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[84] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[85] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[86] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[87] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[88] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[89] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[90] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[91] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[92] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[93] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[94] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[95] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[96] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[97] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[98] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[99] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[100] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[101] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[102] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_regs_reg[103] was removed.  [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0_AXI.sv:252]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net hdmi_clk_n in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0.sv:21]
+WARNING: [Synth 8-3848] Net hdmi_clk_p in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0.sv:22]
+WARNING: [Synth 8-3848] Net hdmi_tx_n in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0.sv:23]
+WARNING: [Synth 8-3848] Net hdmi_tx_p in module/entity hdmi_text_controller_v1_0 does not have driver. [c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ipshared/4789/src/hdmi_text_controller_v1_0.sv:24]
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module hdmi_text_controller_v1_0_AXI is either unconnected or has no load
@@ -53,61 +254,61 @@ WARNING: [Synth 8-7129] Port hdmi_tx_p[2] in module hdmi_text_controller_v1_0 is
 WARNING: [Synth 8-7129] Port hdmi_tx_p[1] in module hdmi_text_controller_v1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port hdmi_tx_p[0] in module hdmi_text_controller_v1_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1281.879 ; gain = 502.043
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1280.836 ; gain = 503.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1281.879 ; gain = 502.043
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1280.836 ; gain = 503.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1281.879 ; gain = 502.043
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1280.836 ; gain = 503.789
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1281.879 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1280.836 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1387.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1383.746 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1387.320 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1383.801 ; gain = 0.055
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Registers : 
-	              601 Bit    Registers := 2     
 	               32 Bit    Registers := 5     
+	               10 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   32 Bit        Muxes := 4     
 	   4 Input   32 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 20    
 	   2 Input    1 Bit        Muxes := 5     
@@ -142,25 +343,25 @@ WARNING: [Synth 8-7129] Port axi_arprot[2] in module mb_block_hdmi_text_controll
 WARNING: [Synth 8-7129] Port axi_arprot[1] in module mb_block_hdmi_text_controller_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port axi_arprot[0] in module mb_block_hdmi_text_controller_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -178,37 +379,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -227,34 +428,33 @@ Report Cell Usage:
 |1     |LUT1 |     1|
 |2     |LUT2 |     1|
 |3     |LUT3 |     1|
-|4     |LUT4 |     6|
-|5     |LUT5 |    16|
-|6     |LUT6 |    36|
-|7     |FDRE |   169|
-|8     |FDSE |     1|
+|4     |LUT4 |    22|
+|5     |LUT6 |    36|
+|6     |FDRE |   169|
+|7     |FDSE |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:35 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1383.801 ; gain = 606.754
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1387.320 ; gain = 502.043
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:36 . Memory (MB): peak = 1387.320 ; gain = 607.484
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1383.801 ; gain = 503.789
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1383.801 ; gain = 606.754
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1387.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1383.801 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1387.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1383.801 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: d64f1f17
+Synth Design complete, checksum: cfa63a31
 INFO: [Common 17-83] Releasing license: Synthesis
-25 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+27 Infos, 233 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:42 . Memory (MB): peak = 1387.320 ; gain = 981.289
-INFO: [Common 17-1381] The checkpoint 'C:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.runs/mb_block_hdmi_text_controller_0_0_synth_1/mb_block_hdmi_text_controller_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mb_block_hdmi_text_controller_0_0, cache-ID = d27eda6e92bf9af4
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 1383.801 ; gain = 981.023
+INFO: [Common 17-1381] The checkpoint 'C:/Users/steff/Downloads/ece385git/lab71/lab71.runs/mb_block_hdmi_text_controller_0_0_synth_1/mb_block_hdmi_text_controller_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP mb_block_hdmi_text_controller_0_0, cache-ID = 4672ec5db9ae20f1
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/arhan/OneDrive/Documents/uiuc/ece385/ece385git/lab71/lab71.runs/mb_block_hdmi_text_controller_0_0_synth_1/mb_block_hdmi_text_controller_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/steff/Downloads/ece385git/lab71/lab71.runs/mb_block_hdmi_text_controller_0_0_synth_1/mb_block_hdmi_text_controller_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mb_block_hdmi_text_controller_0_0_utilization_synth.rpt -pb mb_block_hdmi_text_controller_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 14:51:29 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 22:39:55 2024...
