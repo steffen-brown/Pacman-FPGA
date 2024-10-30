@@ -99,18 +99,18 @@
   "../../../bd/mb_block/ip/mb_block_axi_uartlite_0_0/sim/mb_block_axi_uartlite_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
-  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
-  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/hdl/encode.v" \
-  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/hdl/serdes_10_to_1.v" \
-  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/hdl/srldelay.v" \
-  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/hdl/hdmi_tx_v1_0.v" \
-  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/sim/hdmi_tx_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/srldelay.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0_1/sim/hdmi_tx_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/mb_block/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/imports/src/VGA_controller.sv" \
-  "../../../bd/mb_block/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/imports/src/font_rom.sv" \
-  "../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/new/mapper.sv" \
+  "../../../bd/mb_block/ipshared/b8a4/src/VGA_controller.sv" \
+  "../../../bd/mb_block/ipshared/b8a4/src/font_rom.sv" \
+  "../../../bd/mb_block/ipshared/b8a4/src/mapper.sv" \
   "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/sim/mb_block_hdmi_text_controller_0_0.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

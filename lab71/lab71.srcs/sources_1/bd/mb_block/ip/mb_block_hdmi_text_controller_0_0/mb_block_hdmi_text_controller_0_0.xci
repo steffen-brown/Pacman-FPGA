@@ -4,15 +4,15 @@
     "xci_name": "mb_block_hdmi_text_controller_0_0",
     "cell_name": "hdmi_text_controller_0",
     "component_reference": "xilinx.com:user:hdmi_text_controller:1.0",
-    "ip_revision": "18",
+    "ip_revision": "31",
     "gen_directory": "../../../../../../lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0",
     "parameters": {
       "component_parameters": {
         "C_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "C_AXI_ADDR_WIDTH": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "C_AXI_ADDR_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_AXI_BASEADDR": [ { "value": "0xFFFFFFFF", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
         "C_AXI_HIGHADDR": [ { "value": "0x00000000", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
-        "Component_Name": [ { "value": "mb_block_hdmi_text_controller_0_0", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "mb_block_hdmi_text_controller_0_0", "value_src": "user", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
         "C_AXI_DATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -35,7 +35,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "18" } ],
+        "IPREVISION": [ { "value": "31" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

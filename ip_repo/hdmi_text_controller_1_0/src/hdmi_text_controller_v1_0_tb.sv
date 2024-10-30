@@ -111,19 +111,19 @@ module hdmi_text_controller_tb();
     //the pixel clock, assign pixel_clk = hdmi_text_controller_v1_0_inst.clk_25MHz
     
     // Red Green and Blue values respectively - these come from your draw logic
-    // assign pixel_rgb[0] = 
-    // assign pixel_rgb[1] =
-    // assign pixel_rgb[2] = 
+//     assign pixel_rgb[0] = 
+//     assign pixel_rgb[1] =
+//     assign pixel_rgb[2] = 
     
     // Pixel clock, hs, vs, and vde (!blank) - these come from your internal VGA module
-    // assign pixel_clk = 
-    // assign pixel_hs = 
-    // assign pixel_vs = 
-    // assign pixel_vde = 
+//     assign pixel_clk = 
+//     assign pixel_hs = 
+//     assign pixel_vs = 
+//     assign pixel_vde = 
     
     // DrawX and DrawY - these come from your internal VGA module
-    // assign drawX = 
-    // assign drawY =
+//     assign drawX = 
+//     assign drawY =
    
     // BMP writing task, based off work from @BrianHGinc:
     // https://github.com/BrianHGinc/SystemVerilog-TestBench-BPM-picture-generator

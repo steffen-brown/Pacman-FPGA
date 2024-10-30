@@ -850,7 +850,12 @@
         "vlnv": "xilinx.com:user:hdmi_text_controller:1.0",
         "xci_name": "mb_block_hdmi_text_controller_0_0",
         "xci_path": "ip\\mb_block_hdmi_text_controller_0_0\\mb_block_hdmi_text_controller_0_0.xci",
-        "inst_hier_path": "hdmi_text_controller_0"
+        "inst_hier_path": "hdmi_text_controller_0",
+        "parameters": {
+          "Component_Name": {
+            "value": "mb_block_hdmi_text_controller_0_0"
+          }
+        }
       }
     },
     "interface_nets": {

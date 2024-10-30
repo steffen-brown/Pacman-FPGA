@@ -70,13 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -123,8 +119,8 @@ set_property used_in_implementation false [get_files -all c:/Users/steff/Downloa
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/mb_block_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/data/mb_bootloop_le.elf]
 

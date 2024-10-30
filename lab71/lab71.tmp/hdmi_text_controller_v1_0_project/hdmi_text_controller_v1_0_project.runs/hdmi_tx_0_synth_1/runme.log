@@ -21,88 +21,59 @@ Command: synth_design -top hdmi_tx_0 -part xc7s50csga324-1 -incremental_mode off
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
-INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14744
+INFO: [Synth 8-7075] Helper process launched with PID 37212
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:145]
-WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:146]
-WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:147]
-WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:148]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN0' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/encode.v:145]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN1' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/encode.v:146]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN2' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/encode.v:147]
+WARNING: [Synth 8-11065] parameter 'CTRLTOKEN3' becomes localparam in 'encode' with formal parameter declaration list [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/encode.v:148]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1186.262 ; gain = 408.164
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 822.445 ; gain = 408.992
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/synth/hdmi_tx_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_v1_0' [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:70]
-INFO: [Synth 8-6157] synthesizing module 'srldelay' [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/srldelay.v:70]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/synth/hdmi_tx_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_v1_0' [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'srldelay' [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/srldelay.v:70]
 INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
 INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131644]
-INFO: [Synth 8-6155] done synthesizing module 'srldelay' (0#1) [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/srldelay.v:70]
-INFO: [Synth 8-6157] synthesizing module 'encode' [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
-INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
-INFO: [Synth 8-6157] synthesizing module 'encode__parameterized0' [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
-INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized0' (0#1) [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
-INFO: [Synth 8-6157] synthesizing module 'encode__parameterized1' [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
-INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized1' (0#1) [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/encode.v:79]
-INFO: [Synth 8-6157] synthesizing module 'serdes_10_to_1' [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/serdes_10_to_1.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'srldelay' (0#1) [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/srldelay.v:70]
+INFO: [Synth 8-6157] synthesizing module 'encode' [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode' (0#1) [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'encode__parameterized0' [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized0' (0#1) [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'encode__parameterized1' [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'encode__parameterized1' (0#1) [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/encode.v:79]
+INFO: [Synth 8-6157] synthesizing module 'serdes_10_to_1' [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v:43]
 INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
 INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:94875]
-INFO: [Synth 8-6155] done synthesizing module 'serdes_10_to_1' (0#1) [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/serdes_10_to_1.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'serdes_10_to_1' (0#1) [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v:43]
 INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
 INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:90676]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_v1_0' (0#1) [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:70]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/synth/hdmi_tx_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element hdmi_ctl1_reg was removed.  [c:/users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.gen/sources_1/ip/hdmi_tx_0/hdl/hdmi_tx_v1_0.v:148]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_v1_0' (0#1) [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/synth/hdmi_tx_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element hdmi_ctl1_reg was removed.  [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v:148]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1282.168 ; gain = 504.070
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 917.230 ; gain = 503.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1282.168 ; gain = 504.070
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1282.168 ; gain = 504.070
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1290.062 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1393.617 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1393.637 ; gain = 0.020
-INFO: [Designutils 20-5008] Incremental synthesis strategy off
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 917.230 ; gain = 503.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 917.230 ; gain = 503.777
 ---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 917.230 ; gain = 503.777
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1393.637 ; gain = 615.539
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1393.637 ; gain = 615.539
----------------------------------------------------------------------------------
+No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -141,30 +112,26 @@ BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
+No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1103.492 ; gain = 690.039
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1393.637 ; gain = 615.539
----------------------------------------------------------------------------------
+No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1112.312 ; gain = 698.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1112.480 ; gain = 699.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -182,37 +149,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.480 ; gain = 699.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.480 ; gain = 699.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.480 ; gain = 699.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.480 ; gain = 699.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.480 ; gain = 699.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.480 ; gain = 699.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -250,35 +217,53 @@ Report Cell Usage:
 |5     |LUT6      |   121|
 |6     |MUXF7     |     1|
 |7     |OSERDESE2 |     8|
-|9     |SRL16E    |    40|
-|10    |FDCE      |    42|
-|11    |FDRE      |   113|
-|12    |OBUFDS    |     4|
+|8     |SRL16E    |    40|
+|9     |FDCE      |    42|
+|10    |FDRE      |   113|
+|11    |OBUFDS    |     4|
 +------+----------+------+
+
+Report Instance Areas: 
++------+---------------+-----------------------+------+
+|      |Instance       |Module                 |Cells |
++------+---------------+-----------------------+------+
+|1     |top            |                       |   486|
+|2     |  inst         |hdmi_tx_v1_0           |   486|
+|3     |    encb       |encode                 |   163|
+|4     |    encg       |encode__parameterized0 |   136|
+|5     |    encr       |encode__parameterized1 |   137|
+|6     |    serial_b   |serdes_10_to_1         |     2|
+|7     |    serial_clk |serdes_10_to_1_0       |     2|
+|8     |    serial_g   |serdes_10_to_1_1       |     2|
+|9     |    serial_r   |serdes_10_to_1_2       |     2|
+|10    |    srldly_0   |srldelay               |    38|
++------+---------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.480 ; gain = 699.027
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1393.637 ; gain = 504.070
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1393.637 ; gain = 615.539
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.480 ; gain = 699.027
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.480 ; gain = 699.027
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1393.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1124.371 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1393.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1202.270 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete, checksum: e1af8bd5
 INFO: [Common 17-83] Releasing license: Synthesis
-46 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+41 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1393.637 ; gain = 990.363
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1202.270 ; gain = 798.602
+INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Common 17-1381] The checkpoint 'c:/Users/steff/Downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/hdmi_tx_0_synth_1/hdmi_tx_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1434.145 ; gain = 231.875
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP hdmi_tx_0, cache-ID = 6368d7ce3798e92a
 INFO: [Coretcl 2-1174] Renamed 9 cell refs.
 INFO: [Common 17-1381] The checkpoint 'c:/Users/steff/Downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.runs/hdmi_tx_0_synth_1/hdmi_tx_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hdmi_tx_0_utilization_synth.rpt -pb hdmi_tx_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 23:10:24 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 12:14:42 2024...

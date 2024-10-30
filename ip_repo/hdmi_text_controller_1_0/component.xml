@@ -346,7 +346,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>524fb565</spirit:value>
+            <spirit:value>edda4f71</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -398,10 +398,10 @@
         <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:modelName>hdmi_text_controller_v1_0</spirit:modelName>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_clk_wiz_6_0__ref_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_realdigital_org_realdigital_hdmi_tx_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagebehavioralsimulation_realdigital_org_realdigital_hdmi_tx_1_0__ref_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_clk_wiz_6_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
@@ -409,7 +409,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1abe5935</spirit:value>
+            <spirit:value>da80e138</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -820,24 +820,19 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci</spirit:name>
+        <spirit:name>src/hdmi_tx_0_1/hdmi_tx_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci</spirit:name>
+        <spirit:name>src/clk_wiz_0_1/clk_wiz_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_clk_wiz</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/hdmi_text_controller_v1_0.sv</spirit:name>
+        <spirit:name>src/VGA_controller.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/imports/src/VGA_controller.sv</spirit:name>
-        <spirit:fileType>systemVerilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/imports/src/font_rom.sv</spirit:name>
+        <spirit:name>src/font_rom.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -845,9 +840,13 @@
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/new/mapper.sv</spirit:name>
+        <spirit:name>src/mapper.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_26941497</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/hdmi_text_controller_v1_0.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_c36e7439</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -914,42 +913,41 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci</spirit:name>
+        <spirit:name>src/hdmi_tx_0_1/hdmi_tx_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci</spirit:name>
+        <spirit:name>src/clk_wiz_0_1/clk_wiz_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_clk_wiz</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/imports/src/VGA_controller.sv</spirit:name>
+        <spirit:name>src/VGA_controller.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/imports/src/font_rom.sv</spirit:name>
+        <spirit:name>src/font_rom.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../users/steff/downloads/ece385git/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/new/mapper.sv</spirit:name>
+        <spirit:name>src/mapper.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_clk_wiz_6_0__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="clk_wiz" xilinx:version="6.0">
-            <xilinx:mode xilinx:name="create_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_realdigital_org_realdigital_hdmi_tx_1_0__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
           <xilinx:componentRef xilinx:vendor="realdigital.org" xilinx:library="realdigital" xilinx:name="hdmi_tx" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_clk_wiz_6_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="clk_wiz" xilinx:version="6.0">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -1025,14 +1023,14 @@
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>24</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-10-30T16:44:54Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>31</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-10-30T17:22:07Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="aa94eb63"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="60746b78"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="53fd20ce"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0aa36615"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="22fb94a0"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="a3d1eed6"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2a946778"/>

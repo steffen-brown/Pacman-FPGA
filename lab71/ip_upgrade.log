@@ -1,6 +1,169 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Oct 30 12:22:24 2024
+| Host         : Winferior running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_block_hdmi_text_controller_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mb_block_hdmi_text_controller_0_0 (xilinx.com:user:hdmi_text_controller:1.0) from (Rev. 28) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Oct 30 12:17:25 2024
+| Host         : Winferior running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_block_hdmi_text_controller_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of mb_block_hdmi_text_controller_0_0 (xilinx.com:user:hdmi_text_controller:1.0) from (Rev. 24) to (Rev. 28)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Unable to set the value 'hdmi_text_controller_v1_0' on parameter 'Component Name' due to the following failure - 
+Validation failed for parameter 'Component Name(Component_Name)' with value 'hdmi_text_controller_v1_0' for BD Cell 'mb_block_hdmi_text_controller_0_0'. The specified IP name 'hdmi_text_controller_v1_0' is reserved. Please specify a different IP name.
+. Restoring to an old valid value of 'mb_block_hdmi_text_controller_0_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:hdmi_text_controller:1.0 -user_name mb_block_hdmi_text_controller_0_0
+set_property -dict "\
+  CONFIG.AXI.ADDR_WIDTH {32} \
+  CONFIG.AXI.ARUSER_WIDTH {0} \
+  CONFIG.AXI.AWUSER_WIDTH {0} \
+  CONFIG.AXI.BUSER_WIDTH {0} \
+  CONFIG.AXI.CLK_DOMAIN {} \
+  CONFIG.AXI.DATA_WIDTH {32} \
+  CONFIG.AXI.FREQ_HZ {100000000} \
+  CONFIG.AXI.HAS_BRESP {1} \
+  CONFIG.AXI.HAS_BURST {0} \
+  CONFIG.AXI.HAS_CACHE {0} \
+  CONFIG.AXI.HAS_LOCK {0} \
+  CONFIG.AXI.HAS_PROT {1} \
+  CONFIG.AXI.HAS_QOS {0} \
+  CONFIG.AXI.HAS_REGION {0} \
+  CONFIG.AXI.HAS_RRESP {1} \
+  CONFIG.AXI.HAS_WSTRB {1} \
+  CONFIG.AXI.ID_WIDTH {0} \
+  CONFIG.AXI.INSERT_VIP {0} \
+  CONFIG.AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.AXI.NUM_READ_OUTSTANDING {1} \
+  CONFIG.AXI.NUM_READ_THREADS {1} \
+  CONFIG.AXI.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.AXI.PHASE {0.0} \
+  CONFIG.AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.AXI.RUSER_WIDTH {0} \
+  CONFIG.AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.AXI.WIZ_DATA_WIDTH {32} \
+  CONFIG.AXI.WIZ_NUM_REG {4} \
+  CONFIG.AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.AXI.WUSER_WIDTH {0} \
+  CONFIG.AXI_CLK.ASSOCIATED_BUSIF {AXI} \
+  CONFIG.AXI_CLK.ASSOCIATED_PORT {} \
+  CONFIG.AXI_CLK.ASSOCIATED_RESET {axi_aresetn} \
+  CONFIG.AXI_CLK.CLK_DOMAIN {} \
+  CONFIG.AXI_CLK.FREQ_HZ {100000000} \
+  CONFIG.AXI_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.AXI_CLK.INSERT_VIP {0} \
+  CONFIG.AXI_CLK.PHASE {0.0} \
+  CONFIG.AXI_RST.INSERT_VIP {0} \
+  CONFIG.AXI_RST.POLARITY {ACTIVE_LOW} \
+  CONFIG.C_AXI_ADDR_WIDTH {32} \
+  CONFIG.C_AXI_BASEADDR {0xFFFFFFFF} \
+  CONFIG.C_AXI_DATA_WIDTH {32} \
+  CONFIG.C_AXI_HIGHADDR {0x00000000} \
+  CONFIG.Component_Name {hdmi_text_controller_v1_0} \
+  CONFIG.hdmi_clk_n.ASSOCIATED_BUSIF {} \
+  CONFIG.hdmi_clk_n.ASSOCIATED_PORT {} \
+  CONFIG.hdmi_clk_n.ASSOCIATED_RESET {} \
+  CONFIG.hdmi_clk_n.CLK_DOMAIN {} \
+  CONFIG.hdmi_clk_n.FREQ_HZ {100000000} \
+  CONFIG.hdmi_clk_n.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.hdmi_clk_n.INSERT_VIP {0} \
+  CONFIG.hdmi_clk_n.PHASE {0.0} \
+  CONFIG.hdmi_clk_p.ASSOCIATED_BUSIF {} \
+  CONFIG.hdmi_clk_p.ASSOCIATED_PORT {} \
+  CONFIG.hdmi_clk_p.ASSOCIATED_RESET {} \
+  CONFIG.hdmi_clk_p.CLK_DOMAIN {} \
+  CONFIG.hdmi_clk_p.FREQ_HZ {100000000} \
+  CONFIG.hdmi_clk_p.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.hdmi_clk_p.INSERT_VIP {0} \
+  CONFIG.hdmi_clk_p.PHASE {0.0} " [get_ips mb_block_hdmi_text_controller_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Oct 30 12:16:06 2024
+| Host         : Winferior running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mb_block_hdmi_text_controller_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of mb_block_hdmi_text_controller_0_0 (xilinx.com:user:hdmi_text_controller:1.0) from (Rev. 18) to (Rev. 24)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Failed to load customization data on the upgraded IP
+
+
+3. Debug Commands
+-----------------
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
 | Date         : Wed Oct 30 11:45:08 2024
 | Host         : Winferior running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
