@@ -9,27 +9,27 @@
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/1f7b/hdl/microblaze_v11_0_vh_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_microblaze_0_0/sim/mb_block_microblaze_0_0.vhd" \
+  "../../../bd/mb_block/ip/mb_block_microblaze_0_2/sim/mb_block_microblaze_0_2.vhd" \
 -endlib
 -makelib xcelium_lib/lmb_v10_v3_0_12 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/cd1d/hdl/lmb_v10_v3_0_vh_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_dlmb_v10_0/sim/mb_block_dlmb_v10_0.vhd" \
-  "../../../bd/mb_block/ip/mb_block_ilmb_v10_0/sim/mb_block_ilmb_v10_0.vhd" \
+  "../../../bd/mb_block/ip/mb_block_dlmb_v10_2/sim/mb_block_dlmb_v10_2.vhd" \
+  "../../../bd/mb_block/ip/mb_block_ilmb_v10_2/sim/mb_block_ilmb_v10_2.vhd" \
 -endlib
 -makelib xcelium_lib/lmb_bram_if_cntlr_v4_0_21 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/sim/mb_block_dlmb_bram_if_cntlr_0.vhd" \
-  "../../../bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/sim/mb_block_ilmb_bram_if_cntlr_0.vhd" \
+  "../../../bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_2/sim/mb_block_dlmb_bram_if_cntlr_2.vhd" \
+  "../../../bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_2/sim/mb_block_ilmb_bram_if_cntlr_2.vhd" \
 -endlib
 -makelib xcelium_lib/blk_mem_gen_v8_4_5 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/25a8/simulation/blk_mem_gen_v8_4.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_lmb_bram_0/sim/mb_block_lmb_bram_0.v" \
+  "../../../bd/mb_block/ip/mb_block_lmb_bram_2/sim/mb_block_lmb_bram_2.v" \
 -endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -56,7 +56,7 @@
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_xbar_0/sim/mb_block_xbar_0.v" \
+  "../../../bd/mb_block/ip/mb_block_xbar_1/sim/mb_block_xbar_1.v" \
 -endlib
 -makelib xcelium_lib/axi_lite_ipif_v3_0_4 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
@@ -65,17 +65,17 @@
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/802b/hdl/axi_intc_v4_1_vh_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/sim/mb_block_microblaze_0_axi_intc_0.vhd" \
+  "../../../bd/mb_block/ip/mb_block_microblaze_0_axi_intc_1/sim/mb_block_microblaze_0_axi_intc_1.vhd" \
 -endlib
 -makelib xcelium_lib/mdm_v3_2_23 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/b8f4/hdl/mdm_v3_2_vh_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_mdm_1_0/sim/mb_block_mdm_1_0.vhd" \
+  "../../../bd/mb_block/ip/mb_block_mdm_1_2/sim/mb_block_mdm_1_2.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_clk_wiz.v" \
-  "../../../bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0.v" \
+  "../../../bd/mb_block/ip/mb_block_clk_wiz_1_2/mb_block_clk_wiz_1_2_clk_wiz.v" \
+  "../../../bd/mb_block/ip/mb_block_clk_wiz_1_2/mb_block_clk_wiz_1_2.v" \
 -endlib
 -makelib xcelium_lib/lib_cdc_v1_0_2 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
@@ -84,7 +84,7 @@
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/sim/mb_block_rst_clk_wiz_1_100M_0.vhd" \
+  "../../../bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_2/sim/mb_block_rst_clk_wiz_1_100M_2.vhd" \
 -endlib
 -makelib xcelium_lib/lib_pkg_v1_0_2 \
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
@@ -96,22 +96,22 @@
   "../../../../lab71.gen/sources_1/bd/mb_block/ipshared/67a1/hdl/axi_uartlite_v2_0_vh_rfs.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_axi_uartlite_0_0/sim/mb_block_axi_uartlite_0_0.vhd" \
+  "../../../bd/mb_block/ip/mb_block_axi_uartlite_0_1/sim/mb_block_axi_uartlite_0_1.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/encode.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/srldelay.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/hdmi_tx_0_1/sim/hdmi_tx_0.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/src/clk_wiz_0_1/clk_wiz_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/hdmi_tx_0_1/hdl/encode.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/hdmi_tx_0_1/hdl/serdes_10_to_1.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/hdmi_tx_0_1/hdl/srldelay.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/hdmi_tx_0_1/sim/hdmi_tx_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0_1/clk_wiz_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/mb_block/ipshared/b8a4/src/VGA_controller.sv" \
-  "../../../bd/mb_block/ipshared/b8a4/src/font_rom.sv" \
-  "../../../bd/mb_block/ipshared/b8a4/src/mapper.sv" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_0/sim/mb_block_hdmi_text_controller_0_0.sv" \
+  "../../../bd/mb_block/ipshared/2cd9/src/VGA_controller.sv" \
+  "../../../bd/mb_block/ipshared/2cd9/src/font_rom.sv" \
+  "../../../bd/mb_block/ipshared/2cd9/src/mapper.sv" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/sim/mb_block_hdmi_text_controller_0_1.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/mb_block/sim/mb_block.v" \
