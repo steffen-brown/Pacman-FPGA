@@ -72,7 +72,6 @@ proc create_report { reportName command } {
 OPTRACE "mb_block_hdmi_text_controller_0_1_synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
 set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config -id {Synth 8-256} -limit 10000
@@ -99,9 +98,10 @@ set_property ip_output_repo c:/Users/steff/Downloads/ece385git/lab71/lab71.cache
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/steff/Downloads/ece385git/lab71/lab71.srcs/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/mb_block_hdmi_text_controller_0_1.xci
+read_ip -quiet C:/Users/steff/Downloads/ece385git/lab71/lab71.srcs/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/mb_block_hdmi_text_controller_0_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0_1/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/steff/Downloads/ece385git/lab71/lab71.gen/sources_1/bd/mb_block/lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

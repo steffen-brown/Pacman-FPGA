@@ -7,6 +7,7 @@ verilog xil_defaultlib  --include "../../../../../../../ip_repo/hdmi_text_contro
 "../../../../../../../ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0_1/sim/hdmi_tx_0.v" \
 "../../../../../../../ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" \
 "../../../../../../../ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1/clk_wiz_0.v" \
+"../../../../hdmi_text_controller_v1_0_project.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
 
 sv xil_defaultlib  --include "../../../../../../../ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0_1" \
 "../../../../../../../ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv" \

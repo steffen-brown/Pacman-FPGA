@@ -22,3 +22,32 @@ platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_
 platform generate -domains 
 platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
 platform generate -domains 
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/Downloads/ece385git/lab71/mb_usb_hdmi_top.xsa}
+platform generate -domains 
