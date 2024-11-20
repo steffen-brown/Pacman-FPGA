@@ -1,0 +1,25 @@
+00:20:03 **** Incremental Build of configuration Debug for project mb_pacman ****
+make all 
+'Building file: ../src/lw_usb_main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb_main.o" -IC:/Users/steff/OneDrive/Documents/ECE385/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb_main.d" -MT"src/lw_usb_main.o" -o "src/lw_usb_main.o" "../src/lw_usb_main.c"
+In file included from ../src/lw_usb_main.c:11:
+../src/lw_usb_main.h:10:61: warning: initialization of 'volatile struct CHARACTER_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   10 |         static volatile struct CHARACTER_STRUCT* charcters =0x44A00000;
+      |                                                             ^~~~~~~~~~
+'Finished building: ../src/lw_usb_main.c'
+' '
+'Building target: mb_pacman.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/steff/OneDrive/Documents/ECE385/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb_pacman.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/lw_usb_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_pacman.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_pacman.elf  |tee "mb_pacman.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24404	   3968	   3676	  32048	   7d30	mb_pacman.elf
+'Finished building: mb_pacman.elf.size'
+' '
+
+00:20:04 Build Finished (took 400ms)
+

@@ -4,14 +4,14 @@ Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:74]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:88]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [C:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [C:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:88]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv" Line 1. Module font_rom doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "c:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv" Line 1. Module font_rom doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv" Line 1. Module font_rom doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/steff/Downloads/ece385git/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv" Line 1. Module font_rom doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.hdmi_text_controller_v1_0_AXI(C_...

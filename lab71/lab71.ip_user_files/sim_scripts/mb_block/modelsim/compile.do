@@ -153,9 +153,9 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../lab71.gen/sources_1
 "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0_1/clk_wiz_0.v" \
 
 vlog -work xil_defaultlib  -incr -mfcu  -sv "+incdir+../../../../lab71.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../lab71.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0_1" \
-"../../../bd/mb_block/ipshared/2cd9/src/VGA_controller.sv" \
-"../../../bd/mb_block/ipshared/2cd9/src/font_rom.sv" \
-"../../../bd/mb_block/ipshared/2cd9/src/mapper.sv" \
+"../../../bd/mb_block/ipshared/960d/src/VGA_controller.sv" \
+"../../../bd/mb_block/ipshared/960d/src/font_rom.sv" \
+"../../../bd/mb_block/ipshared/960d/src/mapper.sv" \
 "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/sim/mb_block_hdmi_text_controller_0_1.sv" \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../lab71.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../lab71.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../lab71.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0_1" \

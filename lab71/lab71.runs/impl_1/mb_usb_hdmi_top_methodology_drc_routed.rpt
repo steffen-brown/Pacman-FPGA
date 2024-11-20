@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Wed Oct 30 20:49:51 2024
+| Date         : Sat Nov 16 10:53:49 2024
 | Host         : Winferior running 64-bit major release  (build 9200)
 | Command      : report_methodology -file mb_usb_hdmi_top_methodology_drc_routed.rpt -pb mb_usb_hdmi_top_methodology_drc_routed.pb -rpx mb_usb_hdmi_top_methodology_drc_routed.rpx
 | Design       : mb_usb_hdmi_top
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 26
+             Violations found: 23
 +-----------+------------------+--------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                            | Violations |
 +-----------+------------------+--------------------------------------------------------+------------+
@@ -33,7 +33,7 @@ Table of Contents
 | TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin              | 1          |
 | LUTAR-1   | Warning          | LUT drives async reset alert                           | 4          |
 | TIMING-9  | Warning          | Unknown CDC Logic                                      | 1          |
-| TIMING-16 | Warning          | Large setup violation                                  | 12         |
+| TIMING-16 | Warning          | Large setup violation                                  | 9          |
 | TIMING-18 | Warning          | Missing input or output delay                          | 3          |
 | ULMTCS-2  | Warning          | Control Sets use limits require reduction              | 1          |
 | XDCC-7    | Warning          | Scoped Clock constraint overwritten on the same source | 1          |
@@ -103,62 +103,47 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -1.085 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[21].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.429 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[491][1]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[29].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -1.089 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[29].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.524 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[491][1]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[39].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -1.091 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[38].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.533 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[491][1]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[31].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -1.102 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[22].srl16_i/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.565 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[491][1]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[30].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -1.287 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[39].srl16_i/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.619 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[491][1]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[36].srl16_i/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -1.427 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[23].srl16_i/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.665 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[491][1]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[20].srl16_i/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -1.574 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[37].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.683 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[491][1]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[23].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -1.582 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[30].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.789 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[491][1]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[22].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -1.595 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[20].srl16_i/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#10 Warning
-Large setup violation  
-There is a large setup violation of -1.658 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[36].srl16_i/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#11 Warning
-Large setup violation  
-There is a large setup violation of -1.907 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[28].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#12 Warning
-Large setup violation  
-There is a large setup violation of -2.104 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[402][25]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[31].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.961 ns between mb_block_i/hdmi_text_controller_0/inst/hdmi_text_controller_v1_0_AXI_inst/slv_regs_reg[491][1]/C (clocked by clk_out1_mb_block_clk_wiz_1_2_1) and mb_block_i/hdmi_text_controller_0/inst/vga_to_hdmi/inst/srldly_0/srl[38].srl16_i_srlopt/D (clocked by clk_out1_clk_wiz_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

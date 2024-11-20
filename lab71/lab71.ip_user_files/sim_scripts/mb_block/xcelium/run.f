@@ -108,9 +108,9 @@
   "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0_1/clk_wiz_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/mb_block/ipshared/2cd9/src/VGA_controller.sv" \
-  "../../../bd/mb_block/ipshared/2cd9/src/font_rom.sv" \
-  "../../../bd/mb_block/ipshared/2cd9/src/mapper.sv" \
+  "../../../bd/mb_block/ipshared/960d/src/VGA_controller.sv" \
+  "../../../bd/mb_block/ipshared/960d/src/font_rom.sv" \
+  "../../../bd/mb_block/ipshared/960d/src/mapper.sv" \
   "../../../bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/sim/mb_block_hdmi_text_controller_0_1.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

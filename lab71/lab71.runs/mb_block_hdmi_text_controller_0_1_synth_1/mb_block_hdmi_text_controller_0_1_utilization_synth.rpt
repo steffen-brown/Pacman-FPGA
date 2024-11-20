@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Wed Oct 30 20:41:29 2024
+| Date         : Sat Nov 16 10:42:49 2024
 | Host         : Winferior running 64-bit major release  (build 9200)
 | Command      : report_utilization -file mb_block_hdmi_text_controller_0_1_utilization_synth.rpt -pb mb_block_hdmi_text_controller_0_1_utilization_synth.pb
 | Design       : mb_block_hdmi_text_controller_0_1
@@ -31,16 +31,16 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| Slice LUTs*                | 15402 |     0 |          0 |     32600 | 47.25 |
-|   LUT as Logic             | 15363 |     0 |          0 |     32600 | 47.13 |
+| Slice LUTs*                | 15099 |     0 |          0 |     32600 | 46.32 |
+|   LUT as Logic             | 15060 |     0 |          0 |     32600 | 46.20 |
 |   LUT as Memory            |    39 |     0 |          0 |      9600 |  0.41 |
 |     LUT as Distributed RAM |     0 |     0 |            |           |       |
 |     LUT as Shift Register  |    39 |     0 |            |           |       |
-| Slice Registers            | 19673 |     0 |          0 |     65200 | 30.17 |
-|   Register as Flip Flop    | 19673 |     0 |          0 |     65200 | 30.17 |
+| Slice Registers            | 19676 |     0 |          0 |     65200 | 30.18 |
+|   Register as Flip Flop    | 19676 |     0 |          0 |     65200 | 30.18 |
 |   Register as Latch        |     0 |     0 |          0 |     65200 |  0.00 |
-| F7 Muxes                   |  5518 |     0 |          0 |     16300 | 33.85 |
-| F8 Muxes                   |  2306 |     0 |          0 |      8150 | 28.29 |
+| F7 Muxes                   |  5543 |     0 |          0 |     16300 | 34.01 |
+| F8 Muxes                   |  2223 |     0 |          0 |      8150 | 27.28 |
 +----------------------------+-------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -59,7 +59,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 66    |          Yes |           - |        Reset |
+| 69    |          Yes |           - |        Reset |
 | 1     |          Yes |         Set |            - |
 | 19606 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -151,14 +151,14 @@ Warning! LUT value is adjusted to account for LUT combining.
 |  Ref Name  |  Used | Functional Category |
 +------------+-------+---------------------+
 | FDRE       | 19606 |        Flop & Latch |
-| LUT6       | 11180 |                 LUT |
-| MUXF7      |  5518 |               MuxFx |
-| LUT3       |  4077 |                 LUT |
-| MUXF8      |  2306 |               MuxFx |
-| LUT5       |   340 |                 LUT |
-| LUT4       |   156 |                 LUT |
-| FDCE       |    66 |        Flop & Latch |
-| LUT2       |    43 |                 LUT |
+| LUT6       | 10704 |                 LUT |
+| MUXF7      |  5543 |               MuxFx |
+| LUT3       |  3799 |                 LUT |
+| MUXF8      |  2223 |               MuxFx |
+| LUT5       |   572 |                 LUT |
+| LUT2       |   174 |                 LUT |
+| LUT4       |    90 |                 LUT |
+| FDCE       |    69 |        Flop & Latch |
 | SRL16E     |    39 |  Distributed Memory |
 | OSERDESE2  |     8 |                  IO |
 | OBUFDS     |     4 |                  IO |
