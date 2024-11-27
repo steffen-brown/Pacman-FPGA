@@ -13,7 +13,7 @@ module hdmi_text_controller_v1_0 #
     // Modify parameters as necessary for access of full VRAM range
 
     parameter integer C_AXI_DATA_WIDTH	= 32,
-    parameter integer C_AXI_ADDR_WIDTH	= 4 
+    parameter integer C_AXI_ADDR_WIDTH	= 8 
 )
 (
     // Users to add ports here
@@ -54,6 +54,7 @@ module hdmi_text_controller_v1_0 #
 //additional logic variables as necessary to support VGA, and HDMI modules.
     logic [31:0] pm_x, pm_y, pm_mv, pm_dir;
     logic [1:0] pm_frame;
+    logic [27:0] pellets[0:30];
 
 // Instantiation of Axi Bus Interface AXI
     // Instantiate AXI Interface
@@ -86,7 +87,9 @@ module hdmi_text_controller_v1_0 #
         .pm_x(pm_x),
         .pm_y(pm_y),
         .pm_dir(pm_dir),
-        .pm_mv(pm_mv)
+        .pm_mv(pm_mv),
+        
+        .pellets(pellets)
     );
 
 
@@ -156,6 +159,8 @@ module hdmi_text_controller_v1_0 #
 	   .pm_y(pm_y),
 	   .pm_dir(pm_dir),
 	   .pm_frame(pm_frame),
+	   
+	   .pellets(pellets),
 	   
 	   .red(red),
 	   .green(green),

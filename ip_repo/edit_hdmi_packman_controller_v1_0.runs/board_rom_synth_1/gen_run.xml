@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="board_rom_synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1732075495">
   <File Type="PA-TCL" Name="board_rom.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="board_rom_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="board_rom_reports.tcl"/>
   <File Type="RDS-RDS" Name="board_rom.vds"/>
   <File Type="RDS-UTIL" Name="board_rom_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="board_rom_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="board_rom.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="board_rom_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="board_rom_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/board_rom">
     <File Path="$PPRDIR/hdmi_packman_controller_1_0/src/board_rom/board_rom.xci">
       <FileInfo>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="pm_rom_synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1731960387">
+<GenRun Id="pm_rom_synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1732467165">
   <File Type="PA-TCL" Name="pm_rom.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="pm_rom_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="pm_rom_reports.tcl"/>
@@ -42,9 +42,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

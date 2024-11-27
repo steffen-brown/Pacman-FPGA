@@ -8,6 +8,8 @@ module mapper (
     input logic [31:0] pm_dir,
     input logic [1:0] pm_frame,
     
+    input logic [27:0] pellets[0:30],
+    
     output logic [3:0] red, green, blue
 );
 
@@ -31,6 +33,10 @@ assign board_rom_address = DrawX + DrawY * 640;
 // Calculate the address for the Pacman ROM
 assign pm_rom_address = (DrawX - pm_x + pm_frame * 26) + (DrawY - pm_y + pm_dir * 26) * 78;
 
+integer grid_x, grid_y;
+integer cell_x, cell_y;
+integer pellet_cell_x_start, pellet_cell_y_start;
+
 always_ff @ (posedge vga_clk) begin
     // Default to black
     red <= 4'h0;
@@ -38,16 +44,46 @@ always_ff @ (posedge vga_clk) begin
     blue <= 4'h0;
 
     if (blank) begin
+        // Draw the gameboard by default
+        red <= board_palette_red;
+        green <= board_palette_green;
+        blue <= board_palette_blue;
+
+        // Check if pixel is within Pacman
         if (DrawX > pm_x && DrawX < (pm_x + 26) && DrawY > pm_y && DrawY < (pm_y + 26)) begin
             // Draw the Pacman sprite
             red <= pm_palette_red;
             green <= pm_palette_green;
             blue <= pm_palette_blue;
-        end else begin
-            // Draw the gameboard
-            red <= board_palette_red;
-            green <= board_palette_green;
-            blue <= board_palette_blue;
+        end
+        else begin
+            // Check if DrawX and DrawY are within the board area
+            if (DrawX >= 110 && DrawX < (110 + 28 * 15) && DrawY >= 8 && DrawY < (8 + 31 * 15)) begin
+                // Compute grid indices
+                grid_x = (DrawX - 110) / 15;
+                grid_y = (DrawY - 8) / 15;
+
+                // Compute position within cell
+                cell_x = (DrawX - 110) % 15;
+                cell_y = (DrawY - 8) % 15;
+
+                // Pellet's top-left corner within the cell
+                pellet_cell_x_start = 6;
+                pellet_cell_y_start = 6;
+
+                // Check if current pixel is within the pellet area
+                if (cell_x >= pellet_cell_x_start && cell_x < (pellet_cell_x_start + 3) &&
+                    cell_y >= pellet_cell_y_start && cell_y < (pellet_cell_y_start + 3)) begin
+
+                    // Check if pellet is present at this grid cell
+                    if (pellets[grid_y][grid_x]) begin
+                        // Draw pellet in white (override the board color)
+                        red <= 4'hF;
+                        green <= 4'hF;
+                        blue <= 4'hF;
+                    end
+                end
+            end
         end
     end
 end

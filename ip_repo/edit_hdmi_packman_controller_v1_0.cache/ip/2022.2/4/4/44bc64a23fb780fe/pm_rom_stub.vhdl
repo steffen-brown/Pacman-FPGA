@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
 -- Date        : Sun Nov 24 10:53:27 2024
 -- Host        : Winferior running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/steff/OneDrive/Documents/ECE385/edit_hdmi_packman_controller_v1_0.gen/sources_1/ip/pm_rom/pm_rom_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+--               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ pm_rom_stub.vhdl
 -- Design      : pm_rom
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s50csga324-1
@@ -12,7 +12,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity pm_rom is
+entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   Port ( 
     clka : in STD_LOGIC;
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -21,9 +21,9 @@ entity pm_rom is
     douta : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
 
-end pm_rom;
+end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
-architecture stub of pm_rom is
+architecture stub of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;

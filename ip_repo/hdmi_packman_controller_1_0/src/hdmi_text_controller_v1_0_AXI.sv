@@ -4,7 +4,7 @@ module hdmi_text_controller_v1_0_AXI #
 (
     // Parameters of Axi Slave Bus Interface S_AXI
     parameter integer C_S_AXI_DATA_WIDTH    = 32,
-    parameter integer C_S_AXI_ADDR_WIDTH    = 4
+    parameter integer C_S_AXI_ADDR_WIDTH    = 8
 )
 (
     // Global Clock Signal
@@ -55,7 +55,9 @@ module hdmi_text_controller_v1_0_AXI #
     input logic [31:0] pm_y,
     // Control outputs to pm_animator
     output logic [31:0] pm_dir,
-    output logic [31:0] pm_mv
+    output logic [31:0] pm_mv,
+    
+    output logic [27:0] pellets[0:30]
 );
 
     // AXI4LITE signals
@@ -75,7 +77,7 @@ module hdmi_text_controller_v1_0_AXI #
     localparam integer OPT_MEM_ADDR_BITS = C_S_AXI_ADDR_WIDTH - ADDR_LSB;
     
     // Slave registers for pm_dir and pm_mv
-    logic [C_S_AXI_DATA_WIDTH-1:0] slv_regs[2:3];  // Registers at addresses 2 and 3
+    logic [C_S_AXI_DATA_WIDTH-1:0] slv_regs[2:34];  // Registers at addresses 2 and 3
     logic   slv_reg_rden;
     logic   slv_reg_wren;
     logic [C_S_AXI_DATA_WIDTH-1:0]   reg_data_out;
@@ -85,6 +87,13 @@ module hdmi_text_controller_v1_0_AXI #
     // Assign outputs
     assign pm_dir = slv_regs[2];
     assign pm_mv = slv_regs[3];
+    
+    genvar i;
+    generate
+        for (i = 0; i < 31; i = i + 1) begin : gen_block
+            assign pellets[i] = slv_regs[i + 4][27:0];
+        end
+    endgenerate
 
     // I/O Connections assignments
     assign S_AXI_AWREADY    = axi_awready;
@@ -175,11 +184,15 @@ module hdmi_text_controller_v1_0_AXI #
         begin
             slv_regs[2] <= 32'd0; // pm_dir
             slv_regs[3] <= 32'd0; // pm_mv
+            
+            for(int i = 4; i <= 34; i++) begin
+                slv_regs[i] <= 32'h0FFFFFFF;
+            end
         end
       else begin
         if (slv_reg_wren)
           begin
-            if (reg_index == 2 || reg_index == 3) // Only allow writing to pm_dir and pm_mv
+            if (reg_index >= 2 || reg_index <= 34) // Only allow writing to pm_dir and pm_mv
             begin
               for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
                 if ( S_AXI_WSTRB[byte_index] == 1 ) begin
@@ -270,13 +283,14 @@ module hdmi_text_controller_v1_0_AXI #
     // Read logic for pm_x, pm_y, pm_dir, pm_mv
     always_comb
     begin
-        case (reg_index_read)
-            0: reg_data_out = pm_x;           // Read pm_x (read-only)
-            1: reg_data_out = pm_y;           // Read pm_y (read-only)
-            2: reg_data_out = slv_regs[2];    // Read pm_dir
-            3: reg_data_out = slv_regs[3];    // Read pm_mv
-            default: reg_data_out = 32'd0;
-        endcase
+        if (reg_index_read == 0)
+            reg_data_out = pm_x;
+        else if (reg_index_read == 1)
+            reg_data_out = pm_y;
+        else if (reg_index_read >= 2 && reg_index_read <= 34)
+            reg_data_out = slv_regs[reg_index_read];
+        else
+            reg_data_out = 32'd0;
     end
 
     // Output register or memory read data
