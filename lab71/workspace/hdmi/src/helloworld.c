@@ -55,7 +55,11 @@ int main()
 {
     init_platform();
 
-    hdmiTestWeek1();
+    for (int i = 0; i < 16; i++) {
+        setColorPalette(i, colors[i].red, colors[i].green, colors[i].blue);
+    }
+
+    hdmiTestWeek2();
     cleanup_platform();
     return 0;
 }

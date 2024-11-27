@@ -821,11 +821,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Sat Nov 16 16:38:12 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:110a4616</spirit:value>
+=======
+            <spirit:value>Sun Nov 03 19:42:43 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a380ab62</spirit:value>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -836,7 +844,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
+<<<<<<< HEAD
             <spirit:value>9:110a4616</spirit:value>
+=======
+            <spirit:value>9:a380ab62</spirit:value>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -852,11 +864,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Sat Nov 16 16:38:12 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:110a4616</spirit:value>
+=======
+            <spirit:value>Sun Nov 03 19:42:43 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a380ab62</spirit:value>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -871,11 +891,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Sat Nov 16 16:38:12 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:979b44fb</spirit:value>
+=======
+            <spirit:value>Sun Nov 03 19:42:43 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:2511a98f</spirit:value>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -891,11 +919,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Sat Nov 16 16:38:12 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:979b44fb</spirit:value>
+=======
+            <spirit:value>Sun Nov 03 19:42:43 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:2511a98f</spirit:value>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -909,11 +945,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Sat Nov 16 16:38:12 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:110a4616</spirit:value>
+=======
+            <spirit:value>Sun Nov 03 19:42:43 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a380ab62</spirit:value>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -927,11 +971,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Sat Nov 16 16:42:53 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:110a4616</spirit:value>
+=======
+            <spirit:value>Sun Nov 03 19:44:34 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:a380ab62</spirit:value>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1350,6 +1402,7 @@
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< HEAD
         <spirit:name>../../ipshared/960d/src/VGA_controller.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
@@ -1367,6 +1420,29 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/960d/src/hdmi_text_controller_v1_0.sv</spirit:name>
+=======
+        <spirit:name>../../lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ac6d/src/VGA_controller.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ac6d/src/font_rom.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ac6d/src/hdmi_text_controller_v1_0_AXI.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ac6d/src/mapper.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ac6d/src/hdmi_text_controller_v1_0.sv</spirit:name>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1389,6 +1465,7 @@
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+<<<<<<< HEAD
         <spirit:name>../../ipshared/960d/src/VGA_controller.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
@@ -1398,6 +1475,21 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>../../ipshared/960d/src/mapper.sv</spirit:name>
+=======
+        <spirit:name>../../lab71/lab71.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ac6d/src/VGA_controller.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ac6d/src/font_rom.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/ac6d/src/mapper.sv</spirit:name>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1531,8 +1623,13 @@
       <xilinx:displayName>hdmi_text_controller_v1.0</xilinx:displayName>
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
+<<<<<<< HEAD
       <xilinx:coreRevision>37</xilinx:coreRevision>
+=======
+      <xilinx:coreRevision>47</xilinx:coreRevision>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
@@ -1594,7 +1691,11 @@
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="aa94eb63"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="60746b78"/>
+<<<<<<< HEAD
       <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="88033aba"/>
+=======
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c0adf37b"/>
+>>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f
       <xilinx:checksum xilinx:scope="ports" xilinx:value="22fb94a0"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="a3d1eed6"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2a946778"/>

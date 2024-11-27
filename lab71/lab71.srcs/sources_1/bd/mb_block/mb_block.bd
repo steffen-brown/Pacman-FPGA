@@ -839,7 +839,12 @@
         "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
         "xci_name": "mb_block_axi_uartlite_0_1",
         "xci_path": "ip\\mb_block_axi_uartlite_0_1\\mb_block_axi_uartlite_0_1.xci",
-        "inst_hier_path": "axi_uartlite_0"
+        "inst_hier_path": "axi_uartlite_0",
+        "parameters": {
+          "C_BAUDRATE": {
+            "value": "115200"
+          }
+        }
       },
       "hdmi_text_controller_0": {
         "vlnv": "xilinx.com:user:hdmi_text_controller:1.0",
