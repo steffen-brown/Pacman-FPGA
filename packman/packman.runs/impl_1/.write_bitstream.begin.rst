@@ -1,9 +1,5 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-<<<<<<< HEAD:packman/packman.runs/impl_1/.write_bitstream.begin.rst
-    <Process Command=".planAhead." Owner="steff" Host="WINFERIOR" Pid="72968">
-=======
-    <Process Command=".planAhead." Owner="steff" Host="WINFERIOR" Pid="37776">
->>>>>>> ad782094b236f6bfef5a3a34b88054f297786a9f:lab71/lab71.runs/impl_1/.write_bitstream.begin.rst
+    <Process Command=".planAhead." Owner="steff" Host="WINFERIOR" Pid="145304">
     </Process>
 </ProcessHandle>

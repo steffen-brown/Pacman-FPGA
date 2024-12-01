@@ -39,15 +39,12 @@ module mb_usb_hdmi_top(
     output logic [7:0] hex_segB,
     output logic [3:0] hex_gridB
 );
-
-    assign hex_segA = 8'h00;
-    assign hex_segB = 8'h00;
-    assign hex_gridA = 4'h0;
-    assign hex_gridB = 4'h0;
     
     logic reset_ah;
     
     assign reset_ah = reset_rtl_0;
+    
+    logic [31:0] keycode0_gpio;
     
     mb_block mb_block_i (
         .HDMI_0_tmds_clk_n(hdmi_tmds_clk_n),
@@ -63,9 +60,25 @@ module mb_usb_hdmi_top(
         .usb_spi_miso(usb_spi_miso),
         .usb_spi_mosi(usb_spi_mosi),
         .usb_spi_sclk(usb_spi_sclk),
-        .usb_spi_ss(usb_spi_ss)
+        .usb_spi_ss(usb_spi_ss),
+        .gpio_usb_keycode_0_tri_o(keycode0_gpio)
     );
     
-        
+       hex_driver HexA (
+        .clk(Clk),
+        .reset(reset_ah),
+        .in({keycode0_gpio[31:28], keycode0_gpio[27:24], keycode0_gpio[23:20], keycode0_gpio[19:16]}),
+        .hex_seg(hex_segA),
+        .hex_grid(hex_gridA)
+    );
+    
+    hex_driver HexB (
+        .clk(Clk),
+        .reset(reset_ah),
+        .in({keycode0_gpio[15:12], keycode0_gpio[11:8], keycode0_gpio[7:4], keycode0_gpio[3:0]}),
+        .hex_seg(hex_segB),
+        .hex_grid(hex_gridB)
+    );
+    
     
 endmodule

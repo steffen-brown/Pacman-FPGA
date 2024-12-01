@@ -45,9 +45,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_rs
 # IP: bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_axi_uartlite_0_0 || ORIG_REF_NAME==mb_block_axi_uartlite_0_0} -quiet] -quiet
 
-# IP: bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_hdmi_packman_control_0_0 || ORIG_REF_NAME==mb_block_hdmi_packman_control_0_0} -quiet] -quiet
-
 # IP: bd/mb_block/ip/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_axi_timer_0_0 || ORIG_REF_NAME==mb_block_axi_timer_0_0} -quiet] -quiet
 
@@ -65,5 +62,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_ax
 
 # IP: bd/mb_block/ip/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_axi_gpio_0_2 || ORIG_REF_NAME==mb_block_axi_gpio_0_2} -quiet] -quiet
+
+# IP: bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==mb_block_hdmi_packman_control_0_1 || ORIG_REF_NAME==mb_block_hdmi_packman_control_0_1} -quiet] -quiet
 
 # XDC: c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/mb_block_ooc.xdc

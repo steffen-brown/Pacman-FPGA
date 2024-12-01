@@ -24,3 +24,30 @@ platform generate
 platform active {mb_usb_hdmi_top}
 platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
 platform generate -domains 
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains standalone_microblaze_0 
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform active {mb_usb_hdmi_top}
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 
+platform config -updatehw {C:/Users/steff/OneDrive/Documents/ECE385/packman/mb_usb_hdmi_top.xsa}
+platform generate -domains 

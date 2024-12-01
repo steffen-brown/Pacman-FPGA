@@ -57,7 +57,7 @@ vmap axi_quad_spi_v3_2_26 modelsim_lib/msim/axi_quad_spi_v3_2_26
 vmap xlconcat_v2_1_4 modelsim_lib/msim/xlconcat_v2_1_4
 vmap axi_gpio_v2_0_29 modelsim_lib/msim/axi_gpio_v2_0_29
 
-vlog -work xpm  -incr -mfcu  -sv "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work xpm  -incr -mfcu  -sv "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
 "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
@@ -85,37 +85,37 @@ vcom -work xil_defaultlib  -93  \
 "../../../bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/sim/mb_block_dlmb_bram_if_cntlr_0.vhd" \
 "../../../bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/sim/mb_block_ilmb_bram_if_cntlr_0.vhd" \
 
-vlog -work blk_mem_gen_v8_4_5  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work blk_mem_gen_v8_4_5  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/25a8/simulation/blk_mem_gen_v8_4.v" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../bd/mb_block/ip/mb_block_lmb_bram_0/sim/mb_block_lmb_bram_0.v" \
 
-vlog -work generic_baseblocks_v2_1_0  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work generic_baseblocks_v2_1_0  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 
-vlog -work axi_infrastructure_v1_1_0  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work axi_infrastructure_v1_1_0  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 
-vlog -work axi_register_slice_v2_1_27  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work axi_register_slice_v2_1_27  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v" \
 
-vlog -work fifo_generator_v13_2_7  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work fifo_generator_v13_2_7  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/83df/simulation/fifo_generator_vlog_beh.v" \
 
 vcom -work fifo_generator_v13_2_7  -93  \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/83df/hdl/fifo_generator_v13_2_rfs.vhd" \
 
-vlog -work fifo_generator_v13_2_7  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work fifo_generator_v13_2_7  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/83df/hdl/fifo_generator_v13_2_rfs.v" \
 
-vlog -work axi_data_fifo_v2_1_26  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work axi_data_fifo_v2_1_26  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
 
-vlog -work axi_crossbar_v2_1_28  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work axi_crossbar_v2_1_28  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../bd/mb_block/ip/mb_block_xbar_0/sim/mb_block_xbar_0.v" \
 
 vcom -work axi_lite_ipif_v3_0_4  -93  \
@@ -133,7 +133,7 @@ vcom -work mdm_v3_2_23  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../bd/mb_block/ip/mb_block_mdm_1_0/sim/mb_block_mdm_1_0.vhd" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_clk_wiz.v" \
 "../../../bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0.v" \
 
@@ -158,34 +158,13 @@ vcom -work axi_uartlite_v2_0_31  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../bd/mb_block/ip/mb_block_axi_uartlite_0_0/sim/mb_block_axi_uartlite_0_0.vhd" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
-"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/hdmi_tx_0/hdl/encode.v" \
-"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/hdmi_tx_0/hdl/serdes_10_to_1.v" \
-"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/hdmi_tx_0/hdl/srldelay.v" \
-"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v" \
-"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/hdmi_tx_0/sim/hdmi_tx_0.v" \
-"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
-"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0/clk_wiz_0.v" \
-"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/board_rom/sim/board_rom.v" \
-"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/pm_rom/sim/pm_rom.v" \
-
-vlog -work xil_defaultlib  -incr -mfcu  -sv "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
-"../../../bd/mb_block/ipshared/4061/src/VGA_controller.sv" \
-"../../../bd/mb_block/ipshared/4061/src/board_example.sv" \
-"../../../bd/mb_block/ipshared/4061/src/board_palette.sv" \
-"../../../bd/mb_block/ipshared/4061/src/hdmi_text_controller_v1_0_AXI.sv" \
-"../../../bd/mb_block/ipshared/4061/pm_animator.sv" \
-"../../../bd/mb_block/ipshared/edit_hdmi_packman_controller_v1_0.srcs/sources_1/imports/pm/pm_palette.sv" \
-"../../../bd/mb_block/ipshared/4061/src/hdmi_text_controller_v1_0.sv" \
-"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/sim/mb_block_hdmi_packman_control_0_0.sv" \
-
 vcom -work axi_timer_v2_0_29  -93  \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/22b2/hdl/axi_timer_v2_0_vh_rfs.vhd" \
 
 vcom -work xil_defaultlib  -93  \
 "../../../bd/mb_block/ip/mb_block_axi_timer_0_0/sim/mb_block_axi_timer_0_0.vhd" \
 
-vlog -work dist_mem_gen_v8_0_13  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work dist_mem_gen_v8_0_13  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/0bf5/simulation/dist_mem_gen_v8_0.v" \
 
 vcom -work lib_fifo_v1_0_16  -93  \
@@ -200,10 +179,10 @@ vcom -work axi_quad_spi_v3_2_26  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../bd/mb_block/ip/mb_block_axi_quad_spi_0_0/sim/mb_block_axi_quad_spi_0_0.vhd" \
 
-vlog -work xlconcat_v2_1_4  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work xlconcat_v2_1_4  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../../packman.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../bd/mb_block/ip/mb_block_xlconcat_0_1/sim/mb_block_xlconcat_0_1.v" \
 
 vcom -work axi_gpio_v2_0_29  -93  \
@@ -214,7 +193,30 @@ vcom -work xil_defaultlib  -93  \
 "../../../bd/mb_block/ip/mb_block_axi_gpio_0_1/sim/mb_block_axi_gpio_0_1.vhd" \
 "../../../bd/mb_block/ip/mb_block_axi_gpio_0_2/sim/mb_block_axi_gpio_0_2.vhd" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
+"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/hdmi_tx_0/hdl/encode.v" \
+"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/hdmi_tx_0/hdl/serdes_10_to_1.v" \
+"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/hdmi_tx_0/hdl/srldelay.v" \
+"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v" \
+"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/hdmi_tx_0/sim/hdmi_tx_0.v" \
+"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0/clk_wiz_0.v" \
+"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/board_rom/sim/board_rom.v" \
+"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/pm_rom/sim/pm_rom.v" \
+"../../../bd/mb_block/ip/edit_hdmi_packman_controller_v1_0.srcs/sources_1/ip/ghosts_rom/sim/ghosts_rom.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  -sv "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
+"../../../bd/mb_block/ipshared/22dc/src/VGA_controller.sv" \
+"../../../bd/mb_block/ipshared/22dc/src/board_example.sv" \
+"../../../bd/mb_block/ipshared/22dc/src/board_palette.sv" \
+"../../../bd/mb_block/ipshared/edit_hdmi_packman_controller_v1_0.srcs/sources_1/new/ghosts_animator.sv" \
+"../../../bd/mb_block/ipshared/22dc/src/hdmi_text_controller_v1_0_AXI.sv" \
+"../../../bd/mb_block/ipshared/22dc/pm_animator.sv" \
+"../../../bd/mb_block/ipshared/edit_hdmi_packman_controller_v1_0.srcs/sources_1/imports/pm/pm_palette.sv" \
+"../../../bd/mb_block/ipshared/22dc/src/hdmi_text_controller_v1_0.sv" \
+"../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/sim/mb_block_hdmi_packman_control_0_1.sv" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/ec67/hdl" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ipshared/7698" "+incdir+../../../../packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0" \
 "../../../bd/mb_block/sim/mb_block.v" \
 
 vlog -work xil_defaultlib \

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 #include "platform.h"
 #include "lw_usb/GenericMacros.h"
 #include "lw_usb/GenericTypeDefs.h"
@@ -56,17 +57,62 @@ BYTE GetDriverandReport() {
 	return device;
 }
 
-void printHex (u32 data, unsigned channel)
+void printHex(u32 data, unsigned channel)
 {
-	XGpio_DiscreteWrite (&Gpio_hex, channel, data);
+    u32 hex_data = 0;
+    int shift = 0;
+
+    // Handle the case where data is zero
+    if (data == 0) {
+        hex_data = 0;
+    } else {
+        while (data > 0 && shift < 32) {
+            u32 digit = data % 10;          // Extract the least significant decimal digit
+            hex_data |= (digit << shift);   // Place the digit in the correct nibble
+            data /= 10;                     // Remove the processed digit
+            shift += 4;                     // Move to the next nibble position
+        }
+    }
+
+    XGpio_DiscreteWrite(&Gpio_hex, channel, hex_data);
+}
+
+u32 score = 0; // Current user score
+uint32_t user_dir = 0; // Current user desired direction
+BYTE started = 0; // Round stated?
+u32 tick = 0; // Current tick of the game loop
+
+// Sets all pellets in valid locations to on
+void reset_pellets() {
+	// Initalize Pellets
+		for (int row = 0; row < 31; row++) {
+		    uint32_t pellet_row = 0;
+		    for (int col = 0; col < 28; col++) {
+		        if (grid[row][col] == 1) {
+		        	if(!(row == 23 && (col == 13 | col == 14)))
+		        		pellet_row |= (1 << col);
+		        }
+		    }
+		    axi_reg->pellets[row] = pellet_row;
+		}
+}
+
+// To reset between each of the 3 lives (not working rn)
+void reset_run() {
+	axi_reg->reset = 0x1;
+	sleep(1);
+	axi_reg->reset = 0x0;
+	user_dir = 0;
+	started = 0;
+	tick = 0;
+	sleep(1);
+	reset_pellets();
 }
 
 int main() {
     init_platform();
     XGpio_Initialize(&Gpio_hex, XPAR_GPIO_USB_KEYCODE_DEVICE_ID);
    	XGpio_SetDataDirection(&Gpio_hex, 1, 0x00000000); //configure hex display GPIO
-   	XGpio_SetDataDirection(&Gpio_hex, 2, 0x00000000); //configure hex display GPIO
-
 
    	BYTE rcode;
 	BOOT_MOUSE_REPORT buf;		//USB mouse report
@@ -77,8 +123,8 @@ int main() {
 	BYTE device;
 	BYTE code = 0;
 
-	charcters->pm_dir = 0;
-	charcters->pm_mv = 0;
+	axi_reg->pm_dir = 0;
+	axi_reg->pm_mv = 0;
 	uint32_t pm_boardx, pm_boardy;
 	uint32_t pm_top, pm_bottom, pm_left, pm_right;
 	uint32_t pm_top_g, pm_bottom_g, pm_left_g, pm_right_g;
@@ -86,19 +132,18 @@ int main() {
 	int collision;
 	uint8_t pm_stopped_dir;
 
-	uint32_t user_dir = 0;
-
-	BYTE started = 0;
-
 	xil_printf("initializing MAX3421E...\n");
 	MAX3421E_init();
 	xil_printf("initializing USB...\n");
 	USB_init();
-	while (1) {
-//		xil_printf("%x \n", code);
-//		xil_printf("%d ", charcters->pm_x);
-//		xil_printf("%d \n", charcters->pm_y);
 
+	reset_pellets();
+
+
+	while (1) {
+		tick++;
+
+		// PACMAN CONTROL AND PELETTE CONSUMPTION CODE STARTS HERE
 
 		switch (code) {
 			case 0x04:
@@ -116,9 +161,9 @@ int main() {
 		};
 
 		if(started) {
-			if(charcters->pm_mv) {
-				pm_boardx = charcters->pm_x - 110;
-				pm_boardy = charcters->pm_y - 8;
+			if(axi_reg->pm_mv) {
+				pm_boardx = axi_reg->pm_x - 110;
+				pm_boardy = axi_reg->pm_y - 8;
 
 				pm_top = pm_boardy;
 				pm_top_g = pm_top / 15;
@@ -136,69 +181,110 @@ int main() {
 				pm_right_g = pm_right / 15;
 				pm_right_i = pm_right % 15;
 
-				if(charcters->pm_dir != user_dir) {
+				if(axi_reg->pm_dir != user_dir) {
 					switch (user_dir) {
 						case(0):
-							if(grid[(pm_top_g + pm_bottom_g) / 2][pm_right_g] && (pm_top_i == 9 || charcters->pm_dir == 2)) {
-								charcters->pm_dir = 0;
+							if(grid[(pm_top_g + pm_bottom_g) / 2][pm_right_g] && (pm_top_i == 9 || axi_reg->pm_dir == 2)) {
+								axi_reg->pm_dir = 0;
 							}
 							break;
 						case(1):
-							if(grid[pm_bottom_g][(pm_left_g + pm_right_g) / 2] && (pm_left_i == 9 || charcters->pm_dir == 3)) {
-								charcters->pm_dir = 1;
+							if(grid[pm_bottom_g][(pm_left_g + pm_right_g) / 2] && (pm_left_i == 9 || axi_reg->pm_dir == 3)) {
+								axi_reg->pm_dir = 1;
 							}
 							break;
 						case(2):
-							if(grid[(pm_top_g + pm_bottom_g) / 2][pm_left_g] && (pm_top_i == 9 || charcters->pm_dir == 0)) {
-								charcters->pm_dir = 2;
+							if(grid[(pm_top_g + pm_bottom_g) / 2][pm_left_g] && (pm_top_i == 9 || axi_reg->pm_dir == 0)) {
+								axi_reg->pm_dir = 2;
 							}
 							break;
 						case(3):
-							if(grid[pm_top_g][(pm_left_g + pm_right_g) / 2] && (pm_left_i == 10 || charcters->pm_dir == 1)) {
-								charcters->pm_dir = 3;
+							if(grid[pm_top_g][(pm_left_g + pm_right_g) / 2] && (pm_left_i == 10 || axi_reg->pm_dir == 1)) {
+								axi_reg->pm_dir = 3;
 							}
 							break;
 					};
 				}
 
-				switch (charcters->pm_dir) {
+				BYTE consume = 0;
+				uint32_t cons_x, cons_y;
+
+				switch (axi_reg->pm_dir) {
 					case (0):
 						collision = !grid[(pm_top_g + pm_bottom_g) / 2][pm_right_g];
 						if(collision && pm_right_i >= 4) {
-							charcters->pm_mv = 0;
+							axi_reg->pm_mv = 0;
 						}
+
+						if(pm_right_i > 6) {
+							consume = 1;
+							cons_x = pm_right_g;
+							cons_y = (pm_top_g + pm_bottom_g) / 2;
+						}
+
 						break;
 					case (1):
 						collision = !grid[pm_bottom_g][(pm_left_g + pm_right_g) / 2];
 						if(collision && pm_bottom_i >= 4) {
-							charcters->pm_mv = 0;
+							axi_reg->pm_mv = 0;
 						}
+
+						if(pm_bottom_i > 6) {
+							consume = 1;
+							cons_x = (pm_left_g + pm_right_g) / 2;
+							cons_y = pm_bottom_g;
+						}
+
 						break;
 					case (2):
 						collision = !grid[(pm_top_g + pm_bottom_g) / 2][pm_left_g];
 						if(collision && pm_left_i <= 11) {
-							charcters->pm_mv = 0;
+							axi_reg->pm_mv = 0;
 						}
+
+						if(pm_left_i < 9) {
+							consume = 1;
+							cons_x = pm_left_g;
+							cons_y = (pm_top_g + pm_bottom_g) / 2;
+						}
+
 						break;
 					case (3):
 						collision = !grid[pm_top_g][(pm_left_g + pm_right_g) / 2];
 						if(collision && pm_top_i <= 11) {
-							charcters->pm_mv = 0;
+							axi_reg->pm_mv = 0;
 						}
+
+						if(pm_top_i < 9) {
+							consume = 1;
+							cons_x = (pm_left_g + pm_right_g) / 2;
+							cons_y = pm_top_g;
+						}
+
 						break;
 				};
 
-				pm_stopped_dir = charcters->pm_dir;
+				pm_stopped_dir = axi_reg->pm_dir;
+
+				if(consume) {
+					if(axi_reg->pellets[cons_y] & (1 << cons_x)) {
+						unsigned int mask = ~(1 << cons_x);
+						axi_reg->pellets[cons_y] &= mask;
+
+						score += 10;
+						printHex(score, 1); // This is how you display the incrimented score
+					}
+				}
 
 			} else {
-				if(charcters->pm_dir != user_dir) {
-					charcters->pm_dir = user_dir;
-					charcters->pm_mv = 1;
+				if(axi_reg->pm_dir != user_dir) {
+					axi_reg->pm_dir = user_dir;
+					axi_reg->pm_mv = 1;
 				} else {
 					if(code == 0x04 || code == 0x1A || code == 0x16 || code == 0x07) {
 						if(user_dir != pm_stopped_dir) {
-							charcters->pm_mv = 1;
-							charcters->pm_dir = user_dir;
+							axi_reg->pm_mv = 1;
+							axi_reg->pm_dir = user_dir;
 						}
 					}
 				}
@@ -208,8 +294,8 @@ int main() {
 		} else {
 			if(code == 0x04 || code == 0x1A || code == 0x16 || code == 0x07) {
 				started = 1;
-				charcters->pm_mv = 1;
-				charcters->pm_dir = user_dir;
+				axi_reg->pm_mv = 1;
+				axi_reg->pm_dir = user_dir;
 
 			}
 		}
@@ -217,7 +303,14 @@ int main() {
 		xil_printf("%d ", (pm_top_g + pm_bottom) / 2);
 		xil_printf(" %d \n", pm_left_g);
 
+		// PACMAN CONTROL AND PELETTE CONSUMPTION CODE ENDS HERE
 
+		// GHOST MOVEMENT AND KILLING CODE STARTS HERE
+
+
+
+
+		// GHOST MOVEMENT AND KILLING CODE ENDS HERE
 
 
 		MAX3421E_Task();

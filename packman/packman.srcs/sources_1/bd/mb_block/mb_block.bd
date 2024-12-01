@@ -1371,6 +1371,30 @@
         "xci_path": "ip\\mb_block_clk_wiz_1_0\\mb_block_clk_wiz_1_0.xci",
         "inst_hier_path": "clk_wiz_1",
         "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "100.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "130.958"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "98.575"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "10.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "10.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "10.000"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "100"
+          },
           "PRIM_SOURCE": {
             "value": "Single_ended_clock_capable_pin"
           }
@@ -1477,8 +1501,8 @@
       },
       "hdmi_packman_control_0": {
         "vlnv": "xilinx.com:user:hdmi_packman_controller:1.0",
-        "xci_name": "mb_block_hdmi_packman_control_0_0",
-        "xci_path": "ip\\mb_block_hdmi_packman_control_0_0\\mb_block_hdmi_packman_control_0_0.xci",
+        "xci_name": "mb_block_hdmi_packman_control_0_1",
+        "xci_path": "ip\\mb_block_hdmi_packman_control_0_1\\mb_block_hdmi_packman_control_0_1.xci",
         "inst_hier_path": "hdmi_packman_control_0"
       }
     },

@@ -70,13 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache C:/Users/steff/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20156-Winferior/incrSyn
-set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -98,7 +93,10 @@ set_property ip_output_repo c:/Users/steff/OneDrive/Documents/ECE385/packman/pac
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib -sv C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/new/top.sv
+read_verilog -library xil_defaultlib -sv {
+  C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv
+  C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/new/top.sv
+}
 add_files C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/bd/mb_block/mb_block.bd
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0_ooc_debug.xdc]
@@ -123,10 +121,6 @@ set_property used_in_implementation false [get_files -all c:/Users/steff/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0/clk_wiz_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/board_rom/board_rom_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/pm_rom/pm_rom_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0_board.xdc]
@@ -142,6 +136,11 @@ set_property used_in_implementation false [get_files -all c:/Users/steff/OneDriv
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0/clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/board_rom/board_rom_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/pm_rom/pm_rom_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/edit_hdmi_packman_controller_v1_0.srcs/sources_1/ip/ghosts_rom/ghosts_rom_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/mb_block_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/data/mb_bootloop_le.elf]
 

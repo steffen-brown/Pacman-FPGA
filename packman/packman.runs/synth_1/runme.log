@@ -26,31 +26,31 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 72680
+INFO: [Synth 8-7075] Helper process launched with PID 149360
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1217.555 ; gain = 406.770
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1217.949 ; gain = 406.832
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mb_usb_hdmi_top' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/new/top.sv:14]
 INFO: [Synth 8-6157] synthesizing module 'mb_block' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1082]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_clk_wiz_1_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_clk_wiz_1_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_1' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_gpio_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_1' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_gpio_0_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_2' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_gpio_0_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_2' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_gpio_0_2_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_hdmi_packman_control_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_hdmi_packman_control_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_hdmi_packman_control_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_hdmi_packman_control_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_clk_wiz_1_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_clk_wiz_1_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_1' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_1' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_2' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_2' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_hdmi_packman_control_0_1' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_hdmi_packman_control_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_hdmi_packman_control_0_1' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_hdmi_packman_control_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_periph_0' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1830]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1TK4492' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1TK4492' (0#1) [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
@@ -70,45 +70,45 @@ INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_3PYGGY' [c:/Users/ste
 INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_3PYGGY' (0#1) [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:950]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_5YIJ0K' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3300]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_5YIJ0K' (0#1) [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3300]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_xbar_0_stub.v:5]
 WARNING: [Synth 8-689] width (6) of port connection 'm_axi_arprot' does not match port width (24) of module 'mb_block_xbar_0' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3027]
 WARNING: [Synth 8-689] width (6) of port connection 'm_axi_awprot' does not match port width (24) of module 'mb_block_xbar_0' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3031]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_periph_0' (0#1) [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1830]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3066]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_v10_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_dlmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_v10_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_v10_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_v10_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_dlmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3212]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_block_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3212]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_v10_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_ilmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_v10_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_v10_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_v10_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_ilmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3258]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_block_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3258]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_lmb_bram_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_lmb_bram_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_lmb_bram_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_lmb_bram_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_lmb_bram_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_lmb_bram_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_block_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3283]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' (0#1) [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:3066]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1760]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1760]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_block_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1760]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_quad_spi_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_quad_spi_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_quad_spi_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_quad_spi_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1769]
 WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1769]
 WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1769]
 WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1769]
 WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1769]
 WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_block_axi_quad_spi_0_0' has 33 connections declared, but only 28 given [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1769]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_timer_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_timer_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_timer_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-69284-Winferior/realtime/mb_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_timer_0_0' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_timer_0_0' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/.Xil/Vivado-53160-Winferior/realtime/mb_block_axi_timer_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1798]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1798]
 WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1798]
@@ -118,34 +118,19 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/st
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block_xlconcat_0_1' (0#1) [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_xlconcat_0_1/synth/mb_block_xlconcat_0_1.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block' (0#1) [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/synth/mb_block.v:1082]
-WARNING: [Synth 8-7071] port 'gpio_usb_keycode_0_tri_o' of module 'mb_block' is unconnected for instance 'mb_block_i' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/new/top.sv:52]
-WARNING: [Synth 8-7071] port 'gpio_usb_keycode_1_tri_o' of module 'mb_block' is unconnected for instance 'mb_block_i' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/new/top.sv:52]
-WARNING: [Synth 8-7023] instance 'mb_block_i' of module 'mb_block' has 16 connections declared, but only 14 given [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/new/top.sv:52]
+WARNING: [Synth 8-7071] port 'gpio_usb_keycode_1_tri_o' of module 'mb_block' is unconnected for instance 'mb_block_i' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/new/top.sv:49]
+WARNING: [Synth 8-7023] instance 'mb_block_i' of module 'mb_block' has 16 connections declared, but only 15 given [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/new/top.sv:49]
+INFO: [Synth 8-6157] synthesizing module 'hex_driver' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/imports/design_source/hex_driver.sv:1]
 INFO: [Synth 8-6155] done synthesizing module 'mb_usb_hdmi_top' (0#1) [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/sources_1/new/top.sv:14]
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[7] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[6] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[5] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[4] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[3] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[2] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[1] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[0] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridA[3] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridA[2] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridA[1] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridA[0] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[7] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[6] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[5] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[4] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[3] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[2] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[1] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[0] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridB[3] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridB[2] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridB[1] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridB[0] driven by constant 0
 WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
@@ -248,18 +233,18 @@ WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1320.559 ; gain = 509.773
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1321.344 ; gain = 510.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1320.559 ; gain = 509.773
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1321.344 ; gain = 510.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1320.559 ; gain = 509.773
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1321.344 ; gain = 510.227
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1320.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1321.344 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -268,8 +253,8 @@ Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/s
 Finished Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0/mb_block_microblaze_0_0_in_context.xdc] for cell 'mb_block_i/microblaze_0'
 Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_v10'
 Finished Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_v10'
 Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
 Finished Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
 Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
@@ -298,8 +283,8 @@ Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/s
 Finished Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_1_in_context.xdc] for cell 'mb_block_i/gpio_usb_int'
 Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2_in_context.xdc] for cell 'mb_block_i/gpio_usb_keycode'
 Finished Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2_in_context.xdc] for cell 'mb_block_i/gpio_usb_keycode'
-Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc] for cell 'mb_block_i/hdmi_packman_control_0'
-Finished Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc] for cell 'mb_block_i/hdmi_packman_control_0'
+Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc] for cell 'mb_block_i/hdmi_packman_control_0'
+Finished Parsing XDC File [c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc] for cell 'mb_block_i/hdmi_packman_control_0'
 Parsing XDC File [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc]
 CRITICAL WARNING: [Constraints 18-1056] Clock 'clk_100' completely overrides clock 'Clk'.
 New: create_clock -period 10.000 -name clk_100 -waveform {0.000 5.000} [get_ports Clk], [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:1]
@@ -312,47 +297,47 @@ Parsing XDC File [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/
 Finished Parsing XDC File [C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1320.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1380.973 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1320.559 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1380.973 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1320.559 ; gain = 509.773
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1320.559 ; gain = 509.773
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property IO_BUFFER_TYPE = NONE for Clk. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc, line 3).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 5).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 6).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 7).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 8).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 9).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 10).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 11).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 12).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 13).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 14).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 15).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 16).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 17).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 18).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0/mb_block_hdmi_packman_control_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/steff/OneDrive/Documents/ECE385/packman/packman.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1/mb_block_hdmi_packman_control_0_1_in_context.xdc, line 19).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
@@ -375,15 +360,19 @@ Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/gpio_usb_int. (constra
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/gpio_usb_keycode. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/hdmi_packman_control_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1320.559 ; gain = 509.773
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1320.559 ; gain = 509.773
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -400,50 +389,28 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[7] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[6] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[5] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[4] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[3] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[2] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[1] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[0] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridA[3] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridA[2] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridA[1] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridA[0] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[7] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[6] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[5] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[4] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[3] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[2] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[1] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[0] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridB[3] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridB[2] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridB[1] driven by constant 0
-WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_gridB[0] driven by constant 0
+WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[7] driven by constant 1
+WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[7] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1320.559 ; gain = 509.773
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1320.559 ; gain = 509.773
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1320.559 ; gain = 509.773
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1321.086 ; gain = 510.301
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -461,37 +428,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1326.320 ; gain = 515.535
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1326.320 ; gain = 515.535
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1326.320 ; gain = 515.535
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1326.320 ; gain = 515.535
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1326.320 ; gain = 515.535
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1326.320 ; gain = 515.535
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -507,7 +474,7 @@ Report BlackBoxes:
 |4     |mb_block_axi_gpio_0_1             |         1|
 |5     |mb_block_axi_gpio_0_2             |         1|
 |6     |mb_block_axi_gpio_0_0             |         1|
-|7     |mb_block_hdmi_packman_control_0_0 |         1|
+|7     |mb_block_hdmi_packman_control_0_1 |         1|
 |8     |mb_block_mdm_1_0                  |         1|
 |9     |mb_block_microblaze_0_0           |         1|
 |10    |mb_block_microblaze_0_axi_intc_0  |         1|
@@ -541,30 +508,38 @@ Report Cell Usage:
 |16    |mb_block_microblaze_0_axi_intc  |     1|
 |17    |mb_block_rst_clk_wiz_1_100M     |     1|
 |18    |mb_block_xbar                   |     1|
-|19    |LUT1                            |     1|
-|20    |IBUF                            |     4|
-|21    |OBUF                            |    29|
+|19    |CARRY4                          |     5|
+|20    |LUT1                            |     2|
+|21    |LUT3                            |     4|
+|22    |LUT5                            |    14|
+|23    |LUT6                            |    56|
+|24    |FDRE                            |    17|
+|25    |IBUF                            |     4|
+|26    |OBUF                            |    29|
 +------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1326.320 ; gain = 515.535
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 1381.086 ; gain = 569.969
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1326.320 ; gain = 515.535
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1326.320 ; gain = 515.535
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 1381.086 ; gain = 510.227
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:24 . Memory (MB): peak = 1381.086 ; gain = 569.969
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1338.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1381.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1345.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1381.086 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: bffd8230
+Synth Design complete, checksum: 8f8cbe09
 INFO: [Common 17-83] Releasing license: Synthesis
-92 Infos, 176 Warnings, 1 Critical Warnings and 0 Errors encountered.
+105 Infos, 129 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 1345.020 ; gain = 911.215
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:28 . Memory (MB): peak = 1381.086 ; gain = 947.914
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/steff/OneDrive/Documents/ECE385/packman/packman.runs/synth_1/mb_usb_hdmi_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mb_usb_hdmi_top_utilization_synth.rpt -pb mb_usb_hdmi_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 22:37:05 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 21:05:26 2024...

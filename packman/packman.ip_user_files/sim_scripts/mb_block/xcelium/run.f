@@ -99,27 +99,6 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/mb_block/ip/mb_block_axi_uartlite_0_0/sim/mb_block_axi_uartlite_0_0.vhd" \
 -endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/hdmi_tx_0/hdl/encode.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/hdmi_tx_0/hdl/serdes_10_to_1.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/hdmi_tx_0/hdl/srldelay.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/hdmi_tx_0/sim/hdmi_tx_0.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/clk_wiz_0/clk_wiz_0.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/board_rom/sim/board_rom.v" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/src/pm_rom/sim/pm_rom.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib -sv \
-  "../../../bd/mb_block/ipshared/4061/src/VGA_controller.sv" \
-  "../../../bd/mb_block/ipshared/4061/src/board_example.sv" \
-  "../../../bd/mb_block/ipshared/4061/src/board_palette.sv" \
-  "../../../bd/mb_block/ipshared/4061/src/hdmi_text_controller_v1_0_AXI.sv" \
-  "../../../bd/mb_block/ipshared/4061/pm_animator.sv" \
-  "../../../bd/mb_block/ipshared/edit_hdmi_packman_controller_v1_0.srcs/sources_1/imports/pm/pm_palette.sv" \
-  "../../../bd/mb_block/ipshared/4061/src/hdmi_text_controller_v1_0.sv" \
-  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_0/sim/mb_block_hdmi_packman_control_0_0.sv" \
--endlib
 -makelib xcelium_lib/axi_timer_v2_0_29 \
   "../../../../packman.gen/sources_1/bd/mb_block/ipshared/22b2/hdl/axi_timer_v2_0_vh_rfs.vhd" \
 -endlib
@@ -154,6 +133,29 @@
   "../../../bd/mb_block/ip/mb_block_axi_gpio_0_0/sim/mb_block_axi_gpio_0_0.vhd" \
   "../../../bd/mb_block/ip/mb_block_axi_gpio_0_1/sim/mb_block_axi_gpio_0_1.vhd" \
   "../../../bd/mb_block/ip/mb_block_axi_gpio_0_2/sim/mb_block_axi_gpio_0_2.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/hdmi_tx_0/hdl/encode.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/hdmi_tx_0/hdl/serdes_10_to_1.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/hdmi_tx_0/hdl/srldelay.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/hdmi_tx_0/hdl/hdmi_tx_v1_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/hdmi_tx_0/sim/hdmi_tx_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/clk_wiz_0/clk_wiz_0.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/board_rom/sim/board_rom.v" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/src/pm_rom/sim/pm_rom.v" \
+  "../../../bd/mb_block/ip/edit_hdmi_packman_controller_v1_0.srcs/sources_1/ip/ghosts_rom/sim/ghosts_rom.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/mb_block/ipshared/22dc/src/VGA_controller.sv" \
+  "../../../bd/mb_block/ipshared/22dc/src/board_example.sv" \
+  "../../../bd/mb_block/ipshared/22dc/src/board_palette.sv" \
+  "../../../bd/mb_block/ipshared/edit_hdmi_packman_controller_v1_0.srcs/sources_1/new/ghosts_animator.sv" \
+  "../../../bd/mb_block/ipshared/22dc/src/hdmi_text_controller_v1_0_AXI.sv" \
+  "../../../bd/mb_block/ipshared/22dc/pm_animator.sv" \
+  "../../../bd/mb_block/ipshared/edit_hdmi_packman_controller_v1_0.srcs/sources_1/imports/pm/pm_palette.sv" \
+  "../../../bd/mb_block/ipshared/22dc/src/hdmi_text_controller_v1_0.sv" \
+  "../../../bd/mb_block/ip/mb_block_hdmi_packman_control_0_1/sim/mb_block_hdmi_packman_control_0_1.sv" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/mb_block/sim/mb_block.v" \
