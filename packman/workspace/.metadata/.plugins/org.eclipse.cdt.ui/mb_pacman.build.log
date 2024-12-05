@@ -1,29 +1,49 @@
-21:30:27 **** Incremental Build of configuration Debug for project mb_pacman ****
+21:41:29 **** Incremental Build of configuration Debug for project mb_pacman ****
 make all 
+'Building file: ../src/ghost_movement.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ghost_movement.o" -IC:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ghost_movement.d" -MT"src/ghost_movement.o" -o "src/ghost_movement.o" "../src/ghost_movement.c"
+'Finished building: ../src/ghost_movement.c'
+' '
 'Building file: ../src/lw_usb_main.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb_main.o" -IC:/Users/steff/OneDrive/Documents/ECE385/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb_main.d" -MT"src/lw_usb_main.o" -o "src/lw_usb_main.o" "../src/lw_usb_main.c"
-In file included from ../src/lw_usb_main.c:12:
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb_main.o" -IC:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb_main.d" -MT"src/lw_usb_main.o" -o "src/lw_usb_main.o" "../src/lw_usb_main.c"
+In file included from ../src/lw_usb_main.c:14:
 ../src/lw_usb_main.h:38:57: warning: initialization of 'volatile struct AXI_REGISTERS *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
    38 |         static volatile struct AXI_REGISTERS* axi_reg = 0x44A00000;
       |                                                         ^~~~~~~~~~
 ../src/lw_usb_main.c: In function 'reset_pellets':
-../src/lw_usb_main.c:92:56: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
-   92 |                                 if(!(row == 23 && (col == 13 | col == 14)))
+../src/lw_usb_main.c:102:56: warning: suggest parentheses around comparison in operand of '|' [-Wparentheses]
+  102 |                                 if(!(row == 23 && (col == 13 | col == 14)))
       |                                                    ~~~~^~~~~
+../src/lw_usb_main.c: In function 'main':
+../src/lw_usb_main.c:324:33: warning: passing argument 3 of 'update_blinky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  324 |                                 &axi_reg->g0_dir, &axi_reg->g0_mv,
+      |                                 ^~~~~~~~~~~~~~~~
+In file included from ../src/lw_usb_main.c:4:
+../src/ghost_movement.h:7:67: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
+    7 | void update_blinky_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv,
+      |                                                         ~~~~~~~~~~^~~~~
+../src/lw_usb_main.c:324:51: warning: passing argument 4 of 'update_blinky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  324 |                                 &axi_reg->g0_dir, &axi_reg->g0_mv,
+      |                                                   ^~~~~~~~~~~~~~~
+In file included from ../src/lw_usb_main.c:4:
+../src/ghost_movement.h:7:84: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
+    7 | void update_blinky_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv,
+      |                                                                          ~~~~~~~~~~^~~~
 'Finished building: ../src/lw_usb_main.c'
 ' '
 'Building target: mb_pacman.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/steff/OneDrive/Documents/ECE385/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb_pacman.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/lw_usb_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb_pacman.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/ghost_movement.o ./src/lw_usb_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: mb_pacman.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size mb_pacman.elf  |tee "mb_pacman.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  25544	   3968	   3688	  33200	   81b0	mb_pacman.elf
+  28508	   3968	   3692	  36168	   8d48	mb_pacman.elf
 'Finished building: mb_pacman.elf.size'
 ' '
 
-21:30:27 Build Finished (took 463ms)
+21:41:31 Build Finished (took 1s.276ms)
 
