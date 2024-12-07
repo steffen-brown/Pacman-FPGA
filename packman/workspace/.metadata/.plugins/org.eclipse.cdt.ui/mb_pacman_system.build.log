@@ -1,6 +1,6 @@
-12:36:20 **** Incremental Build of configuration Debug for project mb_pacman_system ****
+14:10:28 **** Incremental Build of configuration Debug for project mb_pacman_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
 
-12:36:20 Build Finished (took 117ms)
+14:10:28 Build Finished (took 172ms)
 

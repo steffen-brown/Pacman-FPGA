@@ -170,6 +170,13 @@ int main() {
 	// Random seed for ghost movement logic
 	srand(7);  // SIUUUUUUUUUUU
 
+	// Kill mode start tick
+	int kill_mode_start = 0;
+	int last_death_blinky = 0;
+	int last_death_pinky = 0;
+	int last_death_inky = 0;
+	int last_death_clyde = 0;
+
 	while (1) {
 		tick++;
 
@@ -301,10 +308,19 @@ int main() {
 						unsigned int mask = ~(1 << cons_x);
 						axi_reg->pellets[cons_y] &= mask;
 
+						if ((cons_y == 26 && cons_x == 3) || (cons_y == 4 && cons_x == 3) || (cons_y == 4 && cons_x == 24) || (cons_y == 26 && cons_x == 24)) {
+							axi_reg->kill_mode = 1;
+							kill_mode_start = tick;
+						}
+
 						score += 10;
 						printHex(score, 1); // This is how you display the incremented score
 					}
 				}
+
+
+
+
 
 			} else {
 				if(axi_reg->pm_dir != user_dir) {
@@ -339,11 +355,65 @@ int main() {
 
 		// GHOST MOVEMENT AND KILLING CODE STARTS HERE
 
+		if(tick >= 1000 + kill_mode_start) {
+			axi_reg->kill_mode = 0;
+		}
+
+		if (axi_reg->kill_mode == 1) {
+			if (abs(axi_reg->pm_x - axi_reg->g0_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g0_y) <= 10) {
+				axi_reg->ghost_reset += 1;
+				last_death_blinky = tick;
+				score += 200;
+				printHex(score, 1);
+			}
+			if (abs(axi_reg->pm_x - axi_reg->g2_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g2_y) <= 10) {
+				axi_reg->ghost_reset += 4;
+				last_death_pinky = tick;
+				score += 200;
+				printHex(score, 1);
+			}
+			if (abs(axi_reg->pm_x - axi_reg->g1_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g1_y) <= 10) {
+				axi_reg->ghost_reset += 2;
+				last_death_inky = tick;
+				score += 200;
+				printHex(score, 1);
+			}
+			if (abs(axi_reg->pm_x - axi_reg->g3_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g3_y) <= 10) {
+				axi_reg->ghost_reset += 8;
+				last_death_clyde = tick;
+				score += 200;
+				printHex(score, 1);
+			}
+		}
+
+		if ((axi_reg->ghost_reset & 0x1) && (tick > last_death_blinky + 500)) {
+			axi_reg->ghost_reset--;
+			blinky_in_house = 1;
+		}
+		if ((axi_reg->ghost_reset & 0x4) && (tick > last_death_pinky + 500)) {
+			axi_reg->ghost_reset -= 4;
+			pinky_in_house = 1;
+		}
+		if ((axi_reg->ghost_reset & 0x2) && (tick > last_death_inky + 500)) {
+			axi_reg->ghost_reset -= 2;
+			inky_in_house = 1;
+		}
+		if ((axi_reg->ghost_reset & 0x8) && (tick > last_death_clyde + 500)) {
+			axi_reg->ghost_reset -= 8;
+			clyde_in_house = 1;
+		}
+
 		// Update Blinky's Position
-		update_blinky_position(axi_reg->g0_x, axi_reg->g0_y,
-			&axi_reg->g0_dir, &axi_reg->g0_mv,
-			axi_reg->pm_x, axi_reg->pm_y,
-			grid);
+		if (blinky_in_house && tick > 0) {
+			blinky_in_house = 0;
+		}
+		else if (!blinky_in_house) {
+			update_blinky_position(axi_reg->g0_x, axi_reg->g0_y,
+				&axi_reg->g0_dir, &axi_reg->g0_mv,
+				axi_reg->pm_x, axi_reg->pm_y,
+				grid);
+		}
+
 
 		if (pinky_in_house && tick > 250) {
 			pinky_in_house = pinky_exit_ghost_house(axi_reg->g2_x, axi_reg->g2_y, &axi_reg->g2_dir, &axi_reg->g2_mv);

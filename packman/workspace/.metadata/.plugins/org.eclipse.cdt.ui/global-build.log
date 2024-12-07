@@ -1,6 +1,6 @@
 Nothing to build in platform 'mb_usb_hdmi_top'
 
-12:36:19 **** Incremental Build of configuration Debug for project mb_pacman ****
+14:10:27 **** Incremental Build of configuration Debug for project mb_pacman ****
 make all 
 'Building file: ../src/lw_usb_main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -14,107 +14,104 @@ In file included from ../src/lw_usb_main.c:13:
   113 |                                 if(!(row == 23 && (col == 13 | col == 14)))
       |                                                    ~~~~^~~~~
 ../src/lw_usb_main.c: In function 'main':
-../src/lw_usb_main.c:344:25: warning: passing argument 3 of 'update_blinky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  344 |                         &axi_reg->g0_dir, &axi_reg->g0_mv,
-      |                         ^~~~~~~~~~~~~~~~
+../src/lw_usb_main.c:412:33: warning: passing argument 3 of 'update_blinky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  412 |                                 &axi_reg->g0_dir, &axi_reg->g0_mv,
+      |                                 ^~~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:19:
 ../src/blinky.h:7:67: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
     7 | void update_blinky_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv,
       |                                                         ~~~~~~~~~~^~~~~
-../src/lw_usb_main.c:344:43: warning: passing argument 4 of 'update_blinky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  344 |                         &axi_reg->g0_dir, &axi_reg->g0_mv,
-      |                                           ^~~~~~~~~~~~~~~
+../src/lw_usb_main.c:412:51: warning: passing argument 4 of 'update_blinky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  412 |                                 &axi_reg->g0_dir, &axi_reg->g0_mv,
+      |                                                   ^~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:19:
 ../src/blinky.h:7:84: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
     7 | void update_blinky_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv,
       |                                                                          ~~~~~~~~~~^~~~
-../src/lw_usb_main.c:349:95: warning: passing argument 3 of 'pinky_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  349 |                         pinky_in_house = pinky_exit_ghost_house(axi_reg->g2_x, axi_reg->g2_y, &axi_reg->g2_dir, &axi_reg->g2_mv);
+../src/lw_usb_main.c:419:95: warning: passing argument 3 of 'pinky_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  419 |                         pinky_in_house = pinky_exit_ghost_house(axi_reg->g2_x, axi_reg->g2_y, &axi_reg->g2_dir, &axi_reg->g2_mv);
       |                                                                                               ^~~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:20:
 ../src/pinky.h:10:66: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
    10 | int pinky_exit_ghost_house(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv);
       |                                                        ~~~~~~~~~~^~~~~
-../src/lw_usb_main.c:349:113: warning: passing argument 4 of 'pinky_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  349 |                         pinky_in_house = pinky_exit_ghost_house(axi_reg->g2_x, axi_reg->g2_y, &axi_reg->g2_dir, &axi_reg->g2_mv);
+../src/lw_usb_main.c:419:113: warning: passing argument 4 of 'pinky_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  419 |                         pinky_in_house = pinky_exit_ghost_house(axi_reg->g2_x, axi_reg->g2_y, &axi_reg->g2_dir, &axi_reg->g2_mv);
       |                                                                                                                 ^~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:20:
 ../src/pinky.h:10:83: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
    10 | int pinky_exit_ghost_house(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv);
       |                                                                         ~~~~~~~~~~^~~~
-../src/lw_usb_main.c:354:33: warning: passing argument 3 of 'update_pinky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  354 |                                 &axi_reg->g2_dir, &axi_reg->g2_mv,
+../src/lw_usb_main.c:424:33: warning: passing argument 3 of 'update_pinky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  424 |                                 &axi_reg->g2_dir, &axi_reg->g2_mv,
       |                                 ^~~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:20:
 ../src/pinky.h:7:66: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
     7 | void update_pinky_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv,
       |                                                        ~~~~~~~~~~^~~~~
-../src/lw_usb_main.c:354:51: warning: passing argument 4 of 'update_pinky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  354 |                                 &axi_reg->g2_dir, &axi_reg->g2_mv,
+../src/lw_usb_main.c:424:51: warning: passing argument 4 of 'update_pinky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  424 |                                 &axi_reg->g2_dir, &axi_reg->g2_mv,
       |                                                   ^~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:20:
 ../src/pinky.h:7:83: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
     7 | void update_pinky_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv,
       |                                                                         ~~~~~~~~~~^~~~
-../src/lw_usb_main.c:360:93: warning: passing argument 3 of 'inky_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  360 |                         inky_in_house = inky_exit_ghost_house(axi_reg->g1_x, axi_reg->g1_y, &axi_reg->g1_dir, &axi_reg->g1_mv);
+../src/lw_usb_main.c:430:93: warning: passing argument 3 of 'inky_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  430 |                         inky_in_house = inky_exit_ghost_house(axi_reg->g1_x, axi_reg->g1_y, &axi_reg->g1_dir, &axi_reg->g1_mv);
       |                                                                                             ^~~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:21:
 ../src/inky.h:10:65: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
    10 | int inky_exit_ghost_house(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv);
       |                                                       ~~~~~~~~~~^~~~~
-../src/lw_usb_main.c:360:111: warning: passing argument 4 of 'inky_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  360 |                         inky_in_house = inky_exit_ghost_house(axi_reg->g1_x, axi_reg->g1_y, &axi_reg->g1_dir, &axi_reg->g1_mv);
+../src/lw_usb_main.c:430:111: warning: passing argument 4 of 'inky_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  430 |                         inky_in_house = inky_exit_ghost_house(axi_reg->g1_x, axi_reg->g1_y, &axi_reg->g1_dir, &axi_reg->g1_mv);
       |                                                                                                               ^~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:21:
 ../src/inky.h:10:82: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
    10 | int inky_exit_ghost_house(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv);
       |                                                                        ~~~~~~~~~~^~~~
-../src/lw_usb_main.c:365:33: warning: passing argument 3 of 'update_inky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  365 |                                 &axi_reg->g1_dir, &axi_reg->g1_mv,
+../src/lw_usb_main.c:435:33: warning: passing argument 3 of 'update_inky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  435 |                                 &axi_reg->g1_dir, &axi_reg->g1_mv,
       |                                 ^~~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:21:
 ../src/inky.h:7:65: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
     7 | void update_inky_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv,
       |                                                       ~~~~~~~~~~^~~~~
-../src/lw_usb_main.c:365:51: warning: passing argument 4 of 'update_inky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  365 |                                 &axi_reg->g1_dir, &axi_reg->g1_mv,
+../src/lw_usb_main.c:435:51: warning: passing argument 4 of 'update_inky_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  435 |                                 &axi_reg->g1_dir, &axi_reg->g1_mv,
       |                                                   ^~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:21:
 ../src/inky.h:7:82: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
     7 | void update_inky_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv,
       |                                                                        ~~~~~~~~~~^~~~
-../src/lw_usb_main.c:371:95: warning: passing argument 3 of 'clyde_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  371 |                         clyde_in_house = clyde_exit_ghost_house(axi_reg->g3_x, axi_reg->g3_y, &axi_reg->g3_dir, &axi_reg->g3_mv);
+../src/lw_usb_main.c:441:95: warning: passing argument 3 of 'clyde_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  441 |                         clyde_in_house = clyde_exit_ghost_house(axi_reg->g3_x, axi_reg->g3_y, &axi_reg->g3_dir, &axi_reg->g3_mv);
       |                                                                                               ^~~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:22:
 ../src/clyde.h:10:66: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
    10 | int clyde_exit_ghost_house(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv);
       |                                                        ~~~~~~~~~~^~~~~
-../src/lw_usb_main.c:371:113: warning: passing argument 4 of 'clyde_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  371 |                         clyde_in_house = clyde_exit_ghost_house(axi_reg->g3_x, axi_reg->g3_y, &axi_reg->g3_dir, &axi_reg->g3_mv);
+../src/lw_usb_main.c:441:113: warning: passing argument 4 of 'clyde_exit_ghost_house' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  441 |                         clyde_in_house = clyde_exit_ghost_house(axi_reg->g3_x, axi_reg->g3_y, &axi_reg->g3_dir, &axi_reg->g3_mv);
       |                                                                                                                 ^~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:22:
 ../src/clyde.h:10:83: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
    10 | int clyde_exit_ghost_house(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv);
       |                                                                         ~~~~~~~~~~^~~~
-../src/lw_usb_main.c:376:33: warning: passing argument 3 of 'update_clyde_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  376 |                                 &axi_reg->g3_dir, &axi_reg->g3_mv,
+../src/lw_usb_main.c:446:33: warning: passing argument 3 of 'update_clyde_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  446 |                                 &axi_reg->g3_dir, &axi_reg->g3_mv,
       |                                 ^~~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:22:
 ../src/clyde.h:7:66: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
     7 | void update_clyde_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv,
       |                                                        ~~~~~~~~~~^~~~~
-../src/lw_usb_main.c:376:51: warning: passing argument 4 of 'update_clyde_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
-  376 |                                 &axi_reg->g3_dir, &axi_reg->g3_mv,
+../src/lw_usb_main.c:446:51: warning: passing argument 4 of 'update_clyde_position' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  446 |                                 &axi_reg->g3_dir, &axi_reg->g3_mv,
       |                                                   ^~~~~~~~~~~~~~~
 In file included from ../src/lw_usb_main.c:22:
 ../src/clyde.h:7:83: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'volatile uint32_t *' {aka 'volatile long unsigned int *'}
     7 | void update_clyde_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t* g_mv,
       |                                                                         ~~~~~~~~~~^~~~
-../src/lw_usb_main.c:165:13: warning: unused variable 'blinky_in_house' [-Wunused-variable]
-  165 |         int blinky_in_house = 1;
-      |             ^~~~~~~~~~~~~~~
 'Finished building: ../src/lw_usb_main.c'
 ' '
 'Building target: mb_pacman.elf'
@@ -125,9 +122,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/arhan/Documents/pacman2/packman/w
 'Invoking: MicroBlaze Print Size'
 mb-size mb_pacman.elf  |tee "mb_pacman.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  43208	   5008	   3752	  51968	   cb00	mb_pacman.elf
+  44544	   5008	   3752	  53304	   d038	mb_pacman.elf
 'Finished building: mb_pacman.elf.size'
 ' '
-12:36:20 **** Incremental Build of configuration Debug for project mb_pacman_system ****
+14:10:28 **** Incremental Build of configuration Debug for project mb_pacman_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
