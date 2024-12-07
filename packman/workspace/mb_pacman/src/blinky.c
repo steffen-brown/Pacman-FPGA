@@ -172,3 +172,6 @@ void update_blinky_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_
     }
 
 }
+
+
+

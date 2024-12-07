@@ -4971,3 +4971,1017 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-15: Launc
 
 !ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:10:42.818
 !MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:07.317
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:07.325
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:07.326
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:07.333
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:16:07.334
+!MESSAGE Generating MD5 hash for file: C:\Users\arhan\Documents\pacman2\packman\workspace\mb_usb_hdmi_top\export\mb_usb_hdmi_top\sw\mb_usb_hdmi_top\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:07.335
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:07.339
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:16:08.910
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '9'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:11.069
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-751
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:11.089
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-751
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.098
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.103
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#10]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.104
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.115
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.116
+!MESSAGE XSCT Command: [version -server], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.118
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.118
+!MESSAGE XSCT Command: [version], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.120
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.120
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.127
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.128
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.140
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.142
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.148
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.148
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.161
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.162
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.169
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.170
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.182
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.182
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.188
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.189
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.201
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.202
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.209
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.210
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.222
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.223
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000010A" && level == 0}], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.236
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000010A" && level == 0}], Result: [null, ]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.237
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.239
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.254
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.262
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.262
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.276
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.277
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.308
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:12.309
+!MESSAGE XSCT Command: [fpga -file C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.578
+!MESSAGE XSCT command with result: [fpga -file C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.609
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.626
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.627
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.840
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_8]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.841
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.845
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.845
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.859
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.860
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.866
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:13.867
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:16.874
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:16.877
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:16.892
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:16.893
+!MESSAGE XSCT Command: [dow C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/Debug/mb_pacman.elf], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:17.144
+!MESSAGE XSCT command with result: [dow C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/Debug/mb_pacman.elf], Result: [null, ]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:17.202
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:17.216
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:17.217
+!MESSAGE XSCT Command: [con], Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:16:17.232
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-14: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:16:17.233
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:18.210
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:18.216
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:18.217
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:18.227
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:17:18.228
+!MESSAGE Generating MD5 hash for file: C:\Users\arhan\Documents\pacman2\packman\workspace\mb_usb_hdmi_top\export\mb_usb_hdmi_top\sw\mb_usb_hdmi_top\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:18.229
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:18.233
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-17: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:17:19.450
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '10'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:21.519
+!MESSAGE XSCT Command: [disconnect tcfchan#10], Thread: Thread-810
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:21.527
+!MESSAGE XSCT command with result: [disconnect tcfchan#10], Result: [null, ]. Thread: Thread-810
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.524
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.528
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#11]. Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.530
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.539
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A (closed)]. Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.540
+!MESSAGE XSCT Command: [version -server], Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.542
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.543
+!MESSAGE XSCT Command: [version], Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.544
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.545
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.552
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A (closed)]. Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:22.553
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A (closed)" && level==1}], Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:25.566
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A (closed)" && level==1}], Result: [null, ]. Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:28.577
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A (closed)" && level==1}], Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:29.808
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.590
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A (closed)" && level==1}], Result: [null, ]. Thread: Worker-19: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.590
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#11]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.591
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.596
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.597
+!MESSAGE XSCT Command: [version -server], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.599
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.600
+!MESSAGE XSCT Command: [version], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.601
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.602
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.611
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.612
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.632
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.632
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.638
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.639
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.651
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.652
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.659
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.660
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.673
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.674
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.681
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.682
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.694
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.696
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.702
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.703
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.716
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.717
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000010A" && level == 0}], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.731
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000010A" && level == 0}], Result: [null, ]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.731
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.745
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.757
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.765
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.765
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.779
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.780
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.804
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:31.806
+!MESSAGE XSCT Command: [fpga -file C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.073
+!MESSAGE XSCT command with result: [fpga -file C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.076
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.089
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.090
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.315
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_9]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.315
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.318
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.319
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.334
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.336
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.341
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:33.342
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:36.346
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:36.348
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:36.366
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:36.366
+!MESSAGE XSCT Command: [dow C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/Debug/mb_pacman.elf], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:36.617
+!MESSAGE XSCT command with result: [dow C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/Debug/mb_pacman.elf], Result: [null, ]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:36.661
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:36.674
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:36.675
+!MESSAGE XSCT Command: [con], Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:17:36.683
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-20: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:17:36.684
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '11'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:09.791
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:09.798
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:09.799
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:09.807
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:25:09.808
+!MESSAGE Generating MD5 hash for file: C:\Users\arhan\Documents\pacman2\packman\workspace\mb_usb_hdmi_top\export\mb_usb_hdmi_top\sw\mb_usb_hdmi_top\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:09.810
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:09.813
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-12-07 14:25:10.470
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:45.572
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:45.577
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:45.578
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:45.585
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:25:45.586
+!MESSAGE Generating MD5 hash for file: C:\Users\arhan\Documents\pacman2\packman\workspace\mb_usb_hdmi_top\export\mb_usb_hdmi_top\sw\mb_usb_hdmi_top\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:45.587
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:45.591
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-22: Build Project
+
+!ENTRY com.xilinx.sdx.core 1 0 2024-12-07 14:25:45.912
+!MESSAGE Build step failed, canceling full build chain.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:51.509
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:51.518
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:51.519
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:51.527
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:25:51.528
+!MESSAGE Generating MD5 hash for file: C:\Users\arhan\Documents\pacman2\packman\workspace\mb_usb_hdmi_top\export\mb_usb_hdmi_top\sw\mb_usb_hdmi_top\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:51.530
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:51.534
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:25:52.755
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '11'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:56.206
+!MESSAGE XSCT Command: [disconnect tcfchan#11], Thread: Thread-977
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:56.210
+!MESSAGE XSCT command with result: [disconnect tcfchan#11], Result: [null, ]. Thread: Thread-977
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.217
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.223
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#12]. Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.224
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.232
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A (closed)]. Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.233
+!MESSAGE XSCT Command: [version -server], Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.235
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.236
+!MESSAGE XSCT Command: [version], Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.237
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.238
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.244
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A (closed)]. Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:25:57.245
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A (closed)" && level==1}], Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:00.257
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A (closed)" && level==1}], Result: [null, ]. Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:03.266
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A (closed)" && level==1}], Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:06.280
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A (closed)" && level==1}], Result: [null, ]. Thread: Worker-0: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.234
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.236
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#12]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.237
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.244
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.245
+!MESSAGE XSCT Command: [version -server], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.256
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.256
+!MESSAGE XSCT Command: [version], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.257
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.258
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.264
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.264
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.277
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.278
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.284
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.284
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.296
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.296
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.303
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.304
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.315
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.316
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.321
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.321
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.334
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.335
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.341
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.341
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.354
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.354
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000010A" && level == 0}], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.366
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000010A" && level == 0}], Result: [null, ]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.367
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.380
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.395
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.409
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.410
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.423
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.424
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.445
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:09.446
+!MESSAGE XSCT Command: [fpga -file C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:10.715
+!MESSAGE XSCT command with result: [fpga -file C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:10.751
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:10.774
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:10.775
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:10.990
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_10]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:10.990
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:10.994
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:10.994
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:11.009
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:11.010
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:11.026
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:11.027
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:14.042
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:14.043
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:14.059
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:14.059
+!MESSAGE XSCT Command: [dow C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/Debug/mb_pacman.elf], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:14.300
+!MESSAGE XSCT command with result: [dow C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/Debug/mb_pacman.elf], Result: [null, ]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:14.357
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:14.370
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:14.371
+!MESSAGE XSCT Command: [con], Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:26:14.380
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-16: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:26:14.381
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '12'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:10.955
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:10.962
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:10.963
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:10.969
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:30:10.970
+!MESSAGE Generating MD5 hash for file: C:\Users\arhan\Documents\pacman2\packman\workspace\mb_usb_hdmi_top\export\mb_usb_hdmi_top\sw\mb_usb_hdmi_top\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:10.970
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:10.974
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-16: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:30:12.242
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '12'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:14.829
+!MESSAGE XSCT Command: [disconnect tcfchan#12], Thread: Thread-1080
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:14.835
+!MESSAGE XSCT command with result: [disconnect tcfchan#12], Result: [null, ]. Thread: Thread-1080
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.839
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.844
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#13]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.845
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.852
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.852
+!MESSAGE XSCT Command: [version -server], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.855
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.856
+!MESSAGE XSCT Command: [version], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.858
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.859
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.865
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.866
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.877
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.878
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.885
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.886
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.898
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.898
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.904
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.905
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.917
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.918
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.923
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.924
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.937
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.938
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.945
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.945
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.957
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.958
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000010A" && level == 0}], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.970
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 887100000010A" && level == 0}], Result: [null, ]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.971
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.973
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.989
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.995
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 887100000010A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:15.996
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:16.008
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:16.009
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:16.045
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000010A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:16.046
+!MESSAGE XSCT Command: [fpga -file C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/_ide/bitstream/mb_usb_hdmi_top.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.311
+!MESSAGE XSCT command with result: [fpga -file C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/_ide/bitstream/mb_usb_hdmi_top.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.337
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.355
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.356
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.578
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/arhan/Documents/pacman2/packman/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs], Result: [null, mb_usb_hdmi_top_11]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.579
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.583
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.584
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.597
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.598
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.603
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:17.604
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:20.607
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:20.608
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:20.623
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:20.624
+!MESSAGE XSCT Command: [dow C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/Debug/mb_pacman.elf], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:20.863
+!MESSAGE XSCT command with result: [dow C:/Users/arhan/Documents/pacman2/packman/workspace/mb_pacman/Debug/mb_pacman.elf], Result: [null, ]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:20.908
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:20.921
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:20.922
+!MESSAGE XSCT Command: [con], Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-12-07 14:30:20.932
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-24: Launching Debugger_mb_pacman-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-12-07 14:30:20.933
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '13'

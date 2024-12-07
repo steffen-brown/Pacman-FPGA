@@ -177,7 +177,16 @@ int main() {
 	int last_death_inky = 0;
 	int last_death_clyde = 0;
 
+	int pacman_dead = 0;
+
 	while (1) {
+		if(pacman_dead) {
+			axi_reg->g0_mv = 0;
+			axi_reg->g1_mv = 0;
+			axi_reg->g2_mv = 0;
+			axi_reg->g3_mv = 0;
+			axi_reg->pm_mv = 0;
+		} else {
 		tick++;
 
 		// PACMAN CONTROL AND PELLET CONSUMPTION CODE STARTS HERE
@@ -384,6 +393,19 @@ int main() {
 				score += 200;
 				printHex(score, 1);
 			}
+		} else {
+			if (abs(axi_reg->pm_x - axi_reg->g0_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g0_y) <= 10) {
+				pacman_dead = 1;
+			}
+			if (abs(axi_reg->pm_x - axi_reg->g2_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g2_y) <= 10) {
+				pacman_dead = 1;
+			}
+			if (abs(axi_reg->pm_x - axi_reg->g1_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g1_y) <= 10) {
+				pacman_dead = 1;
+			}
+			if (abs(axi_reg->pm_x - axi_reg->g3_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g3_y) <= 10) {
+				pacman_dead = 1;
+			}
 		}
 
 		if ((axi_reg->ghost_reset & 0x1) && (tick > last_death_blinky + 500)) {
@@ -520,6 +542,7 @@ int main() {
 
 
 
+	}
 	}
     cleanup_platform();
 	return 0;
