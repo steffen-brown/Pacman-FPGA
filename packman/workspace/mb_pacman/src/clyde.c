@@ -71,20 +71,19 @@ void update_clyde_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t
 
 
     int random_int = rand() % 2;
-    int random_int2 = rand() % 2;
 	if (*g_dir == 1 || *g_dir == 3) { // if moving vertically, check for gaps on left/right
 		if(grid[(ghost_top_g + ghost_bottom_g) / 2][ghost_right_g] && ghost_top_i == 9) {
-			*g_mv = random_int || random_int2;
+			*g_mv = 0;
 		}
 		if(grid[(ghost_top_g + ghost_bottom_g) / 2][ghost_left_g] && ghost_top_i == 9) {
-			*g_mv = random_int || random_int2;
+			*g_mv = 0;
 		}
 	} else {
 		if(grid[ghost_bottom_g][(ghost_left_g + ghost_right_g) / 2] && ghost_left_i == 9) {
-			*g_mv = random_int || random_int2;
+			*g_mv = 0;
 		}
 		if(grid[ghost_top_g][(ghost_left_g + ghost_right_g) / 2] && ghost_left_i == 10) {
-			*g_mv = random_int || random_int2;
+			*g_mv = 0;
 		}
 	}
 
@@ -94,7 +93,7 @@ void update_clyde_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t
         int directions[2];
 
         // Decide which axis to prioritize based on larger absolute delta
-        if (abs_delta_col > abs_delta_row && random_int) {
+        if (abs_delta_col > abs_delta_row) {
             // Prioritize horizontal movement
             directions[0] = (delta_col > 0) ? 0 : 2; // Right or Left
             directions[1] = (delta_row > 0) ? 1 : 3; // Down or Up

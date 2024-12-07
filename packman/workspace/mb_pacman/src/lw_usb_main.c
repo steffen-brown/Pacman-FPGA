@@ -367,7 +367,7 @@ int main() {
 				grid);
 		}
 
-		if (clyde_in_house && tick > 0) {
+		if (clyde_in_house && tick > 1000) {
 			clyde_in_house = clyde_exit_ghost_house(axi_reg->g3_x, axi_reg->g3_y, &axi_reg->g3_dir, &axi_reg->g3_mv);
 		}
 		else if (!clyde_in_house) {
