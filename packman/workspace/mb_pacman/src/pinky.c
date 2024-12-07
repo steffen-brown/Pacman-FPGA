@@ -71,19 +71,20 @@ void update_pinky_position(uint32_t g_x, uint32_t g_y, uint32_t* g_dir, uint32_t
 
 
     int random_int = rand() % 2;
+    int random_int2 = rand() % 2;
 	if (*g_dir == 1 || *g_dir == 3) { // if moving vertically, check for gaps on left/right
 		if(grid[(ghost_top_g + ghost_bottom_g) / 2][ghost_right_g] && ghost_top_i == 9) {
-			*g_mv = random_int;
+			*g_mv = random_int || random_int2;
 		}
 		if(grid[(ghost_top_g + ghost_bottom_g) / 2][ghost_left_g] && ghost_top_i == 9) {
-			*g_mv = random_int;
+			*g_mv = random_int || random_int2;
 		}
 	} else {
 		if(grid[ghost_bottom_g][(ghost_left_g + ghost_right_g) / 2] && ghost_left_i == 9) {
-			*g_mv = random_int;
+			*g_mv = random_int || random_int2;
 		}
 		if(grid[ghost_top_g][(ghost_left_g + ghost_right_g) / 2] && ghost_left_i == 10) {
-			*g_mv = random_int;
+			*g_mv = random_int || random_int2;
 		}
 	}
 

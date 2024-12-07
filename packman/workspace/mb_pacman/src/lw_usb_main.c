@@ -161,6 +161,7 @@ int main() {
 
 	// GHOST
 	int pinky_in_house = 1;
+	int inky_in_house = 1;
 
 	// Random seed for ghost movement logic
 	srand(7);  // SIUUUUUUUUUUU
@@ -340,13 +341,24 @@ int main() {
 			axi_reg->pm_x, axi_reg->pm_y,
 			grid);
 
-		if (pinky_in_house) {
+		if (pinky_in_house && tick > 250) {
 			pinky_in_house = pinky_exit_ghost_house(axi_reg->g2_x, axi_reg->g2_y, &axi_reg->g2_dir, &axi_reg->g2_mv);
 		}
-		else {
+		else if (!pinky_in_house) {
 			// Update Pinky's Position
 			update_pinky_position(axi_reg->g2_x, axi_reg->g2_y,
 				&axi_reg->g2_dir, &axi_reg->g2_mv,
+				axi_reg->pm_x, axi_reg->pm_y,
+				grid);
+		}
+
+		if (inky_in_house && tick > 500) {
+			inky_in_house = inky_exit_ghost_house(axi_reg->g1_x, axi_reg->g1_y, &axi_reg->g1_dir, &axi_reg->g1_mv);
+		}
+		else if (!inky_in_house) {
+			// Update Inky's Position
+			update_inky_position(axi_reg->g1_x, axi_reg->g1_y,
+				&axi_reg->g1_dir, &axi_reg->g1_mv,
 				axi_reg->pm_x, axi_reg->pm_y,
 				grid);
 		}
