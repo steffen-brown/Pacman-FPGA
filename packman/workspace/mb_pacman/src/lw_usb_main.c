@@ -18,6 +18,8 @@
 // GHOST
 #include "blinky.h"
 #include "pinky.h"
+#include "inky.h"
+#include "clyde.h"
 
 
 // GHOST
@@ -160,8 +162,10 @@ int main() {
 	reset_pellets();
 
 	// GHOST
+	int blinky_in_house = 1;
 	int pinky_in_house = 1;
 	int inky_in_house = 1;
+	int clyde_in_house = 1;
 
 	// Random seed for ghost movement logic
 	srand(7);  // SIUUUUUUUUUUU
@@ -359,6 +363,17 @@ int main() {
 			// Update Inky's Position
 			update_inky_position(axi_reg->g1_x, axi_reg->g1_y,
 				&axi_reg->g1_dir, &axi_reg->g1_mv,
+				axi_reg->pm_x, axi_reg->pm_y,
+				grid);
+		}
+
+		if (clyde_in_house && tick > 0) {
+			clyde_in_house = clyde_exit_ghost_house(axi_reg->g3_x, axi_reg->g3_y, &axi_reg->g3_dir, &axi_reg->g3_mv);
+		}
+		else if (!clyde_in_house) {
+			// Update Inky's Position
+			update_clyde_position(axi_reg->g3_x, axi_reg->g3_y,
+				&axi_reg->g3_dir, &axi_reg->g3_mv,
 				axi_reg->pm_x, axi_reg->pm_y,
 				grid);
 		}
