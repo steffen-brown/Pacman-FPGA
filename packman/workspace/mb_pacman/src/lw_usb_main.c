@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>  // GHOST For abs()
-#include "ghost_movement.h"  // GHOST
 #include "platform.h"
 #include "lw_usb/GenericMacros.h"
 #include "lw_usb/GenericTypeDefs.h"
@@ -16,11 +15,20 @@
 #include "xparameters.h"
 #include <xgpio.h>
 
+// GHOST
+#include "blinky.h"
+#include "pinky.h"
+
 
 // GHOST
 #define OFFSET_X 110
 #define OFFSET_Y 8
 #define CELL_SIZE 15
+// Define direction constants matching hardware mapping
+#define DIR_LEFT 0
+#define DIR_DOWN 1
+#define DIR_RIGHT 2
+#define DIR_UP 3
 
 
 extern HID_DEVICE hid_device;
@@ -92,6 +100,7 @@ uint32_t user_dir = 0; // Current user desired direction
 BYTE started = 0; // Round stated?
 u32 tick = 0; // Current tick of the game loop
 
+
 // Sets all pellets in valid locations to on
 void reset_pellets() {
 	// Initalize Pellets
@@ -143,7 +152,6 @@ int main() {
 	uint8_t pm_stopped_dir;
 
 
-
 	xil_printf("initializing MAX3421E...\n");
 	MAX3421E_init();
 	xil_printf("initializing USB...\n");
@@ -151,6 +159,11 @@ int main() {
 
 	reset_pellets();
 
+	// GHOST
+	int pinky_in_house = 1;
+
+	// Random seed for ghost movement logic
+	srand(7);  // SIUUUUUUUUUUU
 
 	while (1) {
 		tick++;
@@ -317,13 +330,26 @@ int main() {
 
 		// PACMAN CONTROL AND PELLET CONSUMPTION CODE ENDS HERE
 
+
+
 		// GHOST MOVEMENT AND KILLING CODE STARTS HERE
 
-
+		// Update Blinky's Position
 		update_blinky_position(axi_reg->g0_x, axi_reg->g0_y,
-				&axi_reg->g0_dir, &axi_reg->g0_mv,
+			&axi_reg->g0_dir, &axi_reg->g0_mv,
+			axi_reg->pm_x, axi_reg->pm_y,
+			grid);
+
+		if (pinky_in_house) {
+			pinky_in_house = pinky_exit_ghost_house(axi_reg->g2_x, axi_reg->g2_y, &axi_reg->g2_dir, &axi_reg->g2_mv);
+		}
+		else {
+			// Update Pinky's Position
+			update_pinky_position(axi_reg->g2_x, axi_reg->g2_y,
+				&axi_reg->g2_dir, &axi_reg->g2_mv,
 				axi_reg->pm_x, axi_reg->pm_y,
 				grid);
+		}
 
 
 		// GHOST MOVEMENT AND KILLING CODE ENDS HERE
