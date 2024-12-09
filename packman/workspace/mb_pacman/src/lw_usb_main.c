@@ -386,10 +386,14 @@ int main() {
 
 		// GHOST MOVEMENT AND KILLING CODE STARTS HERE
 
+
+		// Kill mode timer
 		if(tick >= 1000 + kill_mode_start) {
 			axi_reg->kill_mode = 0;
 		}
 
+
+		// Ghost killing logic
 		if (axi_reg->kill_mode == 1) {
 			if (abs(axi_reg->pm_x - axi_reg->g0_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g0_y) <= 10) {
 				axi_reg->ghost_reset += 1;
@@ -434,6 +438,8 @@ int main() {
 			}
 		}
 
+
+		// Ghost reset logic
 		if ((axi_reg->ghost_reset & 0x1) && (tick > last_death_blinky + 500)) {
 			axi_reg->ghost_reset--;
 			blinky_in_house = 1;
@@ -451,49 +457,81 @@ int main() {
 			clyde_in_house = 1;
 		}
 
+
 		// Update Blinky's Position
 		if (blinky_in_house && tick > 0) {
 			blinky_in_house = 0;
 		}
 		else if (!blinky_in_house) {
-			update_blinky_position(axi_reg->g0_x, axi_reg->g0_y,
-				&axi_reg->g0_dir, &axi_reg->g0_mv,
-				axi_reg->pm_x, axi_reg->pm_y,
-				grid);
+			if (axi_reg->kill_mode == 1) {
+				scared_blinky(axi_reg->g0_x, axi_reg->g0_y,
+					&axi_reg->g0_dir, &axi_reg->g0_mv,
+					axi_reg->pm_x, axi_reg->pm_y,
+					grid);
+			}
+			else {
+				update_blinky_position(axi_reg->g0_x, axi_reg->g0_y,
+					&axi_reg->g0_dir, &axi_reg->g0_mv,
+					axi_reg->pm_x, axi_reg->pm_y,
+					grid);
+			}
 		}
 
-
+		// Update Pinky's position
 		if (pinky_in_house && tick > 250) {
 			pinky_in_house = pinky_exit_ghost_house(axi_reg->g2_x, axi_reg->g2_y, &axi_reg->g2_dir, &axi_reg->g2_mv);
 		}
 		else if (!pinky_in_house) {
-			// Update Pinky's Position
-			update_pinky_position(axi_reg->g2_x, axi_reg->g2_y,
-				&axi_reg->g2_dir, &axi_reg->g2_mv,
-				axi_reg->pm_x, axi_reg->pm_y,
-				grid);
+			if (axi_reg->kill_mode == 1) {
+				scared_pinky(axi_reg->g2_x, axi_reg->g2_y,
+					&axi_reg->g2_dir, &axi_reg->g2_mv,
+					axi_reg->pm_x, axi_reg->pm_y,
+					grid);
+			}
+			else {
+				update_pinky_position(axi_reg->g2_x, axi_reg->g2_y,
+					&axi_reg->g2_dir, &axi_reg->g2_mv,
+					axi_reg->pm_x, axi_reg->pm_y,
+					grid);
+			}
 		}
 
+		// Update Inky's position
 		if (inky_in_house && tick > 500) {
 			inky_in_house = inky_exit_ghost_house(axi_reg->g1_x, axi_reg->g1_y, &axi_reg->g1_dir, &axi_reg->g1_mv);
 		}
 		else if (!inky_in_house) {
-			// Update Inky's Position
-			update_inky_position(axi_reg->g1_x, axi_reg->g1_y,
-				&axi_reg->g1_dir, &axi_reg->g1_mv,
-				axi_reg->pm_x, axi_reg->pm_y,
-				grid);
+			if (axi_reg->kill_mode == 1) {
+				scared_inky(axi_reg->g1_x, axi_reg->g1_y,
+					&axi_reg->g1_dir, &axi_reg->g1_mv,
+					axi_reg->pm_x, axi_reg->pm_y,
+					grid);
+			}
+			else {
+				update_inky_position(axi_reg->g1_x, axi_reg->g1_y,
+					&axi_reg->g1_dir, &axi_reg->g1_mv,
+					axi_reg->pm_x, axi_reg->pm_y,
+					grid);
+			}
 		}
 
+		// Update Clyde's position
 		if (clyde_in_house && tick > 1000) {
 			clyde_in_house = clyde_exit_ghost_house(axi_reg->g3_x, axi_reg->g3_y, &axi_reg->g3_dir, &axi_reg->g3_mv);
 		}
 		else if (!clyde_in_house) {
-			// Update Inky's Position
-			update_clyde_position(axi_reg->g3_x, axi_reg->g3_y,
-				&axi_reg->g3_dir, &axi_reg->g3_mv,
-				axi_reg->pm_x, axi_reg->pm_y,
-				grid);
+			if (axi_reg->kill_mode == 1) {
+				scared_clyde(axi_reg->g3_x, axi_reg->g3_y,
+					&axi_reg->g3_dir, &axi_reg->g3_mv,
+					axi_reg->pm_x, axi_reg->pm_y,
+					grid);
+			}
+			else {
+				update_clyde_position(axi_reg->g3_x, axi_reg->g3_y,
+					&axi_reg->g3_dir, &axi_reg->g3_mv,
+					axi_reg->pm_x, axi_reg->pm_y,
+					grid);
+			}
 		}
 
 
