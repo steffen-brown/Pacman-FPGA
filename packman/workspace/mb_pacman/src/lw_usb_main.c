@@ -178,16 +178,38 @@ int main() {
 	int last_death_clyde = 0;
 
 	int pacman_dead = 0;
+	int pacman_dead_tick = 0;
 
 	while (1) {
+		tick++;
 		if(pacman_dead) {
 			axi_reg->g0_mv = 0;
 			axi_reg->g1_mv = 0;
 			axi_reg->g2_mv = 0;
 			axi_reg->g3_mv = 0;
 			axi_reg->pm_mv = 0;
+			sleep(5);
+			axi_reg->reset = 1;
+			pacman_dead = 0;
+			sleep(1);
+			axi_reg->reset = 0;
+			reset_pellets();
+			score = 0; // Current user score
+			user_dir = 0; // Current user desired direction
+			started = 0; // Round stated?
+			tick = 0;
+			printHex(score, 1);
+			blinky_in_house = 1;
+			pinky_in_house = 1;
+			inky_in_house = 1;
+			clyde_in_house = 1;
+			kill_mode_start = 0;
+			last_death_blinky = 0;
+			last_death_pinky = 0;
+			last_death_inky = 0;
+			last_death_clyde = 0;
 		} else {
-		tick++;
+
 
 		// PACMAN CONTROL AND PELLET CONSUMPTION CODE STARTS HERE
 
@@ -396,15 +418,19 @@ int main() {
 		} else {
 			if (abs(axi_reg->pm_x - axi_reg->g0_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g0_y) <= 10) {
 				pacman_dead = 1;
+				pacman_dead_tick = tick;
 			}
 			if (abs(axi_reg->pm_x - axi_reg->g2_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g2_y) <= 10) {
 				pacman_dead = 1;
+				pacman_dead_tick = tick;
 			}
 			if (abs(axi_reg->pm_x - axi_reg->g1_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g1_y) <= 10) {
 				pacman_dead = 1;
+				pacman_dead_tick = tick;
 			}
 			if (abs(axi_reg->pm_x - axi_reg->g3_x) <= 10 && abs(axi_reg->pm_y - axi_reg->g3_y) <= 10) {
 				pacman_dead = 1;
+				pacman_dead_tick = tick;
 			}
 		}
 
