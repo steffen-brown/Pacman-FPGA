@@ -103,16 +103,16 @@ Together, the C code integrates **Pac-Man's logic, ghost behaviors, and game sta
 ## Images to Check for Verification of Output
 
 ### Initial Game Screen
-![Initial Game Screen](images/initGameScreen.png)
+![Initial Game Screen](initGameScreen.png)
 
 ### Mid Game Screen Grab
-![Mid Game Screen Grab](images/midGameScreenGrab.jpg)
+![Mid Game Screen Grab](midGameScreenGrab.jpg)
 
 ### Block Design
-![Block Design](images/blockDesign.png)
+![Block Design](blockDesign.png)
 
 ### Top Level RTL Diagram
-![Top Level RTL Diagram](images/topLevelRTL.png)
+![Top Level RTL Diagram](topLevelRTL.png)
 
 ### Internal RTL Diagram
-![Internal RTL Diagram](images/internalRTL.png)
+![Internal RTL Diagram](internalRTL.png)
