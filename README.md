@@ -1,6 +1,6 @@
 # FPGA-Based Pac-Man Game 
 
-[![UIUC ECE 484](https://img.shields.io/badge/Course-ECE%20484-orange)](https://ece.illinois.edu/)
+[![UIUC ECE 385](https://img.shields.io/badge/Course-ECE%20385-orange)](https://ece.illinois.edu/)
 
 ## Overview
 
