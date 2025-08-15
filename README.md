@@ -11,6 +11,10 @@ This project seeks to combine hardware (SystemVerilog) for handling critical tas
 This project seeks to combine hardware (SystemVerilog) for handling critical tasks like VGA display, keyboard input processing, and real-time score updates, with software (C) to manage dynamic game logic, including Pac-Man's movement, ghost behavior, collision detection, and scoring mechanisms. The primary objective is to create a fully playable and visually engaging version of Pac-Man that operates seamlessly on an FPGA platform, while also providing real-time feedback through hardware interfaces like HEX displays.
 
 
+## Contribution
+This project’s hardware and non-algorithmic software were designed, implemented, and tested by Steffen Brown, including all SystemVerilog modules and C code for memory-mapped communication and hardware–software integration.
+
+
 ## Features
 
 - **Playable Pac-Man Game**: Control Pac-Man using a keyboard.
