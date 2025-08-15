@@ -1,5 +1,7 @@
 # FPGA-Based Pac-Man Game 
 
+[![UIUC ECE 484](https://img.shields.io/badge/Course-ECE%20484-orange)](https://ece.illinois.edu/)
+
 ## Overview
 
 This project implements a hardware-software co-designed version of the classic **Pac-Man arcade game** using a **Spartan 7 FPGA**. 
